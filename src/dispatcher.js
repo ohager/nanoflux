@@ -19,6 +19,11 @@ function Dispatcher(actions) {
     this.__connectedStores = [];
 
     var createActionList = function (actionArray) {
+
+        if(!Array.isArray(actionArray)){
+            actionArray = [actionArray];
+        }
+
         for (var i = 0; i < actionArray.length; ++i) {
             self.__registerAction(actionArray[i]);
         }
