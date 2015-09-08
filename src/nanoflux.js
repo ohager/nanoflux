@@ -1,21 +1,22 @@
 var storeFactory = require('./store');
 var dispatcherFactory = require('./dispatcher');
 
-var dispatcher = {};
-
 module.exports = {
 
-    createStore: function (descriptor) {
-        return storeFactory.create(descriptor);
+    createStore: function (name, descriptor) {
+        return storeFactory.create(name, descriptor);
     },
 
     createDispatcher: function (name, actionList) {
-        dispatcher[name] = dispatcherFactory.create(actionList);
-        return dispatcher[name];
+        return dispatcherFactory.create(name, actionList);
     },
 
     getDispatcher : function(name){
-        return dispatcher[name];
+        return dispatcherFactory.getDispatcher(name);
+    },
+
+    getStore : function(name){
+        return storeFactory.getStore(name);
     }
 
 };

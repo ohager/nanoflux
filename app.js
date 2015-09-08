@@ -6,7 +6,7 @@ var myDispatcher1 = NanoFlux.createDispatcher('myDispatcher1', ['action3']);
 var myDispatcher2 = NanoFlux.createDispatcher('myDispatcher2');
 
 
-var myStore = NanoFlux.createStore( {
+var myStore = NanoFlux.createStore( 'myStore', {
 
     onAction1 : function(test){
         console.log("Action 1: " + test);

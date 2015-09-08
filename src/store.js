@@ -3,38 +3,51 @@
  */
 function Store(descriptor) {
 
+    this.__constructor(descriptor);
     this.__connectedDispatchers = [];
-    var storeDescriptor = descriptor;
 
-    var generateHandlerName = function (actionName) {
-        return "on" + actionName[0].toUpperCase() + actionName.substr(1);
-    };
 
-    this.connectTo = function (dispatcherArray) {
-
-        if (!Array.isArray(dispatcherArray)) {
-            dispatcherArray = [dispatcherArray];
-        }
-
-        for (var i = 0; i < dispatcherArray.length; ++i) {
-
-            var dispatcher = dispatcherArray[i];
-            var actionNames = dispatcher.getActionNames();
-
-            for (var j = 0; j < actionNames.length; ++j) {
-                var actionName = actionNames[j];
-                var handlerName = generateHandlerName(actionName);
-                if (storeDescriptor[handlerName]) {
-                    dispatcher[actionName] = storeDescriptor[handlerName].bind(this);
-                }
-                else {
-                    console.warn("Function '" + handlerName + "' not defined in this stores definition");
-                }
-            }
-        }
-        this.__connectedDispatchers = dispatcherArray;
-    };
 }
+
+Store.prototype.__constructor = function (descriptor) {
+    var self = this;
+    for(var func in descriptor){
+        if(descriptor.hasOwnProperty(func)){
+            self[func] = descriptor[func];
+        }
+    }
+};
+
+
+Store.prototype.__generateHandlerName = function (actionName) {
+    return "on" + actionName[0].toUpperCase() + actionName.substr(1);
+};
+
+Store.prototype.__bindAction = function (dispatcher, actionName) {
+    var self = this;
+    var handlerName = this.__generateHandlerName(actionName);
+    if(self[handlerName]) {
+        dispatcher[actionName] = self[handlerName].bind(this);
+    }
+};
+
+Store.prototype.connectTo = function (dispatcherArray) {
+
+    if (!Array.isArray(dispatcherArray)) {
+        dispatcherArray = [dispatcherArray];
+    }
+
+    for (var i = 0; i < dispatcherArray.length; ++i) {
+
+        var dispatcher = dispatcherArray[i];
+        var actionNames = dispatcher.getActionNames();
+
+        for (var j = 0; j < actionNames.length; ++j) {
+            this.__bindAction(dispatcher, actionNames[j]);
+        }
+    }
+    this.__connectedDispatchers = dispatcherArray;
+};
 
 Store.prototype.notify = function () {
     var dispatchers = this.__connectedDispatchers;
@@ -44,10 +57,16 @@ Store.prototype.notify = function () {
     }
 };
 
+var stores = {}; // put it into an own namespace
+
 module.exports = {
 
     create: function (name, storeDescriptor) {
-        return new Store(name, storeDescriptor);
+        stores[name] = new Store(storeDescriptor);
+        return stores[name];
+    },
+    getStore: function (name) {
+        return stores[name];
     }
 
 };
