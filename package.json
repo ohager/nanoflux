@@ -1,0 +1,8 @@
+{
+  "name": "nanoflux",
+  "version": "0.0.1",
+  "author": "Oliver Hager",
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  }
+}
