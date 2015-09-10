@@ -85,7 +85,7 @@ __Example__
     
 ```
 
-# Getting Started
+# Getting nanoflux
 
 You may pick the library directly from ``./dist``, or build on your own:
 
