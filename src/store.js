@@ -32,6 +32,8 @@ Store.prototype.__bindAction = function (dispatcher, actionName) {
     var self = this;
     var handlerName = this.__generateHandlerName(actionName);
     if(self[handlerName]) {
+        // TODO: 1-to-1 relation needs to be 1-to-n relation
+        // dispatcher[actionName].push(self[handlerName].bind(this));
         dispatcher[actionName] = self[handlerName].bind(this);
     }
 };
