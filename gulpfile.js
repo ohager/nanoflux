@@ -8,7 +8,9 @@ var sequence = require('gulp-run-sequence');
 
 gulp.task('build', function() {
     gulp.src('src/nanoflux.js')
-        .pipe(browserify())
+        .pipe(browserify({
+            standalone : 'NanoFlux'
+        }))
         .pipe(uglify({
             output : {
                 ascii_only : true

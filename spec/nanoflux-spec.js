@@ -124,7 +124,7 @@ describe("NanoFlux Dispatching", function () {
         actions.action2(2);
         expect(result).toBe(4);
     });
-    
+
 });
 
 
