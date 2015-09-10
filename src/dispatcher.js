@@ -2,7 +2,6 @@
 function Dispatcher(actions) {
 
     var self = this;
-    this.__subscriptionList = [];
     this.__connectedStores = [];
 
     var createActionList = function (actionArray) {
@@ -64,9 +63,6 @@ Dispatcher.prototype.getActionNames = function () {
 
     return actionNames;
 };
-
-
-
 
 
 Dispatcher.prototype.dispatch = function (actionName, data) {

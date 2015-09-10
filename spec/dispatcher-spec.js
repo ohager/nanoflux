@@ -15,6 +15,12 @@ describe("dispatcher", function () {
         expect(dispatcher.action1).not.toBe(undefined);
         expect(typeof(dispatcher.action1)).toBe("function");
     });
-    
+
+    it("should return the created dispatcher 'myDispatcher'", function () {
+        dispatcherFactory.create('myDispatcher1', 'action1');
+        var dispatcher = dispatcherFactory.getDispatcher('myDispatcher1');
+        expect(dispatcher).not.toBe(undefined);
+        expect(typeof(dispatcher.action1)).toBe("function");
+    });
 });
 
