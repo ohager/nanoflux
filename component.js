@@ -8,7 +8,8 @@ function Component(){
 
     this.test = function(){
         var dispatcher = NanoFlux.getDispatcher('myDispatcher');
-        var subscription = dispatcher.subscribe(this, this.onNotify);
+        var store = NanoFlux.getStore('myStore');
+        var subscription = store.subscribe(this, this.onNotify);
 
         dispatcher.action1("test 1.1");
         dispatcher.action2("test 2.1");

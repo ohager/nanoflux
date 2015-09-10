@@ -1,12 +1,18 @@
-/**
- * Created by oliver on 05/09/2015.
- */
+function Subscription(subscriber, arr) {
+
+    var subscriptionList = arr;
+    var handle = subscriber;
+
+    this.unsubscribe = function () {
+        var index = arr.indexOf(handle);
+        subscriptionList.splice(index, 1);
+    };
+}
+
 function Store(descriptor) {
 
     this.__constructor(descriptor);
-    this.__connectedDispatchers = [];
-
-
+    this.__subscriptionList = [];
 }
 
 Store.prototype.__constructor = function (descriptor) {
@@ -17,7 +23,6 @@ Store.prototype.__constructor = function (descriptor) {
         }
     }
 };
-
 
 Store.prototype.__generateHandlerName = function (actionName) {
     return "on" + actionName[0].toUpperCase() + actionName.substr(1);
@@ -46,19 +51,22 @@ Store.prototype.connectTo = function (dispatcherArray) {
             this.__bindAction(dispatcher, actionNames[j]);
         }
     }
-    this.__connectedDispatchers = dispatcherArray;
+};
+
+Store.prototype.subscribe = function (context, func) {
+    var subscriber = {context: context, func: func};
+    this.__subscriptionList.push(subscriber);
+    return new Subscription(subscriber, this.__subscriptionList);
 };
 
 Store.prototype.notify = function () {
-    var dispatchers = this.__connectedDispatchers;
-    for (var i = 0; i < dispatchers.length; ++i) {
-        var dispatcher = dispatchers[i];
-        dispatcher.notify.apply(dispatcher, arguments);
+    for (var i = 0; i < this.__subscriptionList.length; ++i) {
+        var subscriber = this.__subscriptionList[i];
+        subscriber.func.apply(subscriber.context, arguments);
     }
 };
 
-var stores = {}; // put it into an own namespace
-
+var stores = {};
 module.exports = {
 
     create: function (name, storeDescriptor) {
