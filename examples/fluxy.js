@@ -5,10 +5,15 @@ var setup = function() {
 
     var myDispatcher = NanoFlux.createDispatcher('myDispatcher', ['action1', 'action2']);
     var myDispatcher1 = NanoFlux.createDispatcher('myDispatcher1', ['action3']);
+
+    // Creating a store 'myStore' with functions triggered by dispatched actions
+    // The convention for action handlers name is: on<ActionName>
     var myStore = NanoFlux.createStore('myStore', {
 
+        // the handlers signature bases on the users convention
         onAction1: function (test) {
             console.log("Store.onAction1: " + test);
+            // this will call the subscribed callbacks
             this.notify({data: test});
         },
 
@@ -23,6 +28,12 @@ var setup = function() {
         }
     });
 
+    // Establish the link between one or more dispatchers and the store.
+    // On connection the actions of the passed dispatchers will be
+    // mapped to the stores action handlers following the mentioned
+    // naming convention.
+    // A warning will be thrown, if store does not provide a certain
+    // action handler and its mapping is being ignored.
     myStore.connectTo([myDispatcher, myDispatcher1]);
 };
 
