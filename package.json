@@ -4,10 +4,14 @@
   "author": "Oliver Hager",
   "private": true,
   "devDependencies": {
+    "browserify": "^11.0.1",
     "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-uglify": "^1.4.1",
     "jasmine-node": "^1.14.5"
   },
   "scripts": {
-    "test": "node ./node_modules/jasmine-node/lib/jasmine-node/cli.js ./spec --verbose"
+    "test": "node ./node_modules/jasmine-node/lib/jasmine-node/cli.js ./spec --verbose",
+    "bundle": "node ./node_modules/browserify/bin/browserify.js ./src/nanoflux.js > ./dist/nanoflux.js"
   }
 }
