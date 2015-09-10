@@ -1,10 +1,11 @@
+var nanofluxDir;
 
 // @ifdef DIST
-var nanofluxDir = "../dist/nanoflux";
+nanofluxDir = "../dist/nanoflux";
 // @endif
 
 // @ifndef DIST
-var nanofluxDir = "../src/nanoflux";
+nanofluxDir = "../src/nanoflux";
 // @endif
 
 var NanoFlux = require(nanofluxDir);
@@ -17,7 +18,7 @@ describe("NanoFlux Basics", function () {
                 return "Test";
             }
         });
-        expect(store.onAction1).not.toBe(undefined);
+        expect(store.onAction1).toBeDefined();
         expect(typeof(store.onAction1)).toBe("function");
         expect(store.onAction1()).toBe("Test");
     });
@@ -29,9 +30,25 @@ describe("NanoFlux Basics", function () {
             }
         });
         var store = NanoFlux.getStore('myStore');
-        expect(store.onAction1).not.toBe(undefined);
+        expect(store.onAction1).toBeDefined();
         expect(typeof(store.onAction1)).toBe("function");
         expect(store.onAction1()).toBe("Test");
+    });
+
+    it("should create dispatcher 'myDispatcher", function () {
+        var dispatcher = NanoFlux.createDispatcher('myDispatcher',['action1', 'action2']);
+        expect(dispatcher.action1).toBeDefined();
+        expect(typeof(dispatcher.action1)).toBe("function");
+    });
+
+    it("should return created dispatcher 'myDispatcher", function () {
+        NanoFlux.createDispatcher('myDispatcher',['action1', 'action2']);
+        NanoFlux.createDispatcher('myDispatcher1','action3');
+        var dispatcher = NanoFlux.getDispatcher('myDispatcher');
+
+        expect(dispatcher.action1).toBeDefined();
+        expect(typeof(dispatcher.action1)).toBe("function");
+        expect(dispatcher.action3).not.toBeDefined();
     });
 
 });
@@ -107,8 +124,7 @@ describe("NanoFlux Dispatching", function () {
         actions.action2(2);
         expect(result).toBe(4);
     });
-
-
+    
 });
 
 

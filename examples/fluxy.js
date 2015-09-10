@@ -3,6 +3,8 @@ var NanoFlux = require('../src/nanoflux');
 
 var setup = function() {
 
+    // Create the dispatcher with one or many actions
+    // The passed action names become functions of the dispatcher
     var myDispatcher = NanoFlux.createDispatcher('myDispatcher', ['action1', 'action2']);
     var myDispatcher1 = NanoFlux.createDispatcher('myDispatcher1', ['action3']);
 
