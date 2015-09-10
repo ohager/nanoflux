@@ -43,9 +43,9 @@ Dispatcher.prototype.__connectStore = function (store) {
 };
 
 Dispatcher.prototype.__bindAction = function(actionName){
-    for (var i = 0; i < this.__connectedStores; ++i) {
+    for (var i = 0; i < this.__connectedStores.length; ++i) {
         var store = this.__connectedStores[i];
-        store.__bindAction(actionName);
+        store.__bindAction(this, actionName);
         this.__connectStore(store);
     }
 };

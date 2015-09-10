@@ -45,10 +45,12 @@ Store.prototype.connectTo = function (dispatcherArray) {
     for (var i = 0; i < dispatcherArray.length; ++i) {
 
         var dispatcher = dispatcherArray[i];
-        var actionNames = dispatcher.getActionNames();
+        dispatcher.__connectStore(this);
 
+        var actionNames = dispatcher.getActionNames();
         for (var j = 0; j < actionNames.length; ++j) {
             this.__bindAction(dispatcher, actionNames[j]);
+
         }
     }
 };
