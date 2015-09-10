@@ -42,7 +42,8 @@ __Example__
     
         this.action1 = function(data){
             console.log("Action 1");
-            // this way, the dispatcher establishes dynamically the action binding.
+            // this way, the dispatcher establishes dynamically the action binding
+            // to connected stores.
             dispatcher.dispatch('action1', data);
         };
     
@@ -66,11 +67,13 @@ __Example__
         this.exec = function(){
     
             // note, that in this example the dispatcher won't be created with any actions.
-            // the actions are provided by the dedicated ActionProvider
-    
+            // the actions are provided by the dedicated ActionProvider    
             var dispatcher = NanoFlux.createDispatcher('myDispatcher');
             var store = NanoFlux.getStore('myStore');
+            
+            // Now, connecting Store and Dispatcher
             store.connectTo(dispatcher);
+            
             // establishes the link between store's notification mechanism and this component.
             // use the returned object to unsubscribe, if needed!
             var subscription = store.subscribe(this, this.onNotify);
