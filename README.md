@@ -83,8 +83,6 @@ __Example__
         };
     }
     
-    setup();
-    new Component().exec();
 ```
 
 # Getting Started
