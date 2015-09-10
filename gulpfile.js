@@ -19,12 +19,12 @@ gulp.task('build', function() {
         .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('test', function() {
+gulp.task('build:test', function() {
     gulp.src('spec/nanoflux-spec.js')
         .pipe(preprocess({context: {DIST: true}}))
         .pipe(jasmine({verbose:true}));
 });
 
 gulp.task('default', function(cb){
-    sequence('build','test',cb);
+    sequence('build','build:test',cb);
 });

@@ -97,6 +97,11 @@ After all (dev) dependencies were installed just run ``gulp``.
 
 Pronto!
 
+## Automated Testing
+
+The gulp build chain runs tests only for the browserified nanoflux module. All tests can be run using `jasmine-node` or `npm run test`. 
+
+
 # TO DO
 
 - Exhaustive Testing
