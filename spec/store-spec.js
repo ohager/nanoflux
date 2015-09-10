@@ -1,3 +1,6 @@
+
+// @ifndef DIST
+
 var storeFactory = require("../src/store");
 
 describe("store", function () {
@@ -45,3 +48,4 @@ describe("store", function () {
 
 });
 
+// @endif

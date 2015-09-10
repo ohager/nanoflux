@@ -1,10 +1,12 @@
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
 var uglify = require('gulp-uglify');
+var preprocess = require('gulp-preprocess');
+var jasmine = require('gulp-jasmine');
+var sequence = require('gulp-run-sequence');
 
 
 gulp.task('build', function() {
-    // Single entry point to browserify 
     gulp.src('src/nanoflux.js')
         .pipe(browserify())
         .pipe(uglify({
@@ -15,4 +17,12 @@ gulp.task('build', function() {
         .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('default', ['build']);
+gulp.task('test', function() {
+    gulp.src('spec/nanoflux-spec.js')
+        .pipe(preprocess({context: {DIST: true}}))
+        .pipe(jasmine({verbose:true}));
+});
+
+gulp.task('default', function(cb){
+    sequence('build','test',cb);
+});

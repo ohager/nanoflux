@@ -1,4 +1,13 @@
-var NanoFlux = require("../src/nanoflux");
+
+// @ifdef DIST
+var nanofluxDir = "../dist/nanoflux";
+// @endif
+
+// @ifndef DIST
+var nanofluxDir = "../src/nanoflux";
+// @endif
+
+var NanoFlux = require(nanofluxDir);
 
 describe("NanoFlux Basics", function () {
 
