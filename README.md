@@ -1,6 +1,6 @@
 # nanoflux
 
-__nanoflux__ is a *very* lightweight and dependency-free Flux implementation.
+__nanoflux__ is a *very* lightweight (currently 3KiB!) and dependency-free Flux implementation.
 
 The idea of this implementation is to support a very small, but full Flux implementation (separated Action, Dispatcher, and Store), 
 and also a "fluxy" version, with Action and Dispatcher merged in one unit. 
