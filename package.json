@@ -15,6 +15,7 @@
     "jasmine-node": "^1.14.5"
   },
   "scripts": {
-    "test": "node ./node_modules/jasmine-node/lib/jasmine-node/cli.js ./spec --verbose"
+    "test": "node ./node_modules/jasmine-node/lib/jasmine-node/cli.js ./spec --verbose",
+    "benchmark": "node ./perf/benchmark.js"
   }
 }

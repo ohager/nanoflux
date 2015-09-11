@@ -105,7 +105,14 @@ Pronto!
 The gulp build chain runs tests only for the browserified nanoflux module. All tests can be run using `jasmine-node` or `npm run test`. 
 
 
+# Available Node Tasks
+
+Use `npm run <task>` to execute additional task. Available tasks are:
+ 
+- test : Runs all tests
+- benchmark : Runs a performance benchmark for different Flux Implementations. 
+
 # TO DO
 
 - Exhaustive Testing
-- Performance Benchmark
+- More Performance Benchmarks
