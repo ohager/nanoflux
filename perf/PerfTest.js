@@ -2,6 +2,7 @@
 
 function PerfTest(name, runner){
 
+
     var __constructor = function(){
         for(var prop in runner){
             if(runner.hasOwnProperty(prop)){
@@ -15,6 +16,7 @@ function PerfTest(name, runner){
 
     __constructor();
 
+    this.getName = function(){ return name; };
     this.start = function(){
 
         if(this.before){
@@ -51,6 +53,8 @@ function PerfTest(name, runner){
         }
     }
 }
+
+// --------------------------------------
 
 module.exports = {
     createPerfTest : function(name, runner){
