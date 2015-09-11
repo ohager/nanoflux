@@ -14,7 +14,7 @@ function ActionProvider(dispatcher){
 }
 
 module.exports = PerfTest.createPerfTest('fullflux-perf', {
-    dispatcher : NanoFlux.createDispatcher('myDispatcher', ['action1', 'action2']),
+    dispatcher : NanoFlux.createDispatcher('myDispatcher'),
     store : NanoFlux.createStore('myStore', {
 
         onAction1: function (test) {
