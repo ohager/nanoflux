@@ -25,10 +25,21 @@ describe("Dispatcher Creation", function () {
         expect(typeof(dispatcher.action1)).toBe("function");
     });
 
-
     it("can create without any action", function () {
         var dispatcher = dispatcherFactory.create('myDispatcher1');
         expect(dispatcher).toBeDefined();
+    });
+
+    it("cannot create with empty name", function () {
+        expect(function(){dispatcherFactory.create('');}).toThrow();
+    });
+
+    it("should create action on dispatch", function () {
+
+        var dispatcher = dispatcherFactory.create('myDispatcher1');
+        dispatcher.dispatch('action1');
+
+        expect(typeof(dispatcher.action1)).toBe("function");
     });
 
 });

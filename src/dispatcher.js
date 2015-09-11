@@ -68,6 +68,10 @@ var dispatchers = {};
 
 module.exports = {
     create: function (name, actionArray) {
+        if(!name || name.length===0){
+            throw "Empty names are not allowed";
+        }
+
         dispatchers[name] = new Dispatcher(actionArray);
         return dispatchers[name];
     },
