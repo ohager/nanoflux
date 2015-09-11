@@ -1,7 +1,6 @@
 // @ifndef DIST
 
 var dispatcherFactory = require("../src/dispatcher");
-var storeFactory = require("../src/store");
 
 describe("Dispatcher Creation", function () {
 

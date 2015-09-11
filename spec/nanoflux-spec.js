@@ -173,8 +173,7 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
         var dispatcher = NanoFlux.createDispatcher('myDispatcher');
         var actions = new ActionProvider(dispatcher);
 
-        dispatcher.connectTo(store1);
-        dispatcher.connectTo(store2);
+        dispatcher.connectTo([store1,store2]);
         store1.subscribe(this, this.onNotifyStore1);
         store2.subscribe(this, this.onNotifyStore2);
 

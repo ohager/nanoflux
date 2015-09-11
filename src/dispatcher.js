@@ -46,9 +46,17 @@ Dispatcher.prototype.__registerAction = function (actionName) {
 };
 
 Dispatcher.prototype.connectTo = function (store) {
-    if(this.__connectedStores.indexOf(store)===-1){
-        this.__connectedStores.push(store);
+
+    if(!Array.isArray(store)){
+        store = [store];
     }
+    
+    for(var i=0; i<store.length;++i){
+        if(this.__connectedStores.indexOf(store[i])===-1){
+            this.__connectedStores.push(store[i]);
+        }
+    }
+
 };
 
 Dispatcher.prototype.getActionNames = function () {
