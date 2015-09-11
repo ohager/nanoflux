@@ -1,5 +1,6 @@
 var fluxyPerf = require('../perf/fluxy-perf');
 var fullfluxPerf = require('../perf/fullflux-perf');
+var refluxPerf = require('../perf/reflux-perf');
 
 var results = [];
 
@@ -11,7 +12,7 @@ function run(f){
 
 run(fluxyPerf);
 run(fullfluxPerf);
-
+run(refluxPerf);
 
 
 
