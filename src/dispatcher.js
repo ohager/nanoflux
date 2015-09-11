@@ -50,7 +50,7 @@ Dispatcher.prototype.connectTo = function (store) {
     if(!Array.isArray(store)){
         store = [store];
     }
-    
+
     for(var i=0; i<store.length;++i){
         if(this.__connectedStores.indexOf(store[i])===-1){
             this.__connectedStores.push(store[i]);
@@ -58,20 +58,6 @@ Dispatcher.prototype.connectTo = function (store) {
     }
 
 };
-
-Dispatcher.prototype.getActionNames = function () {
-
-    var actionNames = [];
-
-    for (var actionName in this) {
-        if (this.hasOwnProperty(actionName) && actionName.indexOf("__") === -1) {
-            actionNames.push(actionName);
-        }
-    }
-
-    return actionNames;
-};
-
 
 Dispatcher.prototype.dispatch = function (actionName, data) {
     this.__registerAction(actionName);
