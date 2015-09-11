@@ -1,3 +1,8 @@
+"use strict";
+
+function generateHandlerName(actionName) {
+    return "on" + actionName[0].toUpperCase() + actionName.substr(1);
+}
 
 function Dispatcher(actions) {
 
@@ -24,32 +29,27 @@ function Dispatcher(actions) {
     initialize();
 }
 
-Dispatcher.prototype.__registerAction = function (actionName) {
+Dispatcher.prototype.__callAction = function(){
+    var handler = generateHandlerName(arguments[0]);
+    var args = Array.prototype.slice.call(arguments,1);
 
-    var self = this;
-
-    if(self[actionName]) return;
-
-    self[actionName] = function (msg) {
-        console.warn(msg);
-    }.bind(null, "Action " + actionName + " is not attached to any store yet!");
-
+    for (var i = 0; i < this.__connectedStores.length; ++i) {
+        var store = this.__connectedStores[i];
+        store[handler].apply(store, args);
+    }
 };
 
-Dispatcher.prototype.__connectStore = function (store) {
+Dispatcher.prototype.__registerAction = function (actionName) {
+    if(!this[actionName]) {
+        this[actionName] = this.__callAction.bind(this, actionName);
+    }
+};
+
+Dispatcher.prototype.connectTo = function (store) {
     if(this.__connectedStores.indexOf(store)===-1){
         this.__connectedStores.push(store);
     }
 };
-
-Dispatcher.prototype.__bindAction = function(actionName){
-    for (var i = 0; i < this.__connectedStores.length; ++i) {
-        var store = this.__connectedStores[i];
-        store.__bindAction(this, actionName);
-        this.__connectStore(store);
-    }
-};
-
 
 Dispatcher.prototype.getActionNames = function () {
 
@@ -66,10 +66,8 @@ Dispatcher.prototype.getActionNames = function () {
 
 
 Dispatcher.prototype.dispatch = function (actionName, data) {
-    var self = this;
-    self.__registerAction(actionName);
-    self.__bindAction(actionName);
-    self[actionName](data);
+    this.__registerAction(actionName);
+    this[actionName](data);
 };
 
 var dispatchers = {};

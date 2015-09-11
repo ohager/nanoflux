@@ -1,3 +1,5 @@
+"use strict";
+
 function Subscription(subscriber, arr) {
 
     var subscriptionList = arr;
@@ -16,43 +18,9 @@ function Store(descriptor) {
 }
 
 Store.prototype.__constructor = function (descriptor) {
-    var self = this;
     for(var func in descriptor){
         if(descriptor.hasOwnProperty(func)){
-            self[func] = descriptor[func];
-        }
-    }
-};
-
-Store.prototype.__generateHandlerName = function (actionName) {
-    return "on" + actionName[0].toUpperCase() + actionName.substr(1);
-};
-
-Store.prototype.__bindAction = function (dispatcher, actionName) {
-    var self = this;
-    var handlerName = this.__generateHandlerName(actionName);
-    if(self[handlerName]) {
-        // TODO: 1-to-1 relation needs to be 1-to-n relation
-        // dispatcher[actionName].push(self[handlerName].bind(this));
-        dispatcher[actionName] = self[handlerName].bind(this);
-    }
-};
-
-Store.prototype.connectTo = function (dispatcherArray) {
-
-    if (!Array.isArray(dispatcherArray)) {
-        dispatcherArray = [dispatcherArray];
-    }
-
-    for (var i = 0; i < dispatcherArray.length; ++i) {
-
-        var dispatcher = dispatcherArray[i];
-        dispatcher.__connectStore(this);
-
-        var actionNames = dispatcher.getActionNames();
-        for (var j = 0; j < actionNames.length; ++j) {
-            this.__bindAction(dispatcher, actionNames[j]);
-
+            this[func] = descriptor[func];
         }
     }
 };

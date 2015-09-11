@@ -36,7 +36,8 @@ var setup = function() {
     // naming convention.
     // A warning will be thrown, if store does not provide a certain
     // action handler and its mapping is being ignored.
-    myStore.connectTo([myDispatcher, myDispatcher1]);
+    myDispatcher.connectTo(myStore);
+    myDispatcher1.connectTo(myStore);
 };
 
 function Component(){

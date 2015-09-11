@@ -79,7 +79,7 @@ describe("NanoFlux Dispatching", function () {
 
     it("should dispatch 'static' actions 'action1' and 'action2 (Fluxy)", function () {
         var dispatcher = NanoFlux.createDispatcher('myDispatcher', ['action1','action2']);
-        store.connectTo(dispatcher);
+        dispatcher.connectTo(store);
 
         dispatcher.action1("Action1");
         expect(result).toBe("Action1");
@@ -93,7 +93,7 @@ describe("NanoFlux Dispatching", function () {
 
     it("should dispatch 'dynamic' actions 'action1' and 'action2 (Full Flux)", function () {
         var dispatcher = NanoFlux.createDispatcher('myDispatcher');
-        store.connectTo(dispatcher);
+        dispatcher.connectTo(store);
         var actions = new ActionProvider(dispatcher);
 
         actions.action1("Action1");
@@ -109,7 +109,7 @@ describe("NanoFlux Dispatching", function () {
 
     it("should be able to use 'static' and  'dynamic' actions 'action1' and 'action2", function () {
         var dispatcher = NanoFlux.createDispatcher('myDispatcher', 'action1');
-        store.connectTo(dispatcher);
+        dispatcher.connectTo(store);
         var actions = new ActionProvider(dispatcher);
 
         dispatcher.action1("Action1");
@@ -173,22 +173,20 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
         var dispatcher = NanoFlux.createDispatcher('myDispatcher');
         var actions = new ActionProvider(dispatcher);
 
-        store1.connectTo(dispatcher);
-        store2.connectTo(dispatcher);
+        dispatcher.connectTo(store1);
+        dispatcher.connectTo(store2);
         store1.subscribe(this, this.onNotifyStore1);
         store2.subscribe(this, this.onNotifyStore2);
 
         actions.action1("Action1");
         expect(resultStore1.store).toBe("store1");
         expect(resultStore1.data).toBe("Action1");
+        expect(resultStore2.store).toBe("store2");
+        expect(resultStore2.data).toBe("Action1");
+
         actions.action1("Action2");
         expect(resultStore1.store).toBe("store1");
         expect(resultStore1.data).toBe("Action2");
-
-        actions.action1("Action1");
-        expect(resultStore2.store).toBe("store2");
-        expect(resultStore2.data).toBe("Action1");
-        actions.action1("Action2");
         expect(resultStore2.store).toBe("store2");
         expect(resultStore2.data).toBe("Action2");
 

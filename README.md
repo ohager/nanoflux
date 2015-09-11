@@ -72,7 +72,7 @@ __Example__
             var store = NanoFlux.getStore('myStore');
             
             // Now, connecting Store and Dispatcher
-            store.connectTo(dispatcher);
+            dispatcher.connectTo(store);
             
             // establishes the link between store's notification mechanism and this component.
             // use the returned object to unsubscribe, if needed!

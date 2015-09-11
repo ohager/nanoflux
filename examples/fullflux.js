@@ -58,7 +58,7 @@ function Component(){
 
         var dispatcher = NanoFlux.createDispatcher('myDispatcher');
         var store = NanoFlux.getStore('myStore');
-        store.connectTo(dispatcher);
+        dispatcher.connectTo(store);
         // establishes the link between store's notification mechanism and this component.
         // use the returned object to unsubscribe, if needed!
         var subscription = store.subscribe(this, this.onNotify);
