@@ -4,6 +4,10 @@ function generateHandlerName(actionName) {
     return "on" + actionName[0].toUpperCase() + actionName.substr(1);
 }
 
+function guaranteeArray(obj){
+    return !Array.isArray(obj) ? [obj] : obj;
+}
+
 function Dispatcher(actions) {
 
     var self = this;
@@ -11,12 +15,10 @@ function Dispatcher(actions) {
 
     var createActionList = function (actionArray) {
 
-        if(!Array.isArray(actionArray)){
-            actionArray = [actionArray];
-        }
+        var actions = guaranteeArray(actionArray);
 
-        for (var i = 0; i < actionArray.length; ++i) {
-            self.__registerAction(actionArray[i]);
+        for (var i = 0; i < actions.length; ++i) {
+            self.__registerAction(actions[i]);
         }
     };
 
@@ -45,15 +47,13 @@ Dispatcher.prototype.__registerAction = function (actionName) {
     }
 };
 
-Dispatcher.prototype.connectTo = function (store) {
+Dispatcher.prototype.connectTo = function (storeArray) {
 
-    if(!Array.isArray(store)){
-        store = [store];
-    }
+    var stores = guaranteeArray(storeArray);
 
-    for(var i=0; i<store.length;++i){
-        if(this.__connectedStores.indexOf(store[i])===-1){
-            this.__connectedStores.push(store[i]);
+    for(var i=0; i<stores.length;++i){
+        if(this.__connectedStores.indexOf(stores[i])===-1){
+            this.__connectedStores.push(stores[i]);
         }
     }
 
