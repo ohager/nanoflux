@@ -13,7 +13,7 @@ function ActionProvider(dispatcher){
     }
 }
 
-module.exports = PerfTest.createPerfTest('fullflux-perf', {
+module.exports = PerfTest.createPerfTest('nanoflux-fullflux-perf', {
     dispatcher : NanoFlux.createDispatcher('myDispatcher'),
     store : NanoFlux.createStore('myStore', {
 

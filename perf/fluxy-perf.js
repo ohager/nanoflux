@@ -3,7 +3,7 @@ var PerfTest = require('../perf/perftest');
 var NanoFlux = require('../src/nanoflux');
 
 
-module.exports = PerfTest.createPerfTest('fluxy-perf', {
+module.exports = PerfTest.createPerfTest('nanoflux-fluxy-perf', {
     dispatcher : NanoFlux.createDispatcher('myDispatcher', ['action1', 'action2']),
     store : NanoFlux.createStore('myStore', {
 
