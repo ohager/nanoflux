@@ -53,7 +53,6 @@ describe("NanoFlux Basics", function () {
 
 });
 
-
 describe("NanoFlux Dispatching", function () {
 
     var result = null;
@@ -259,4 +258,34 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
 });
 
 
+describe("NanoFlux Advanced Techniques", function () {
 
+    it("store should connect to another store", function () {
+        var dispatcher = NanoFlux.getDispatcher('myDispatcher', ['action1']);
+        var store1 = NanoFlux.createStore('myStore1', {
+            onAction1 : function() {
+                this.notify("From Store1");
+            }
+        });
+        var store2 = NanoFlux.createStore('myStore2', {
+            onInitialize : function(){
+                store1.subscribe(this, this.onStore1Notify);
+            },
+            onStore1Notify : function(data){
+                this.notify(data);
+            }
+        });
+
+        var result;
+        dispatcher.connectTo(store1);
+        store2.subscribe(this,function(data){
+            result = data;
+        });
+
+        dispatcher.action1();
+
+        expect(result).toBeDefined();
+        expect(result).toBe("From Store1");
+    });
+
+});

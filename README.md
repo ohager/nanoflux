@@ -7,7 +7,42 @@ and also a "fluxy" version, with Action and Dispatcher merged in one unit.
 
 Furthermore, __nanoflux__ does not use events for communication, but a functional approach for (hopefully) more performant solution (Tests will be made).
 
-__Example__
+# Features
+
+- Extremely tiny implementation (less than 3 KiB)
+- No dependencies at all
+- Pure Functional approach (totally event less)
+- Support for full Flux using full stack of ActionProvider/Creator, Dispatcher, and Stores
+- Support for a simplified 'fluxy' concept, where Dispatcher is also ActionProvider
+- Interoperable Stores
+- Apparently very fast (Performance comparisons in progress)
+
+
+# Performance
+
+__nanoflux__ neither supports asynchronous action handling, nor any kind of event triggering.
+Everything is done using synchronous function calls, that makes __nanoflux__ quite fast.
+
+I think special asynchronous support is not necessary, because long term operations like server requests can be easily
+implemented in a stores logic, and change notification is under full control of the programmer.
+
+Notification callbacks in view components should be simple operations (like copying data). Usually, 
+the update mechanisms of component based approaches (p.e. like in React) realize their updates in 'separate' render
+cycles, and therefore do not affect notification cycles.
+
+Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
+
+1. nanoflux-fluxy-perf: 42488.67 op/s (0.00 op/s) - 100.00%
+2. nanoflux-fullflux-perf: 41404.00 op/s (-1084.67 op/s) - 97.45%
+3. reflux-perf: 18490.00 op/s (-23998.67 op/s) - 43.52%
+4. delorean-perf: 2403.00 op/s (-40085.67 op/s) - 5.66%
+
+
+The benchmark code is available under `./perf`.
+
+# Example
+
+The following example demonstrates the 'full' Flux approach, using ActionProvider, Dispatcher, and Store
 
 ```javascript
 

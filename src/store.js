@@ -23,6 +23,10 @@ Store.prototype.__constructor = function (descriptor) {
             this[func] = descriptor[func];
         }
     }
+
+    if(this.onInitialize){
+        this.onInitialize();
+    }
 };
 
 Store.prototype.subscribe = function (context, func) {
