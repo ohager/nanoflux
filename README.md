@@ -14,6 +14,7 @@ Furthermore, __nanoflux__ does not use events for communication, but a functiona
 - Pure Functional approach (totally event less)
 - Support for full Flux using full stack of ActionProvider/Creator, Dispatcher, and Stores
 - Support for a simplified 'fluxy' concept, where Dispatcher is also ActionProvider
+- No singleton
 - Interoperable Stores
 - Multiple Dispatchers
 - Quite fast
