@@ -10,33 +10,41 @@ function PerfTest(name, runner){
             }
         }
 
-        if(!this.exec) throw "No 'exec' method defined";
+        if(!this.exec && !this.execAsync) throw "No 'exec' nor 'execAsync' method defined";
 
     }.bind(this);
 
     __constructor();
 
     this.getName = function(){ return name; };
-    this.start = function(){
 
-        if(this.before){
-            this.before.call(this);
-        }
+    this.start = function(){
 
         var overallElapsed = 0;
         var iterations = 0;
         var elapsedTime = 0;
         var rounds = 3;
-        for(var i = 0; i < rounds; ++i){
+        var i = 0;
+        var start = 0;
 
-            var start = Date.now();
-            while(elapsedTime <= 1000){
-                this.exec.call(this,i);
-                elapsedTime = Date.now() - start;
-                ++iterations;
+        if(this.before){
+            this.before.call(this);
+        }
+
+        if(this.exec){
+
+            for(i = 0; i < rounds; ++i){
+
+                start = Date.now();
+                while(elapsedTime <= 1000){
+                    this.exec.call(this,i);
+                    elapsedTime = Date.now() - start;
+                    ++iterations;
+                }
+                overallElapsed += elapsedTime;
+                elapsedTime = 0;
             }
-            overallElapsed += elapsedTime;
-            elapsedTime = 0;
+
         }
 
         if(this.after) {
