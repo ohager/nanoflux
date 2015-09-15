@@ -46,20 +46,20 @@ Everything is done using synchronous function calls, that makes __nanoflux__ qui
 I think special asynchronous support is not necessary, because long term operations like server requests can be easily
 implemented in a stores logic, and change notification is under full control of the programmer.
 
-Notification callbacks in view components should be simple operations (like copying data). Usually, 
-the update mechanisms of component based approaches (p.e. like in React) realize their updates in 'separate' render
-cycles, and therefore do not affect notification cycles.
-
 Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
 
-1. fbflux-perf: 51512.67 op/s (0.00 op/s) - 100.00%
-2. nanoflux-fluxy-perf: 41914.00 op/s (-9598.67 op/s) - 81.37%
-3. nanoflux-fullflux-perf: 41371.00 op/s (-10141.67 op/s) - 80.31%
-4. reflux-perf: 18595.00 op/s (-32917.67 op/s) - 36.10%
-5. delorean-perf: 2366.67 op/s (-49146.00 op/s) - 4.59%
-
+1. fbflux-perf: 50461.33 op/s (0.00 op/s) - 100.00%
+2. nanoflux-fluxy-perf: 42936.00 op/s (-7525.33 op/s) - 85.09%
+3. nanoflux-fullflux-perf: 42455.00 op/s (-8006.33 op/s) - 84.13%
+4. reflux-perf: 18585.67 op/s (-31875.66 op/s) - 36.83%
+5. delorean-perf: 2376.00 op/s (-48085.33 op/s) - 4.71%
 
 The benchmark code is available under `./perf`.
+
+Currently, all measuring is done server side using `nodejs`. 
+No client side performance tests were done yet. But I do not expect much differences.
+Interestingly, Facebook's Flux is the fastest implementation. I expected the functional approach to be faster than events. 
+I think `nodejs`s native event emitter is highly optimized, as it is the core of nodejs. Maybe on client side it won't be that fast, but I have to test it.  
 
 # Example
 
