@@ -24,7 +24,7 @@ Furthermore, __nanoflux__ does not use events for communication, but a functiona
 
 # Comparison to Facebook's Implementation
 
-From an architectural point of view, the main difference is that (Facebook's Flux implementation)[https://github.com/facebook/flux] provides 
+From an architectural point of view, the main difference is that [Facebook's Flux implementation](https://github.com/facebook/flux) provides 
 one central dispatcher, while __nanoflux__ supports also multiple dispatchers (if needed). Given that flexibility, it is possible to link multiple stores 
 and multiple dispatchers, but I hardly doubt that this is a preferable scenario, as this can get quite messy. Nevertheless, it is also possible 
 (as a built in feature) to link stores easily, so they can notify each other on changes.
