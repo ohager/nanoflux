@@ -15,8 +15,27 @@ Furthermore, __nanoflux__ does not use events for communication, but a functiona
 - Support for full Flux using full stack of ActionProvider/Creator, Dispatcher, and Stores
 - Support for a simplified 'fluxy' concept, where Dispatcher is also ActionProvider
 - Interoperable Stores
-- Apparently very fast (Performance comparisons in progress)
+- Multiple Dispatchers
+- Quite fast
+- CommonJS, RequireJS ready
 
+
+
+# Comparison to Facebook's Implementation
+
+From an architectural point of view, the main difference is that (Facebook's Flux implementation)[https://github.com/facebook/flux] provides 
+one central dispatcher, while __nanoflux__ supports also multiple dispatchers (if needed). Given that flexibility, it is possible to link multiple stores 
+and multiple dispatchers, but I hardly doubt that this is a preferable scenario, as this can get quite messy. Nevertheless, it is also possible 
+(as a built in feature) to link stores easily, so they can notify each other on changes.
+For the sake of simplicity, __nanoflux__ supports a 'fluxy' way, which means, that a dispatcher provides actions directly. This can be quite handy in less 
+complex applications and reduces much of boilerplate code. Of course, __nanoflux__  supports the original concept with separated *ActionProvider*. 
+The verbosity may be one of the 'weakest' aspects of Facebook's Flux: this is due to the fact, that Facebook provides the Dispatcher only. 
+A *Store* and/or an *ActionProvider* is not part of their library, and therefore Facebook's Flux implementation is very lightweight, too. 
+And even a bit smaller than __nanoflux__.  The developer gains more liberty on implementation decisions, but for the costs of more work. 
+For example, it is left to the developer how stores and actions may interoperate, p.e. common approaches base on event emitters. 
+In this point __nanoflux__ offers slightly less flexibility with its a pure functional approach only - at least regarding 
+the dispatcher-store-binding - but is more comfortable. 
+ 
 
 # Performance
 
@@ -32,10 +51,11 @@ cycles, and therefore do not affect notification cycles.
 
 Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
 
-1. nanoflux-fluxy-perf: 42488.67 op/s (0.00 op/s) - 100.00%
-2. nanoflux-fullflux-perf: 41404.00 op/s (-1084.67 op/s) - 97.45%
-3. reflux-perf: 18490.00 op/s (-23998.67 op/s) - 43.52%
-4. delorean-perf: 2403.00 op/s (-40085.67 op/s) - 5.66%
+1. fbflux-perf: 51512.67 op/s (0.00 op/s) - 100.00%
+2. nanoflux-fluxy-perf: 41914.00 op/s (-9598.67 op/s) - 81.37%
+3. nanoflux-fullflux-perf: 41371.00 op/s (-10141.67 op/s) - 80.31%
+4. reflux-perf: 18595.00 op/s (-32917.67 op/s) - 36.10%
+5. delorean-perf: 2366.67 op/s (-49146.00 op/s) - 4.59%
 
 
 The benchmark code is available under `./perf`.
