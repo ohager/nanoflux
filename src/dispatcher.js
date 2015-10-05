@@ -11,7 +11,7 @@ function guaranteeArray(obj){
 function Dispatcher(actions) {
 
     var self = this;
-    this.__connectedStores = [];
+    this.__stores = [];
 
     var createActionList = function (actionArray) {
 
@@ -35,9 +35,11 @@ Dispatcher.prototype.__callAction = function(){
     var handler = generateHandlerName(arguments[0]);
     var args = Array.prototype.slice.call(arguments,1);
 
-    for (var i = 0; i < this.__connectedStores.length; ++i) {
-        var store = this.__connectedStores[i];
-        store[handler].apply(store, args);
+    for (var i = 0; i < this.__stores.length; ++i) {
+        var store = this.__stores[i];
+        if(store[handler]){
+            store[handler].apply(store, args);
+        }
     }
 };
 
@@ -52,8 +54,8 @@ Dispatcher.prototype.connectTo = function (storeArray) {
     var stores = guaranteeArray(storeArray);
 
     for(var i=0; i<stores.length;++i){
-        if(this.__connectedStores.indexOf(stores[i])===-1){
-            this.__connectedStores.push(stores[i]);
+        if(this.__stores.indexOf(stores[i])===-1){
+            this.__stores.push(stores[i]);
         }
     }
 

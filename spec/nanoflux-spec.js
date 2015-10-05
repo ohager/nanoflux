@@ -143,6 +143,9 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
         },
         onAction2 : function(data){
             this.notify({store: 'store2', data: data * 2});
+        },
+        onAction3 : function(data){
+            this.notify({store: 'store2', data: data});
         }
     });
     
@@ -153,6 +156,10 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
 
         this.action2 = function(data){
             dispatcher.dispatch('action2',data);
+        };
+
+        this.action3 = function(data){
+            dispatcher.dispatch('action3',data);
         };
     }
 
@@ -187,6 +194,12 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
         expect(resultStore1.data).toBe("Action2");
         expect(resultStore2.store).toBe("store2");
         expect(resultStore2.data).toBe("Action2");
+
+        actions.action3("Action3");
+        expect(resultStore1.store).toBe("store1");
+        expect(resultStore1.data).toBe("Action2"); // not changed!
+        expect(resultStore2.store).toBe("store2");
+        expect(resultStore2.data).toBe("Action3"); // changed!
 
     });
 

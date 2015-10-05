@@ -56,9 +56,8 @@ Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
 
 The benchmark code is available under `./perf`.
 
-Currently, all measuring is done server side using `nodejs`. 
-No client side performance tests were done yet. But I do not expect much differences.
-Interestingly, Facebook's Flux is the fastest implementation. I expected the functional approach to be faster than events. 
+Currently, all measuring is done server side using `nodejs`. No client side performance tests were done yet.
+Interestingly, Facebook's Flux is the fastest implementation (of all tested ones). I expected the functional approach to be faster than events. 
 I think `nodejs`s native event emitter is highly optimized, as it is the core of nodejs. Maybe on client side it won't be that fast, but I have to test it.  
 
 # Example
