@@ -148,19 +148,23 @@ The following example demonstrates the 'full' Flux approach, using ActionProvide
 
 # Getting nanoflux
 
-You may pick the library directly from ``./dist``, or build on your own:
+You may pick the library directly from ``./dist``, or use ``npm install nanoflux``
 
-__Prerequisite__: NPM installed
+# Build your own
 
-Clone the repository and simply run ``npm install``.
-
-After all (dev) dependencies were installed just run ``gulp``.
+1. Get sources: ``npm install nanoflux`` (or fork/clone this repo)
+2. Install dependencies: ``npm install``
+3. Build:
+  - ``gulp`` to create the minified bundle ``.\dist\nanoflux.min.js``
+  - ``gulp dev`` to create the non-minified bundle ``.\dist\nanoflux.js``
 
 Pronto!
 
 ## Automated Testing
 
-The gulp build chain runs tests only for the browserified nanoflux module. All tests can be run using `jasmine-node` or `npm run test`. 
+The gulp build chain runs tests only for the browserified nanoflux module. 
+
+All tests can be run using `jasmine-node` or `npm run test`. 
 
 
 # Available Node Tasks
