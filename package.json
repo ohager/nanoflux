@@ -1,8 +1,15 @@
 {
   "name": "nanoflux",
-  "version": "0.0.1",
+  "description": "nanoflux is a very lightweight (less than 3 KiB!) agnostic full Flux implementation.",
+  "version": "1.0.1",
   "author": "Oliver Hager",
-  "private": true,
+  "email": "oliver@devbutze.com",
+  "private": false,
+  "repository" :  {
+    "type" : "git",
+    "url" : "https://github.com/ohager/nanoflux"
+  },
+  "license": "MIT",
   "devDependencies": {
     "browserify": "^11.0.1",
     "gulp": "^3.9.0",
