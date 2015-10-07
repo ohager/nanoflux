@@ -176,5 +176,4 @@ Use `npm run <task>` to execute additional task. Available tasks are:
 - More Performance Benchmarks
 - Neat diagrams for benchmark results
 - Eventually, introduce a *createActionProvider()* method
-- 
 
