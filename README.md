@@ -1,6 +1,6 @@
 # nanoflux
 
-__nanoflux__ is a *very* lightweight (less than 3 KiB!) and dependency-free Flux implementation.
+__nanoflux__ is a *very* lightweight (less than 3 KiB!) dependency-free Flux implementation.
 
 The idea of this implementation is to support a very small, but full Flux implementation (separated Action, Dispatcher, and Store), 
 and also a "fluxy" version, with Action and Dispatcher merged in one unit. 
@@ -28,12 +28,15 @@ From an architectural point of view, the main difference is that [Facebook's Flu
 one central dispatcher, while __nanoflux__ supports also multiple dispatchers (if needed). Given that flexibility, it is possible to link multiple stores 
 and multiple dispatchers, but I hardly doubt that this is a preferable scenario, as this can get quite messy. Nevertheless, it is also possible 
 (as a built in feature) to link stores easily, so they can notify each other on changes.
+
 For the sake of simplicity, __nanoflux__ supports a 'fluxy' way, which means, that a dispatcher provides actions directly. This can be quite handy in less 
 complex applications and reduces much of boilerplate code. Of course, __nanoflux__  supports the original concept with separated *ActionProvider*. 
+
 The verbosity may be one of the 'weakest' aspects of Facebook's Flux: this is due to the fact, that Facebook provides the Dispatcher only. 
 A *Store* and/or an *ActionProvider* is not part of their library, and therefore Facebook's Flux implementation is very lightweight, too. 
 And even a bit smaller than __nanoflux__.  The developer gains more liberty on implementation decisions, but for the costs of more work. 
 For example, it is left to the developer how stores and actions may interoperate, p.e. common approaches base on event emitters. 
+
 In this point __nanoflux__ offers slightly less flexibility with its a pure functional approach only - at least regarding 
 the dispatcher-store-binding - but is more comfortable. 
  
@@ -44,7 +47,7 @@ __nanoflux__ neither supports asynchronous action handling, nor any kind of even
 Everything is done using synchronous function calls, that makes __nanoflux__ quite fast.
 
 I think special asynchronous support is not necessary, because long term operations like server requests can be easily
-implemented in a stores logic, and change notification is under full control of the programmer.
+implemented in a store (for fluxy application scencarios), or in action provider (for full flux scenarios), and change notification is under full control of the programmer.
 
 Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
 
@@ -169,5 +172,9 @@ Use `npm run <task>` to execute additional task. Available tasks are:
 
 # TO DO
 
-- Exhaustive Testing
+- Exhaustive Field-Testing
 - More Performance Benchmarks
+- Neat diagrams for benchmark results
+- Eventually, introduce a *createActionProvider()* method
+- 
+
