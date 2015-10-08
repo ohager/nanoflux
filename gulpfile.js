@@ -32,7 +32,7 @@ gulp.task('build:uglify', function() {
 });
 
 gulp.task('build:test', function() {
-    gulp.src('spec/nanoflux-spec.js')
+    gulp.src('spec/*-spec.js')
         .pipe(preprocess({context: {DIST: true}}))
         .pipe(jasmine({verbose:true}));
 });

@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git://github.com/ohager/nanoflux.git"
   },
-  "main": "./src/nanoflux.js",
+  "main": "src/nanoflux.js",
   "moduleType": [
     "amd",
     "globals",
@@ -24,6 +24,7 @@
     "node_modules",
     "bower_components",
     "perf",
-    "spec"
+    "spec",
+    "gulpfile.js"
   ]
 }
