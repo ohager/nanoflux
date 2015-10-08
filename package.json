@@ -9,6 +9,9 @@
     "type" : "git",
     "url" : "https://github.com/ohager/nanoflux"
   },
+  "keywords": [
+    "flux"
+  ],
   "license": "MIT",
   "devDependencies": {
     "browserify": "^11.0.1",
