@@ -1,0 +1,29 @@
+{
+  "name": "nanoflux",
+  "description": "nanoflux is a very lightweight (less than 3 KiB!) agnostic full Flux implementation.",
+  "homepage": "https://github.com/ohager/nanoflux",
+  "authors": [
+    "ohager <oliver.hager@dextra.com.br>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ohager/nanoflux.git"
+  },
+  "main": "./src/nanoflux.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "flux"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "perf",
+    "spec"
+  ]
+}
