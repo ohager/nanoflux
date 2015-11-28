@@ -3,9 +3,11 @@ var NanoFlux = require('../src/nanoflux');
 
 var setup = function() {
 
+    var dispatcher = NanoFlux.createDispatcher('myDispatcher');
+
     // Creating a store 'myStore' with functions triggered by dispatched actions
     // The convention for action handlers name is: on<ActionName>
-    var myStore = NanoFlux.createStore('myStore', {
+    NanoFlux.createStore('myStore', {
 
         // the handlers signature bases on the users convention
         onAction1: function (test) {
@@ -25,24 +27,22 @@ var setup = function() {
         }
     });
 
+    // The full flux concept foresees a separation of actions and dispatcher
+    // Here we create an action provider using the inbuilt action creator
+    NanoFlux.createActions('myActions', dispatcher, {
+        action1 : function(data){
+            console.log("Action 1");
+            // this way, the dispatcher establishes dynamically the action binding.
+            this.dispatch('action1', data);
+        },
+
+        action2 : function(data){
+            console.log("Action 2");
+            this.dispatch('action2', data);
+        }
+    });
+
 };
-
-// The full flux concept foresees a separation of actions and dispatcher
-// Here we create an action provider using the more dynamic Dispatcher.dispatch method.
-function ActionProvider(dispatcher){
-
-    this.action1 = function(data){
-        console.log("Action 1");
-        // this way, the dispatcher establishes dynamically the action binding.
-        dispatcher.dispatch('action1', data);
-    };
-
-    this.action2 = function(data){
-        console.log("Action 2");
-        dispatcher.dispatch('action2', data);
-    }
-}
-
 
 
 function Component(){
@@ -55,18 +55,16 @@ function Component(){
     this.exec = function(){
 
         // note, that in this example the dispatcher won't be created with any actions.
-        // the actions are provided by the dedicated ActionProvider
-
-        var dispatcher = NanoFlux.createDispatcher('myDispatcher');
+        // the actions are provided by the inbuilt action creator
+        var dispatcher = NanoFlux.getDispatcher('myDispatcher');
         var store = NanoFlux.getStore('myStore');
+        var actions = NanoFlux.getActionCreator('myActions');
         dispatcher.connectTo(store);
         // establishes the link between store's notification mechanism and this component.
         // use the returned object to unsubscribe, if needed!
         var subscription = store.subscribe(this, this.onNotify);
 
-        // the 'full flux' way uses a separated ActionProvider
-        var actions = new ActionProvider(dispatcher);
-
+        // executing the actions
         actions.action1("test 1");
         actions.action2("test 2");
     };

@@ -1,6 +1,6 @@
 {
   "name": "nanoflux",
-  "description": "nanoflux is a very lightweight (less than 3 KiB!) agnostic full Flux implementation.",
+  "description": "nanoflux is a very lightweight (about 3 KiB!) agnostic full Flux implementation.",
   "homepage": "https://github.com/ohager/nanoflux",
   "authors": [
     "ohager <oliver.hager@dextra.com.br>"
