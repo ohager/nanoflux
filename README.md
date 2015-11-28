@@ -1,5 +1,6 @@
 # nanoflux
 
+
 __nanoflux__ is a *very* lightweight (about 3 KiB!) dependency-free Flux implementation.
 
 The idea of this implementation is to support a very small, but full Flux implementation (separated Action, Dispatcher, and Store), 
@@ -17,10 +18,9 @@ Furthermore, __nanoflux__ does not use events for communication, but a functiona
 - No singleton
 - Interoperable Stores
 - Multiple Dispatchers
-- Built in ActionCreator
+- Built in ActionCreator (*new*)
 - Quite fast
 - CommonJS, RequireJS ready
-
 
 
 # Comparison to Facebook's Implementation
