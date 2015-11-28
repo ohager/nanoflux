@@ -21,7 +21,7 @@ describe("Action Creator", function () {
             }
         });
 
-        var actions = actionCreatorFactory.getActionCreator('myActionCreator');
+        var actions = actionCreatorFactory.getActions('myActionCreator');
         expect(actions.action1).not.toBe(undefined);
         expect(typeof(actions.action1)).toBe("function");
         expect(actions.action1()).toBe("Test");
@@ -38,7 +38,7 @@ describe("Action Creator", function () {
             }
         });
 
-        var actions = actionCreatorFactory.getActionCreator('myActionCreator');
+        var actions = actionCreatorFactory.getActions('myActionCreator');
         actions.action1("Test");
         expect(dispatcher.result).toBe("Test");
 

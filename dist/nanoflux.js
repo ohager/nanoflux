@@ -30,7 +30,7 @@ module.exports = {
         return actioncreators[name];
     },
 
-    getActionCreator: function (name) {
+    getActions: function (name) {
         return actioncreators[name];
     }
 };
@@ -146,8 +146,8 @@ module.exports = {
         return storeFactory.getStore(name);
     },
 
-    getActionCreator : function(name){
-        return actionCreatorFactory.getActionCreator(name);
+    getActions: function(name){
+        return actionCreatorFactory.getActions(name);
     }
 
 };

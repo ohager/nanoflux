@@ -23,8 +23,8 @@ module.exports = {
         return storeFactory.getStore(name);
     },
 
-    getActionCreator : function(name){
-        return actionCreatorFactory.getActionCreator(name);
+    getActions: function(name){
+        return actionCreatorFactory.getActions(name);
     }
 
 };

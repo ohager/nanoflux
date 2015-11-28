@@ -58,7 +58,7 @@ function Component(){
         // the actions are provided by the inbuilt action creator
         var dispatcher = NanoFlux.getDispatcher('myDispatcher');
         var store = NanoFlux.getStore('myStore');
-        var actions = NanoFlux.getActionCreator('myActions');
+        var actions = NanoFlux.getActions('myActions');
         dispatcher.connectTo(store);
         // establishes the link between store's notification mechanism and this component.
         // use the returned object to unsubscribe, if needed!

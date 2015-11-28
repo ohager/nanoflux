@@ -29,7 +29,7 @@ module.exports = {
         return actioncreators[name];
     },
 
-    getActionCreator: function (name) {
+    getActions: function (name) {
         return actioncreators[name];
     }
 };

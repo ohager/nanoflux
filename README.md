@@ -1,6 +1,6 @@
 # nanoflux
 
-__nanoflux__ is a *very* lightweight (less than 3 KiB!) dependency-free Flux implementation.
+__nanoflux__ is a *very* lightweight (about 3 KiB!) dependency-free Flux implementation.
 
 The idea of this implementation is to support a very small, but full Flux implementation (separated Action, Dispatcher, and Store), 
 and also a "fluxy" version, with Action and Dispatcher merged in one unit. 
@@ -9,7 +9,7 @@ Furthermore, __nanoflux__ does not use events for communication, but a functiona
 
 # Features
 
-- Extremely tiny implementation (less than 3 KiB)
+- Extremely tiny implementation (about 3 KiB)
 - No dependencies at all
 - Pure Functional approach (totally event less)
 - Support for full Flux using full stack of ActionProvider/Creator, Dispatcher, and Stores
@@ -17,6 +17,7 @@ Furthermore, __nanoflux__ does not use events for communication, but a functiona
 - No singleton
 - Interoperable Stores
 - Multiple Dispatchers
+- Built in ActionCreator
 - Quite fast
 - CommonJS, RequireJS ready
 
@@ -71,50 +72,54 @@ The following example demonstrates the 'full' Flux approach, using ActionProvide
 
 	var NanoFlux = require('nanoflux'); // UMD with browserify!
 
-	// Creating the store
-    var myStore = NanoFlux.createStore('myStore', {    
-        // the handlers signature bases on the users convention
-        onAction1: function (test) {
-            console.log("Store.onAction1: " + test);
-            // this will call the subscribed callbacks
-            this.notify({data: test});
-        },
+    var setup = function() {
+    
+        // Creating a store 'myStore' with functions triggered by dispatched actions
+        // The convention for action handlers name is: on<ActionName>
+        NanoFlux.createStore('myStore', {
+    
+            // the handlers signature bases on the users convention
+            onAction1: function (test) {
+                console.log("Store.onAction1: " + test);
+                // this will call the subscribed callbacks
+                this.notify({data: test});
+            },
+    
+            onAction2: function (test) {
+                console.log("Store.onAction2: " + test);
+                this.notify({data: test});
+            },
+    
+            onAction3: function (test) {
+                console.log("Store.onAction3: " + test);
+                this.notify({data: test});
+            }
+        });
 
-        onAction2: function (test) {
-            console.log("Store.onAction2: " + test);
-            this.notify({data: test});
-        },
-
-        onAction3: function (test) {
-            console.log("Store.onAction3: " + test);
-            this.notify({data: test});
-        }
-    });
+		// Creating the Dispatcher
+        var dispatcher = NanoFlux.createDispatcher('myDispatcher');
+        
+        // The full flux concept foresees a separation of actions and dispatcher
+        // Here we create an action provider using the built in action creator
+        NanoFlux.createActions('myActions', dispatcher, {
+            action1 : function(data){
+                console.log("Action 1");
+                // this way, the dispatcher establishes dynamically the action binding.
+                this.dispatch('action1', data);
+            },
+    
+            action2 : function(data){
+                console.log("Action 2");
+                this.dispatch('action2', data);
+            }
+        });    
+    };
 ```
     
-```javascript
-
-    // The full flux concept foresees a separation of actions and dispatcher
-    // Here we create an action provider using the more dynamic Dispatcher.dispatch method.
-    function ActionProvider(dispatcher){
-    
-        this.action1 = function(data){
-            console.log("Action 1");
-            // this way, the dispatcher establishes dynamically the action binding
-            // to connected stores.
-            dispatcher.dispatch('action1', data);
-        };
-    
-        this.action2 = function(data){
-            console.log("Action 2");
-            dispatcher.dispatch('action2', data);
-        }
-    }
-    
-```
     
 ```javascript
     
+    setup();
     function Component(){
     
         // callback called by Store.notify
@@ -124,10 +129,10 @@ The following example demonstrates the 'full' Flux approach, using ActionProvide
     
         this.exec = function(){
     
-            // note, that in this example the dispatcher won't be created with any actions.
-            // the actions are provided by the dedicated ActionProvider    
-            var dispatcher = NanoFlux.createDispatcher('myDispatcher');
+                
+            var dispatcher = NanoFlux.getDispatcher('myDispatcher');
             var store = NanoFlux.getStore('myStore');
+            var actions = NanoFlux.getActionCreator('myActions'); 
             
             // Now, connecting Store and Dispatcher
             dispatcher.connectTo(store);
@@ -136,19 +141,16 @@ The following example demonstrates the 'full' Flux approach, using ActionProvide
             // use the returned object to unsubscribe, if needed!
             var subscription = store.subscribe(this, this.onNotify);
     
-            // the 'full flux' way uses a separated ActionProvider
-            var actions = new ActionProvider(dispatcher);
-    
+			// executing the actions    
             actions.action1("test 1");
             actions.action2("test 2");
         };
-    }
-    
+    }   
 ```
 
 # Getting nanoflux
 
-You may pick the library directly from ``./dist``, or use ``npm install nanoflux``
+You may pick the library directly from ``./dist``, use ``npm install nanoflux``, or use ``bower install nanoflux``
 
 # Build your own
 
@@ -178,6 +180,6 @@ Use `npm run <task>` to execute additional task. Available tasks are:
 
 - Exhaustive Field-Testing
 - More Performance Benchmarks
+- Client side Benchmarks
 - Neat diagrams for benchmark results
-- Eventually, introduce a *createActionProvider()* method
 
