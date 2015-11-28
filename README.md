@@ -100,11 +100,11 @@ The following example demonstrates the 'full' Flux approach, using ActionProvide
         var dispatcher = NanoFlux.createDispatcher('myDispatcher');
         
         // The full flux concept foresees a separation of actions and dispatcher
-        // Here we create an action provider using the built in action creator
+        // Here we create actions using the built in action creator
         NanoFlux.createActions('myActions', dispatcher, {
             action1 : function(data){
                 console.log("Action 1");
-                // this way, the dispatcher establishes dynamically the action binding.
+                // this way, the dispatcher establishes dynamically the action binding, calling stores onAction1().
                 this.dispatch('action1', data);
             },
     
@@ -132,7 +132,7 @@ The following example demonstrates the 'full' Flux approach, using ActionProvide
                 
             var dispatcher = NanoFlux.getDispatcher('myDispatcher');
             var store = NanoFlux.getStore('myStore');
-            var actions = NanoFlux.getActionCreator('myActions'); 
+            var actions = NanoFlux.getActions('myActions'); 
             
             // Now, connecting Store and Dispatcher
             dispatcher.connectTo(store);
