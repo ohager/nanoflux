@@ -1,7 +1,7 @@
 {
   "name": "nanoflux",
   "description": "nanoflux is a very lightweight (about 3 KiB!) agnostic full Flux implementation.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Oliver Hager",
   "email": "oliver@devbutze.com",
   "private": false,

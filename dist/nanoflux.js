@@ -38,18 +38,16 @@ module.exports = {
 },{}],2:[function(_dereq_,module,exports){
 "use strict";
 
-function generateHandlerName(actionName) {
-    return "on" + actionName[0].toUpperCase() + actionName.substr(1);
-}
-
 function guaranteeArray(obj){
     return !Array.isArray(obj) ? [obj] : obj;
 }
 
 function Dispatcher(actions) {
 
-    var self = this;
+	var self = this;
     this.__stores = [];
+	this.__handlerMapCache = {};
+	this.__isDispatching = false;
 
     var createActionList = function (actionArray) {
 
@@ -69,8 +67,17 @@ function Dispatcher(actions) {
     initialize();
 }
 
+Dispatcher.prototype.__getHandlerName = function(actionName){
+	var r = this.__handlerMapCache[actionName];
+	if(!r){
+		r = "on" + actionName[0].toUpperCase() + actionName.substr(1);
+		this.__handlerMapCache[actionName] = r;
+	}
+	return r;
+}
+
 Dispatcher.prototype.__callAction = function(){
-    var handler = generateHandlerName(arguments[0]);
+    var handler = this.__getHandlerName(arguments[0]);
     var args = Array.prototype.slice.call(arguments,1);
 
     for (var i = 0; i < this.__stores.length; ++i) {
@@ -78,7 +85,7 @@ Dispatcher.prototype.__callAction = function(){
         if(store[handler]){
             store[handler].apply(store, args);
         }
-    }
+	}
 };
 
 Dispatcher.prototype.__registerAction = function (actionName) {
@@ -101,7 +108,14 @@ Dispatcher.prototype.connectTo = function (storeArray) {
 
 Dispatcher.prototype.dispatch = function (actionName, data) {
     this.__registerAction(actionName);
+
+	if(this.__isDispatching){
+		throw "DISPATCH WHILE DISPATCHING: Don't trigger any action in your store callbacks!";
+	}
+
+	this.__isDispatching = true;
     this[actionName](data);
+	this.__isDispatching = false;
 };
 
 var dispatchers = {};

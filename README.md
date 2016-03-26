@@ -1,12 +1,12 @@
 # nanoflux
 
 
-__nanoflux__ is a *very* lightweight (about 3 KiB!) dependency-free Flux implementation.
+__nanoflux__ is a *very* lightweight (about 3 KiB minified, and 1.25 KiB gzipped) dependency-free Flux implementation.
 
 The idea of this implementation is to support a very small, but full Flux implementation (separated Action, Dispatcher, and Store), 
 and also a "fluxy" version, with Action and Dispatcher merged in one unit. 
 
-Furthermore, __nanoflux__ does not use events for communication, but a functional approach for (hopefully) more performant solution (Tests will be made).
+Furthermore, __nanoflux__ uses a pure functional approach as a performant solution.
 
 # Features
 
@@ -19,7 +19,7 @@ Furthermore, __nanoflux__ does not use events for communication, but a functiona
 - Interoperable Stores
 - Multiple Dispatchers
 - Built in ActionCreator (*new*)
-- Quite fast
+- Quite fast (*recently optimized*)
 - CommonJS, RequireJS ready
 
 
@@ -27,10 +27,10 @@ Furthermore, __nanoflux__ does not use events for communication, but a functiona
 
 From an architectural point of view, the main difference is that [Facebook's Flux implementation](https://github.com/facebook/flux) provides 
 one central dispatcher, while __nanoflux__ supports also multiple dispatchers (if needed). Given that flexibility, it is possible to link multiple stores 
-and multiple dispatchers, but I hardly doubt that this is a preferable scenario, as this can get quite messy. Nevertheless, it is also possible 
+and multiple dispatchers, but IMHO this would only be a preferable scenario for really large applications. Additionally, it is also possible 
 (as a built in feature) to link stores easily, so they can notify each other on changes.
 
-For the sake of simplicity, __nanoflux__ supports a 'fluxy' way, which means, that a dispatcher provides actions directly. This can be quite handy in less 
+For more comfort, __nanoflux__ supports a 'fluxy' way, which means, that a dispatcher provides actions directly. This can be quite handy in less 
 complex applications and reduces much of boilerplate code. Of course, __nanoflux__  supports the original concept with separated *ActionProvider*. 
 
 The verbosity may be one of the 'weakest' aspects of Facebook's Flux: this is due to the fact, that Facebook provides the Dispatcher only. 
@@ -44,25 +44,20 @@ the dispatcher-store-binding - but is more comfortable.
 
 # Performance
 
-__nanoflux__ neither supports asynchronous action handling, nor any kind of event triggering.
-Everything is done using synchronous function calls, that makes __nanoflux__ quite fast.
-
-I think special asynchronous support is not necessary, because long term operations like server requests can be easily
-implemented in a store (for fluxy application scencarios), or in action provider (for full flux scenarios), and change notification is under full control of the programmer.
+__nanoflux__  use synchronous function calls, that makes __nanoflux__ quite fast. Synchronous cycles guarantee consistent dispatch cycles.
 
 Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
 
-1. fbflux-perf: 50461.33 op/s (0.00 op/s) - 100.00%
-2. nanoflux-fluxy-perf: 42936.00 op/s (-7525.33 op/s) - 85.09%
-3. nanoflux-fullflux-perf: 42455.00 op/s (-8006.33 op/s) - 84.13%
-4. reflux-perf: 18585.67 op/s (-31875.66 op/s) - 36.83%
-5. delorean-perf: 2376.00 op/s (-48085.33 op/s) - 4.71%
+1. fbflux-perf: 175733.00 op/s (0.00 op/s) - 100.00%
+2. nanoflux-fluxy-perf: 159160.67 op/s (-16572.33 op/s) - 90.57%
+3. nanoflux-fullflux-perf: 151129.33 op/s (-24603.67 op/s) - 86.00%
+4. reflux-perf: 63217.00 op/s (-112516.00 op/s) - 35.97%
+5. delorean-perf: 9306.00 op/s (-166427.00 op/s) - 5.30%
 
 The benchmark code is available under `./perf`.
 
-Currently, all measuring is done server side using `nodejs`. No client side performance tests were done yet.
-Interestingly, Facebook's Flux is the fastest implementation (of all tested ones). I expected the functional approach to be faster than events. 
-I think `nodejs`s native event emitter is highly optimized, as it is the core of nodejs. Maybe on client side it won't be that fast, but I have to test it.  
+Currently, all measuring is done server side using `nodejs`. I think it is slightly slower than Facebooks implementation, as __nanoflux__ uses
+a comfortable auto-binding, without verbose switch-case-statements like the Facebook version. Nevertheless, it should be fast enough :)
 
 # Example
 
