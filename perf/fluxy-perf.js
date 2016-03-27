@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var PerfTest = require('../perf/perftest');
-var NanoFlux = require('../src/nanoflux');
+var NanoFlux = require('../dist/nanoflux.min');
 
 
 module.exports = PerfTest.createPerfTest('nanoflux-fluxy-perf', {

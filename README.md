@@ -1,7 +1,7 @@
 # nanoflux
 
 
-__nanoflux__ is a *very* lightweight (about 3 KiB minified, and 1.25 KiB gzipped) dependency-free Flux implementation.
+__nanoflux__ is a *very* lightweight (about 3.5 KiB minified, and 1.25 KiB gzipped) dependency-free Flux implementation.
 
 The idea of this implementation is to support a very small, but full Flux implementation (separated Action, Dispatcher, and Store), 
 and also a "fluxy" version, with Action and Dispatcher merged in one unit. 
@@ -10,7 +10,7 @@ Furthermore, __nanoflux__ uses a pure functional approach as a performant soluti
 
 # Features
 
-- Extremely tiny implementation (about 3 KiB)
+- Extremely tiny implementation
 - No dependencies at all
 - Pure Functional approach (totally event less)
 - Support for full Flux using full stack of ActionProvider/Creator, Dispatcher, and Stores
@@ -41,6 +41,14 @@ For example, it is left to the developer how stores and actions may interoperate
 In this point __nanoflux__ offers slightly less flexibility with its a pure functional approach only - at least regarding 
 the dispatcher-store-binding - but is more comfortable. 
  
+# Size
+__nanoflux__ is a really tiny implementation, although it offers *much* more comfort than the reference implementation from Facebook.
+
+1. fb.flux.min.js       ca. 2 KiB 
+2. nanoflux.min.js      ca. 3.5 KiB 
+3. reflux.min.js        ca. 18 KiB 
+4. delorean.min.js      ca 20 KiB
+5. alt.min.js           ca 23 KiB
 
 # Performance
 
@@ -48,16 +56,18 @@ __nanoflux__  use synchronous function calls, that makes __nanoflux__ quite fast
 
 Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
 
-1. fbflux-perf: 178164.33 op/s (0.00 op/s) - 100.00%
-2. nanoflux-fluxy-perf: 165021.00 op/s (-13143.33 op/s) - 92.62%
-3. nanoflux-fullflux-perf: 162546.33 op/s (-15618.00 op/s) - 91.23%
-4. reflux-perf: 64944.67 op/s (-113219.66 op/s) - 36.45%
-5. delorean-perf: 9384.33 op/s (-168780.00 op/s) - 5.27%
+1. fbflux-perf: 163983.67 op/s (0.00 op/s) - 100.00%
+2. nanoflux-fluxy-perf: 157380.00 op/s (-6603.67 op/s) - 95.97%
+3. nanoflux-fullflux-perf: 151334.33 op/s (-12649.34 op/s) - 92.29%
+4. reflux-perf: 61861.33 op/s (-102122.34 op/s) - 37.72%
+5. alt-perf: 27704.33 op/s (-136279.34 op/s) - 16.89%
+6. delorean-perf: 9350.33 op/s (-154633.34 op/s) - 5.70%
 
 The benchmark code is available under `./perf`.
 
-Currently, all measuring is done server side using `nodejs`. I think it is slightly slower than Facebooks implementation, as __nanoflux__ uses
-a comfortable auto-binding, without verbose switch-case-statements like the Facebook version. Nevertheless, it should be fast enough :)
+Currently, all measuring is done server side using `nodejs` (listed results run on Dell XPS15 i7). 
+I think it is slightly slower than Facebooks implementation, as __nanoflux__ uses a comfortable auto-binding, 
+without verbose switch-case-statements like the Facebook version. Nevertheless, it should be fast enough :)
 
 # Example
 
