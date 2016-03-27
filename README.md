@@ -28,14 +28,14 @@ Furthermore, __nanoflux__ uses a pure functional approach as a performant soluti
 From an architectural point of view, the main difference is that [Facebook's Flux implementation](https://github.com/facebook/flux) provides 
 one central dispatcher, while __nanoflux__ supports also multiple dispatchers (if needed). Given that flexibility, it is possible to link multiple stores 
 and multiple dispatchers, but IMHO this would only be a preferable scenario for really large applications. Additionally, it is also possible 
-(as a built in feature) to link stores easily, so they can notify each other on changes.
+(as a built in feature) to link stores easily, so they can notify each other on changes (chaining).
 
-For more comfort, __nanoflux__ supports a 'fluxy' way, which means, that a dispatcher provides actions directly. This can be quite handy in less 
-complex applications and reduces much of boilerplate code. Of course, __nanoflux__  supports the original concept with separated *ActionProvider*. 
+For more comfort, __nanoflux__ supports a 'fluxy' way, which means, that a dispatcher provides actions directly without the need of a dedicated *ActionProvider*. 
+This can be quite handy in less complex applications and reduces much of boilerplate code. Of course, __nanoflux__  supports the original concept with separated *ActionProvider*. 
 
 The verbosity may be one of the 'weakest' aspects of Facebook's Flux: this is due to the fact, that Facebook provides the Dispatcher only. 
 A *Store* and/or an *ActionProvider* is not part of their library, and therefore Facebook's Flux implementation is very lightweight, too. 
-And even a bit smaller than __nanoflux__.  The developer gains more liberty on implementation decisions, but for the costs of more work. 
+And even a bit smaller than __nanoflux__. The developer gains more liberty on implementation decisions, but for the costs of more work. 
 For example, it is left to the developer how stores and actions may interoperate, p.e. common approaches base on event emitters. 
 
 In this point __nanoflux__ offers slightly less flexibility with its a pure functional approach only - at least regarding 
@@ -48,11 +48,11 @@ __nanoflux__  use synchronous function calls, that makes __nanoflux__ quite fast
 
 Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
 
-1. fbflux-perf: 175733.00 op/s (0.00 op/s) - 100.00%
-2. nanoflux-fluxy-perf: 159160.67 op/s (-16572.33 op/s) - 90.57%
-3. nanoflux-fullflux-perf: 151129.33 op/s (-24603.67 op/s) - 86.00%
-4. reflux-perf: 63217.00 op/s (-112516.00 op/s) - 35.97%
-5. delorean-perf: 9306.00 op/s (-166427.00 op/s) - 5.30%
+1. fbflux-perf: 178164.33 op/s (0.00 op/s) - 100.00%
+2. nanoflux-fluxy-perf: 165021.00 op/s (-13143.33 op/s) - 92.62%
+3. nanoflux-fullflux-perf: 162546.33 op/s (-15618.00 op/s) - 91.23%
+4. reflux-perf: 64944.67 op/s (-113219.66 op/s) - 36.45%
+5. delorean-perf: 9384.33 op/s (-168780.00 op/s) - 5.27%
 
 The benchmark code is available under `./perf`.
 
@@ -159,7 +159,7 @@ Pronto!
 
 ## Automated Testing
 
-The gulp build chain runs tests only for the browserified nanoflux module. 
+The gulp build chain runs tests only for the browserified __nanoflux__ module. 
 
 All tests can be run using `jasmine-node` or `npm run test`. 
 

@@ -36,7 +36,7 @@ Dispatcher.prototype.__getHandlerName = function(actionName){
 		this.__handlerMapCache[actionName] = r;
 	}
 	return r;
-}
+};
 
 Dispatcher.prototype.__callAction = function(){
     var handler = this.__getHandlerName(arguments[0]);
@@ -69,14 +69,16 @@ Dispatcher.prototype.connectTo = function (storeArray) {
 };
 
 Dispatcher.prototype.dispatch = function (actionName, data) {
-    this.__registerAction(actionName);
 
 	if(this.__isDispatching){
 		throw "DISPATCH WHILE DISPATCHING: Don't trigger any action in your store callbacks!";
 	}
 
 	this.__isDispatching = true;
-    this[actionName](data);
+
+	this.__registerAction(actionName);
+	this[actionName](data);
+
 	this.__isDispatching = false;
 };
 
