@@ -164,8 +164,7 @@ You may pick the library directly from ``./dist``, use ``npm install nanoflux``,
 1. Get sources: ``npm install nanoflux`` (or fork/clone this repo)
 2. Install dependencies: ``npm install``
 3. Build:
-  - ``gulp`` to create the minified bundle ``.\dist\nanoflux.min.js``
-  - ``gulp dev`` to create the non-minified bundle ``.\dist\nanoflux.js``
+  - ``gulp`` to build the minified and non-minified bundle in ``.\dist``
 
 Pronto!
 
