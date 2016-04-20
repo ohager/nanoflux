@@ -13,6 +13,10 @@ DispatcherMockup.prototype.dispatch = function(actioname, data){
 
 describe("Action Creator", function () {
 
+	beforeEach(function(){
+		actionCreatorFactory.clear();
+	});
+
     it("should create and return an action creator named 'myActionCreator", function () {
 
         actionCreatorFactory.create('myActionCreator', null, {

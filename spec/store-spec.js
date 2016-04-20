@@ -5,6 +5,10 @@ var storeFactory = require("../src/store");
 
 describe("store", function () {
 
+	beforeEach(function(){
+		storeFactory.clear();
+	});
+
     it("should create and return a store named 'myStore", function () {
         storeFactory.create('myStore', { onAction1 : function(){ return "Test";}});
 

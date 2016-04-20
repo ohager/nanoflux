@@ -54,10 +54,10 @@ function Component(){
 
     this.exec = function(){
 
-        // note, that in this example the dispatcher won't be created with any actions.
+        // Note: wwe use the implicit default dispatcher here
         // the actions are provided by the dedicated ActionProvider
-
-        var dispatcher = NanoFlux.createDispatcher('myDispatcher');
+		
+        var dispatcher = NanoFlux.getDispatcher();
         var store = NanoFlux.getStore('myStore');
         dispatcher.connectTo(store);
         // establishes the link between store's notification mechanism and this component.

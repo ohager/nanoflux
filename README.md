@@ -102,6 +102,8 @@ The following example demonstrates the 'full' Flux approach, using ActionProvide
         });
 
 		// Creating the Dispatcher
+		// You may also use the implicit default dispatcher: 
+		// var dispatcher = NanoFlux.getDispatcher();
         var dispatcher = NanoFlux.createDispatcher('myDispatcher');
         
         // The full flux concept foresees a separation of actions and dispatcher
