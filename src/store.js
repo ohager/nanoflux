@@ -44,7 +44,9 @@ Store.prototype.notify = function () {
 
 var stores = {};
 module.exports = {
-
+	clear : function() {
+		stores = {};
+	},
     create: function (name, storeDescriptor) {
         stores[name] = new Store(storeDescriptor);
         return stores[name];

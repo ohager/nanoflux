@@ -20,6 +20,9 @@ ActionCreator.prototype.dispatch = function(actionname, data){
 var actioncreators = {};
 
 module.exports = {
+	clear: function(){
+		actioncreators = {};
+	},
     create: function (name, dispatcher, descriptor) {
         if(!name || name.length===0){
             throw "Empty names are not allowed";

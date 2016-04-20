@@ -74,26 +74,40 @@ Dispatcher.prototype.dispatch = function (actionName, data) {
 		throw "DISPATCH WHILE DISPATCHING: Don't trigger any action in your store callbacks!";
 	}
 
-	this.__isDispatching = true;
-
-	this.__registerAction(actionName);
-	this[actionName](data);
-
-	this.__isDispatching = false;
+	try {
+		this.__isDispatching = true;
+		this.__registerAction(actionName);
+		this[actionName](data);
+	}catch(e){
+		console.error(e);
+		throw e;
+	}
+	finally{
+		this.__isDispatching = false;
+	}
 };
 
 var dispatchers = {};
+var defaultDispatcherName = "__defDispatcher";
+
+function __getDispatcher(name, actionArray){
+
+	if(!name){
+		name = defaultDispatcherName;
+	}
+
+	if(!dispatchers[name]){
+		dispatchers[name] = new Dispatcher(actionArray);
+	}
+	return dispatchers[name];
+}
 
 module.exports = {
+	clear: function(){ dispatchers = {}; },
     create: function (name, actionArray) {
-        if(!name || name.length===0){
-            throw "Empty names are not allowed";
-        }
-
-        dispatchers[name] = new Dispatcher(actionArray);
-        return dispatchers[name];
+    	return __getDispatcher(name, actionArray);
     },
     getDispatcher: function (name) {
-        return dispatchers[name];
+        return __getDispatcher(name);
     }
 };

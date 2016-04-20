@@ -4,7 +4,12 @@ var dispatcherFactory = require('./dispatcher');
 var actionCreatorFactory = require('./actioncreator');
 
 module.exports = {
-
+	reset : function(){
+		dispatcherFactory.clear();
+		storeFactory.clear();
+		actionCreatorFactory.clear();
+	},
+	
     createStore: function (name, descriptor) {
         return storeFactory.create(name, descriptor);
     },

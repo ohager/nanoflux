@@ -12,6 +12,10 @@ var NanoFlux = require(nanofluxDir);
 
 describe("NanoFlux Basics", function () {
 
+	beforeEach(function(){
+		NanoFlux.reset();
+	});
+	
     it("should create store 'myStore", function () {
         var store = NanoFlux.createStore('myStore', {
             onAction1 : function(){
@@ -71,17 +75,24 @@ describe("NanoFlux Dispatching", function () {
 		};
 	}
 
-	var store = NanoFlux.createStore('myStore', {
+	var storeDescriptor = {
 		onAction1 : function(data){
 			result = data;
 		},
 		onAction2 : function(data){
 			result = data * 2;
 		}
+	};
+
+	beforeEach( function(){
+		result = null;
+		NanoFlux.reset();
 	});
 	
 	it("should dispatch 'static' actions 'action1' and 'action2 (Fluxy)", function () {
 		var dispatcher = NanoFlux.createDispatcher('myDispatcher', ['action1','action2']);
+		var store = NanoFlux.createStore('myStore',storeDescriptor);
+
 		dispatcher.connectTo(store);
 
 		dispatcher.action1("Action1");
@@ -96,6 +107,7 @@ describe("NanoFlux Dispatching", function () {
 
 	it("should dispatch 'dynamic' actions 'action1' and 'action2 (Full Flux)", function () {
 		var dispatcher = NanoFlux.createDispatcher('myDispatcher');
+		var store = NanoFlux.createStore('myStore',storeDescriptor);
 		dispatcher.connectTo(store);
 		var actions = new ActionProvider(dispatcher);
 
@@ -112,6 +124,7 @@ describe("NanoFlux Dispatching", function () {
 
 	it("should be able to use 'static' and  'dynamic' actions 'action1' and 'action2", function () {
 		var dispatcher = NanoFlux.createDispatcher('myDispatcher', 'action1');
+		var store = NanoFlux.createStore('myStore',storeDescriptor);
 		dispatcher.connectTo(store);
 		var actions = new ActionProvider(dispatcher);
 
@@ -131,11 +144,12 @@ describe("NanoFlux Dispatching", function () {
 	
 	it("must not allow to dispatch while dispatch, i.e. call actions in store callbacks", function(){
 		var dispatcher = NanoFlux.createDispatcher('myDispatcher');
+		var store = NanoFlux.createStore('myStore',storeDescriptor);
 		var actions = new ActionProvider(dispatcher);
 
 		store.onAction3 = function(data){
 			this.notify(data);
-		}
+		};
 
 		store.subscribe(this, function(){
 			actions.action2("not allowed");
@@ -149,16 +163,16 @@ describe("NanoFlux Dispatching", function () {
 
 describe("NanoFlux Complex Full Flux Dispatching", function () {
 
-    var store1 = NanoFlux.createStore('store1', {
+    var store1Descriptor = {
         onAction1 : function(data){
             this.notify({store: 'store1', data: data});
         },
         onAction2 : function(data){
             this.notify({store: 'store1', data: data * 2});
         }
-    });
+    };
 
-    var store2 = NanoFlux.createStore('store2', {
+    var store2Descriptor = {
         onAction1 : function(data){
             this.notify({store: 'store2', data: data});
         },
@@ -168,7 +182,7 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
         onAction3 : function(data){
             this.notify({store: 'store2', data: data});
         }
-    });
+    };
     
     function ActionProvider(dispatcher){
         this.action1 = function(data){
@@ -184,6 +198,9 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
         };
     }
 
+	beforeEach(function(){
+		NanoFlux.reset();
+	});
 
     it("use single dispatcher and multiple stores", function () {
 
@@ -199,8 +216,10 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
 
         var dispatcher = NanoFlux.createDispatcher('myDispatcher');
         var actions = new ActionProvider(dispatcher);
+		var store1 = NanoFlux.createStore('store1',store1Descriptor);
+		var store2 = NanoFlux.createStore('store2',store2Descriptor);
 
-        dispatcher.connectTo([store1,store2]);
+		dispatcher.connectTo([store1,store2]);
         store1.subscribe(this, this.onNotifyStore1);
         store2.subscribe(this, this.onNotifyStore2);
 
@@ -238,6 +257,8 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
         var actions1 = new ActionProvider(dispatcher1);
         var actions2 = new ActionProvider(dispatcher2);
 
+		var store1 = NanoFlux.createStore('store1',store1Descriptor);
+
         dispatcher1.connectTo(store1);
         dispatcher2.connectTo(store1);
         store1.subscribe(this, this.onNotifyStore1);
@@ -270,6 +291,9 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
         var actions1 = new ActionProvider(dispatcher1);
         var actions2 = new ActionProvider(dispatcher2);
 
+		var store1 = NanoFlux.createStore('store1',store1Descriptor);
+		var store2 = NanoFlux.createStore('store2',store2Descriptor);
+
         dispatcher1.connectTo([store1,store2]);
         dispatcher2.connectTo([store1,store2]);
         store1.subscribe(this, this.onNotifyStore1);
@@ -294,8 +318,12 @@ describe("NanoFlux Complex Full Flux Dispatching", function () {
 
 describe("NanoFlux Advanced Techniques", function () {
 
+	beforeEach(function(){
+		NanoFlux.reset();
+	});
+
     it("store should connect to another store", function () {
-        var dispatcher = NanoFlux.getDispatcher('myDispatcher', ['action1']);
+        var dispatcher = NanoFlux.createDispatcher('myDispatcher', ['action1']);
         var store1 = NanoFlux.createStore('myStore1', {
             onAction1 : function() {
                 this.notify("From Store1");
