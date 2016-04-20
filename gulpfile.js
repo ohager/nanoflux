@@ -38,9 +38,5 @@ gulp.task('build:test', function() {
 });
 
 gulp.task('default', function(cb){
-    sequence('build:uglify','build:test',cb);
-});
-
-gulp.task('dev', function(cb){
-    sequence('build','build:test',cb);
+    sequence('build','build:uglify','build:test',cb);
 });
