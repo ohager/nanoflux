@@ -1,191 +1,124 @@
-# nanoflux
+![Build Status](https://travis-ci.org/PanosSakkos/personal-jekyll-theme.svg?branch=master)
+[![Join the chat at https://gitter.im/PanosSakkos/personal-jekyll-theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PanosSakkos/personal-jekyll-theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+# { Personal } Jekyll Theme
 
-__nanoflux__ is a *very* lightweight (about 3.5 KiB minified, and 1.25 KiB gzipped) dependency-free Flux implementation.
+{ Personal } is a free responsive Jekyll theme, about you :wink:
 
-The idea of this implementation is to support a very small, but full Flux implementation (separated Action, Dispatcher, and Store), 
-and also a "fluxy" version, with Action and Dispatcher merged in one unit. 
+You can watch it in action [here](https://panossakkos.github.io/personal-jekyll-theme/)!
 
-Furthermore, __nanoflux__ uses a pure functional approach as a performant solution.
+## What value does { Personal } add
 
-# Features
+* Fork of [Timeline](https://github.com/kirbyt/timeline-jekyll-theme) (mashup of [Grayscale by Start Bootstrap](https://github.com/IronSummitMedia/startbootstrap-grayscale) and [Agency Jekyll Theme](https://github.com/y7kim/agency-jekyll-theme))
+  * Modern and minimal design
+    * Responsive templates for home page, blog archive and posts. Looks great on mobile, tablet, and desktop devices
+    * Sweet animations
+    * Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers
+  * Timeline
+    * Tell your story so far with a sleek timeline of dates, pictures and descriptions
+  * White on black text, making the reading experience tireless
+  * Google analytics  
+* Customization and full control of your website and blog through the site config
+* Customization of the website's coloring
+* Blogging functionality
+  * Preview of the latest post in the home page
+  * Archive page
+  * Syntax highlighting
+  * Emojis
+  * Gesture navigation in archive and post pages by swiping
+  * Hashtags
+  * Categories
+  * Disqus comments
+  * Bootstrap share buttons
+  * RSS feed
+* Author blurb under the posts
+* 404 page
+* iOS and Android Web App mode
+* Enforcing of https protocol
+* Protection from email harvesting
+* Sitemap
+* Travis CI integration with [html-proofer](https://github.com/gjtorikian/html-proofer)
 
-- Extremely tiny implementation
-- No dependencies at all
-- Pure Functional approach (totally event less)
-- Support for full Flux using full stack of ActionProvider/Creator, Dispatcher, and Stores
-- Support for a simplified 'fluxy' concept, where Dispatcher is also ActionProvider
-- No singleton
-- Interoperable Stores
-- Multiple Dispatchers
-- Built in ActionCreator (*new*)
-- Quite fast (*recently optimized*)
-- CommonJS, RequireJS ready
+## { Personal } à la JekyllNow
 
+Want to get { Personal } without messing with jekyll installations and terminal commands?
 
-# Comparison to Facebook's Implementation
+  1. Fork the personal-jekyll-theme repository
+  2. Rename the forked repository to yourgithubusername.github.io
+  3. Visit https://yourgithubusername.github.io
+  4. Start modifying the \_config.yml and editing your blog's posts from Github's online editor or a third party online editor (i.e. [Prose](https://prose.io/))
 
-From an architectural point of view, the main difference is that [Facebook's Flux implementation](https://github.com/facebook/flux) provides 
-one central dispatcher, while __nanoflux__ supports also multiple dispatchers (if needed). Given that flexibility, it is possible to link multiple stores 
-and multiple dispatchers, but IMHO this would only be a preferable scenario for really large applications. Additionally, it is also possible 
-(as a built in feature) to link stores easily, so they can notify each other on changes (chaining).
+## Documentation
 
-For more comfort, __nanoflux__ supports a 'fluxy' way, which means, that a dispatcher provides actions directly without the need of a dedicated *ActionProvider*. 
-This can be quite handy in less complex applications and reduces much of boilerplate code. Of course, __nanoflux__  supports the original concept with separated *ActionProvider*. 
+The theme contains documentation in the form of [blog posts](https://panossakkos.github.io/personal-jekyll-theme/blog/index.html).
 
-The verbosity may be one of the 'weakest' aspects of Facebook's Flux: this is due to the fact, that Facebook provides the Dispatcher only. 
-A *Store* and/or an *ActionProvider* is not part of their library, and therefore Facebook's Flux implementation is very lightweight, too. 
-And even a bit smaller than __nanoflux__. The developer gains more liberty on implementation decisions, but for the costs of more work. 
-For example, it is left to the developer how stores and actions may interoperate, p.e. common approaches base on event emitters. 
+## Screenshots
+### Header
+![Intro](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/index.jpg)
+### About
+![About](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/about.jpg)
+### Latest post preview
+![Blog](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blog.jpg)
+### Timeline
+![Timeline](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/timeline.jpg)
+### Blog Archive
+![Archive](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/archive.jpg)
+### Gesture navigation instructions
+![Instructions](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/swipe.jpg)
+### Post page
+![Post](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/post.jpg)
+### Author blurb
+![Blurb](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/blurb.jpg)
+### Hashtags
+![Tags](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/tags.jpg)
+### Categories
+![Categories](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/categories.jpg)
+### 404
+![404](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/404.jpg)
+### Mobile rendering
+![Web App](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/web-app.jpg)
+### Web App mode
 
-In this point __nanoflux__ offers slightly less flexibility with its a pure functional approach only - at least regarding 
-the dispatcher-store-binding - but is more comfortable. 
- 
-# Size
-__nanoflux__ is a really tiny implementation, although it offers *much* more comfort than the reference implementation from Facebook.
+![iOS](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/ios.jpg)
 
-1. fb.flux.min.js       ca. 2 KiB 
-2. nanoflux.min.js      ca. 3.5 KiB 
-3. reflux.min.js        ca. 18 KiB 
-4. delorean.min.js      ca 20 KiB
-5. alt.min.js           ca 23 KiB
+![Android](https://dl.dropboxusercontent.com/u/8522559/personal-jekyll-theme/pinned.jpg)
 
-# Performance
+## How to run locally
 
-__nanoflux__  use synchronous function calls, that makes __nanoflux__ quite fast. Synchronous cycles guarantee consistent dispatch cycles.
+First, you need to install jekyll and the dependencies of { Personal } by running:
 
-Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
+````
+./scripts/install
+````
 
-1. fbflux-perf: 163983.67 op/s (0.00 op/s) - 100.00%
-2. nanoflux-fluxy-perf: 157380.00 op/s (-6603.67 op/s) - 95.97%
-3. nanoflux-fullflux-perf: 151334.33 op/s (-12649.34 op/s) - 92.29%
-4. reflux-perf: 61861.33 op/s (-102122.34 op/s) - 37.72%
-5. alt-perf: 27704.33 op/s (-136279.34 op/s) - 16.89%
-6. delorean-perf: 9350.33 op/s (-154633.34 op/s) - 5.70%
+Then, you can build and serve your website by simply running:
 
-The benchmark code is available under `./perf`.
+````
+./scripts/serve-production
+````
 
-Currently, all measuring is done server side using `nodejs` (listed results run on Dell XPS15 i7). 
-I think it is slightly slower than Facebooks implementation, as __nanoflux__ uses a comfortable auto-binding, 
-without verbose switch-case-statements like the Facebook version. Nevertheless, it should be fast enough :)
+## Wiki
 
-# Example
+Don't forget to list your { Personal } blog in the [Blogs using { Personal }](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Blogs-using-%7B-Personal-%7D) wiki page in order to drive some traffic to your website :wink:
 
-The following example demonstrates the 'full' Flux approach, using ActionProvider, Dispatcher, and Store
+## Integrating bug fixes and features into your old fork
 
-```javascript
+Have you published your own website by forking { Personal } and now you want to get the latest bug fixes and features from this repo into your website?
+Then check [this](https://github.com/PanosSakkos/personal-jekyll-theme/wiki/Upgrading-your-%7B-Personal-%7D-website-with-our-latest-bug-fixes-and-features) out.
 
-	var NanoFlux = require('nanoflux'); // UMD with browserify!
+## OSS used in { Personal }
 
-    var setup = function() {
-    
-        // Creating a store 'myStore' with functions triggered by dispatched actions
-        // The convention for action handlers name is: on<ActionName>
-        NanoFlux.createStore('myStore', {
-    
-            // the handlers signature bases on the users convention
-            onAction1: function (test) {
-                console.log("Store.onAction1: " + test);
-                // this will call the subscribed callbacks
-                this.notify({data: test});
-            },
-    
-            onAction2: function (test) {
-                console.log("Store.onAction2: " + test);
-                this.notify({data: test});
-            },
-    
-            onAction3: function (test) {
-                console.log("Store.onAction3: " + test);
-                this.notify({data: test});
-            }
-        });
+One of the reasons { Personal } is real is the following OSS projects:
 
-		// Creating the Dispatcher
-		// You may also use the implicit default dispatcher: 
-		// var dispatcher = NanoFlux.getDispatcher();
-        var dispatcher = NanoFlux.createDispatcher('myDispatcher');
-        
-        // The full flux concept foresees a separation of actions and dispatcher
-        // Here we create actions using the built in action creator
-        NanoFlux.createActions('myActions', dispatcher, {
-            action1 : function(data){
-                console.log("Action 1");
-                // this way, the dispatcher establishes dynamically the action binding, calling stores onAction1().
-                this.dispatch('action1', data);
-            },
-    
-            action2 : function(data){
-                console.log("Action 2");
-                this.dispatch('action2', data);
-            }
-        });    
-    };
-```
-    
-    
-```javascript
-    
-    setup();
-    function Component(){
-    
-        // callback called by Store.notify
-        this.onNotify = function(data){
-            console.log("Component notified: " + JSON.stringify(data));
-        };
-    
-        this.exec = function(){
-    
-                
-            var dispatcher = NanoFlux.getDispatcher('myDispatcher');
-            var store = NanoFlux.getStore('myStore');
-            var actions = NanoFlux.getActions('myActions'); 
-            
-            // Now, connecting Store and Dispatcher
-            dispatcher.connectTo(store);
-            
-            // establishes the link between store's notification mechanism and this component.
-            // use the returned object to unsubscribe, if needed!
-            var subscription = store.subscribe(this, this.onNotify);
-    
-			// executing the actions    
-            actions.action1("test 1");
-            actions.action2("test 2");
-        };
-    }   
-```
+  1. [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
+  2. [hammer.js](https://hammerjs.github.io/)
+  3. [highlightjs](https://highlightjs.org/)
+  4. [RRSSB](https://github.com/kni-labs/rrssb)
+  5. [Timeline](https://github.com/kirbyt/timeline-jekyll-theme)
+  6. [typed.js](https://github.com/mattboldt/typed.js/)
 
-# Getting nanoflux
+## Supporting the repo
 
-You may pick the library directly from ``./dist``, use ``npm install nanoflux``, or use ``bower install nanoflux``
+Proposals, pull requests and issues are more than welcome, let's make the web a bit more beautiful and secure :wink:
 
-# Build your own
-
-1. Get sources: ``npm install nanoflux`` (or fork/clone this repo)
-2. Install dependencies: ``npm install``
-3. Build:
-  - ``gulp`` to build the minified and non-minified bundle in ``.\dist``
-
-Pronto!
-
-## Automated Testing
-
-The gulp build chain runs tests only for the browserified __nanoflux__ module. 
-
-All tests can be run using `jasmine-node` or `npm run test`. 
-
-
-# Available Node Tasks
-
-Use `npm run <task>` to execute additional task. Available tasks are:
- 
-- test : Runs all tests
-- benchmark : Runs a performance benchmark for different Flux Implementations. 
-
-# TO DO
-
-- Exhaustive Field-Testing
-- More Performance Benchmarks
-- Client side Benchmarks
-- Neat diagrams for benchmark results
-
+In case you want to say thank you by donating Bitcoins to all the contributors, [this](https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi) is our address.
