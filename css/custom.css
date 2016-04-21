@@ -1,0 +1,25 @@
+#about{
+    background-color: #191F58;
+}
+
+#features{
+    background-color: #116611;
+}
+
+#features [class*="flaticon-"]:before{
+    font-size: 6em;
+    margin: 0;
+    padding: 16px;
+    border-radius: 100%;
+    background: #f1e767;
+    background: -moz-linear-gradient(-45deg,  #f1e767 10%, #f2af40 100%);
+    background: -webkit-linear-gradient(-45deg,  #f1e767 10%,#f2af40 100%);
+    background: linear-gradient(135deg,  #f1e767 10%,#f2af40 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#f2af40',GradientType=1 );
+    color: rgba(255,255,255,0.8);
+    border: 2px solid white;
+}
+
+#features h3{
+    margin-top: 1em;
+}

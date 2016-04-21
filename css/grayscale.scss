@@ -163,7 +163,7 @@ a {
     text-align: center;
     color: $intro-text-color;
     {% if site.background-img %}
-    background: url({{ site.background-img }}) no-repeat bottom center scroll;
+    background: url({{ site.background-img }}) no-repeat bottom center fixed;
     {% endif %}
     background-color: $header-background-color;
     -webkit-background-size: cover;
@@ -232,11 +232,13 @@ a {
 }
 
 .content-section {
-    margin-top: 100px;
     padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+
     @media(min-width:767px) {
-        margin-top: 125px;
         padding-top: 125px;
+        padding-bottom: 125px;
     }
     /* Added in { Personal } for responsive images in posts and section contents */
     img {

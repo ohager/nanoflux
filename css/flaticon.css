@@ -1,0 +1,171 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/02/2016 14:44
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-3-molecules:before { content: "\f100"; }
+.flaticon-airplane:before { content: "\f101"; }
+.flaticon-airplane-1:before { content: "\f102"; }
+.flaticon-airplane-2:before { content: "\f103"; }
+.flaticon-astronaut:before { content: "\f104"; }
+.flaticon-atom-shape:before { content: "\f105"; }
+.flaticon-atom-symbol:before { content: "\f106"; }
+.flaticon-axe:before { content: "\f107"; }
+.flaticon-barrel-container:before { content: "\f108"; }
+.flaticon-barrels:before { content: "\f109"; }
+.flaticon-battery-charge:before { content: "\f10a"; }
+.flaticon-battery-status:before { content: "\f10b"; }
+.flaticon-battery-status-1:before { content: "\f10c"; }
+.flaticon-battery-status-2:before { content: "\f10d"; }
+.flaticon-battery-status-3:before { content: "\f10e"; }
+.flaticon-battery-status-4:before { content: "\f10f"; }
+.flaticon-battery-status-full:before { content: "\f110"; }
+.flaticon-battery-with-plus-and-minus-signs-of-positive-and-negative-poles:before { content: "\f111"; }
+.flaticon-beaker:before { content: "\f112"; }
+.flaticon-beaker-1:before { content: "\f113"; }
+.flaticon-bicycle:before { content: "\f114"; }
+.flaticon-binoculars-with-eyes:before { content: "\f115"; }
+.flaticon-bottle-black-silhouette:before { content: "\f116"; }
+.flaticon-bucket:before { content: "\f117"; }
+.flaticon-bulldozer:before { content: "\f118"; }
+.flaticon-bus-front-view:before { content: "\f119"; }
+.flaticon-bus-side-view:before { content: "\f11a"; }
+.flaticon-cactus-silhouette:before { content: "\f11b"; }
+.flaticon-caliper:before { content: "\f11c"; }
+.flaticon-car-compact:before { content: "\f11d"; }
+.flaticon-car-compact-side-view:before { content: "\f11e"; }
+.flaticon-car-icon:before { content: "\f11f"; }
+.flaticon-closed-umbrella-variant:before { content: "\f120"; }
+.flaticon-cloud:before { content: "\f121"; }
+.flaticon-cloud-and-moon:before { content: "\f122"; }
+.flaticon-cloud-dark-shape:before { content: "\f123"; }
+.flaticon-cloud-flash:before { content: "\f124"; }
+.flaticon-cloud-storage-downloading-option:before { content: "\f125"; }
+.flaticon-compass:before { content: "\f126"; }
+.flaticon-construction-hazard-banner:before { content: "\f127"; }
+.flaticon-control-panel:before { content: "\f128"; }
+.flaticon-control-panel-monitoring-tool:before { content: "\f129"; }
+.flaticon-cooling-tower:before { content: "\f12a"; }
+.flaticon-cooling-tower-smoke:before { content: "\f12b"; }
+.flaticon-cow-stained-skin:before { content: "\f12c"; }
+.flaticon-crane:before { content: "\f12d"; }
+.flaticon-cube-molecule:before { content: "\f12e"; }
+.flaticon-cube-molecule-1:before { content: "\f12f"; }
+.flaticon-cutter-knife-tool:before { content: "\f130"; }
+.flaticon-delivery-truck:before { content: "\f131"; }
+.flaticon-dump-truck-variant-side-view:before { content: "\f132"; }
+.flaticon-emergency-stop-button:before { content: "\f133"; }
+.flaticon-equalizer:before { content: "\f134"; }
+.flaticon-excavator:before { content: "\f135"; }
+.flaticon-factory:before { content: "\f136"; }
+.flaticon-fish:before { content: "\f137"; }
+.flaticon-fish-bowl:before { content: "\f138"; }
+.flaticon-fish-in-water:before { content: "\f139"; }
+.flaticon-flashlight:before { content: "\f13a"; }
+.flaticon-flower-shape-of-five-petals:before { content: "\f13b"; }
+.flaticon-folding-rule:before { content: "\f13c"; }
+.flaticon-fuel-dispenser:before { content: "\f13d"; }
+.flaticon-gauge:before { content: "\f13e"; }
+.flaticon-gear-wheel:before { content: "\f13f"; }
+.flaticon-gearwheels-couple:before { content: "\f140"; }
+.flaticon-hammer-silhouette:before { content: "\f141"; }
+.flaticon-jackhammer:before { content: "\f142"; }
+.flaticon-jerrycan:before { content: "\f143"; }
+.flaticon-knife:before { content: "\f144"; }
+.flaticon-landing-airplane:before { content: "\f145"; }
+.flaticon-leaf:before { content: "\f146"; }
+.flaticon-magnet-polarity-tool:before { content: "\f147"; }
+.flaticon-magnifying-glass:before { content: "\f148"; }
+.flaticon-measuring-tape:before { content: "\f149"; }
+.flaticon-microscope-side-view:before { content: "\f14a"; }
+.flaticon-minibus-side-view:before { content: "\f14b"; }
+.flaticon-moon:before { content: "\f14c"; }
+.flaticon-moon-in-half-phase:before { content: "\f14d"; }
+.flaticon-mosquito-from-top-view:before { content: "\f14e"; }
+.flaticon-motor-scooter:before { content: "\f14f"; }
+.flaticon-motorbike:before { content: "\f150"; }
+.flaticon-moving-truck:before { content: "\f151"; }
+.flaticon-mushroom-symbol:before { content: "\f152"; }
+.flaticon-nail:before { content: "\f153"; }
+.flaticon-newtons-cradle:before { content: "\f154"; }
+.flaticon-odometer-for-kilometers-and-speed-control:before { content: "\f155"; }
+.flaticon-paint-roller-black-silhouette:before { content: "\f156"; }
+.flaticon-plant-with-two-leaves-on-a-pot-side-view:before { content: "\f157"; }
+.flaticon-power-drill:before { content: "\f158"; }
+.flaticon-pressure-sprayer:before { content: "\f159"; }
+.flaticon-pylon:before { content: "\f15a"; }
+.flaticon-radar:before { content: "\f15b"; }
+.flaticon-radiation:before { content: "\f15c"; }
+.flaticon-rain-cloud:before { content: "\f15d"; }
+.flaticon-rain-drops:before { content: "\f15e"; }
+.flaticon-remote-control-variant-for-machine:before { content: "\f15f"; }
+.flaticon-road-roller-tractor:before { content: "\f160"; }
+.flaticon-rocket:before { content: "\f161"; }
+.flaticon-screwdriver:before { content: "\f162"; }
+.flaticon-sedan-car-side-black-silhouette:before { content: "\f163"; }
+.flaticon-snow-cloud:before { content: "\f164"; }
+.flaticon-snowflake-crystal-shape:before { content: "\f165"; }
+.flaticon-spider-black-shape:before { content: "\f166"; }
+.flaticon-spirit-level-tool:before { content: "\f167"; }
+.flaticon-sportive-car-front:before { content: "\f168"; }
+.flaticon-square-ruler-tool:before { content: "\f169"; }
+.flaticon-steering-wheel:before { content: "\f16a"; }
+.flaticon-submarine:before { content: "\f16b"; }
+.flaticon-sun-behind-the-clouds:before { content: "\f16c"; }
+.flaticon-sun-black-circular-shape-with-small-rays-of-triangles:before { content: "\f16d"; }
+.flaticon-switch-off:before { content: "\f16e"; }
+.flaticon-switch-off-1:before { content: "\f16f"; }
+.flaticon-switch-off-2:before { content: "\f170"; }
+.flaticon-switch-on:before { content: "\f171"; }
+.flaticon-switch-on-1:before { content: "\f172"; }
+.flaticon-switch-on-control-outline:before { content: "\f173"; }
+.flaticon-tank-truck:before { content: "\f174"; }
+.flaticon-tape-measure:before { content: "\f175"; }
+.flaticon-thermometer:before { content: "\f176"; }
+.flaticon-toolbox:before { content: "\f177"; }
+.flaticon-tools-cross-settings-symbol-for-interface:before { content: "\f178"; }
+.flaticon-tower-crane:before { content: "\f179"; }
+.flaticon-tractor-side-view:before { content: "\f17a"; }
+.flaticon-tree:before { content: "\f17b"; }
+.flaticon-truck:before { content: "\f17c"; }
+.flaticon-truck-1:before { content: "\f17d"; }
+.flaticon-truck-container:before { content: "\f17e"; }
+.flaticon-truck-variant-front-view:before { content: "\f17f"; }
+.flaticon-ufo-silhouette:before { content: "\f180"; }
+.flaticon-umbrella:before { content: "\f181"; }
+.flaticon-van-black-side-view:before { content: "\f182"; }
+.flaticon-water:before { content: "\f183"; }
+.flaticon-weight-tool-with-handle:before { content: "\f184"; }
+.flaticon-wheel:before { content: "\f185"; }
+.flaticon-wheel-loader-tractor:before { content: "\f186"; }
+.flaticon-wind-mill:before { content: "\f187"; }
+.flaticon-windmill-silhouette-variant:before { content: "\f188"; }
+.flaticon-windsock:before { content: "\f189"; }
+.flaticon-windup-key-tool:before { content: "\f18a"; }
+.flaticon-wrench:before { content: "\f18b"; }

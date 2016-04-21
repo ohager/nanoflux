@@ -31,7 +31,7 @@ force-https: False
 lang: "en"
 author: "Oliver Häger"
 title: "nanoflux"
-description: "nanoflux - an independent, lightweight and comfortable Flux implementation"
+description: "nanoflux - a lightweight and comfortable Flux implementation"
 keywords: "häger, oliver, nanoflux, flux, npm, bower"
 favicon: "/img/favicon.ico"
 
@@ -39,7 +39,7 @@ favicon: "/img/favicon.ico"
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "flaticon-3-molecules"
 
 background-img: "../img/nano-bg.jpg"
 
@@ -167,6 +167,7 @@ social:
 
 pages_list:
   About: 'about'
+  Features: 'features'
   Blog: 'latest-post'
   Timeline: 'timeline'
   Contact: 'contact'
