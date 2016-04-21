@@ -12,7 +12,7 @@ url: "https://ohager.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /nanoflux
+baseurl: /
 
 # Google tracking id to track your visitors
 
@@ -41,7 +41,7 @@ favicon: "/img/favicon.ico"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "/img/intro-bg.jpg"
+background-img: "../img/nano-bg.jpg"
 
 ##############################
 # Dynamic Text on the Header #
