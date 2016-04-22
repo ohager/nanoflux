@@ -10,17 +10,15 @@ tags: [ 'tutorial' ]
 
 Pull the package in your project's directory using either `npm`, or `bower`:
 
-<pre>
-  <code class="bash">
+{% highlight shell %}
     npm install nanoflux --save
     bower install nanoflux
-  </code>
-</pre>
-
+{% endhighlight %}  
+  
 ## Usage
 Once included in your project you need to define your stores, and wire them with your dispatcher(s):
   
-<pre><code data-trim class="javascript">      
+{% highlight javascript %} 
 var NanoFlux = require('../node_modules/nanoflux/dist/nanoflux.min.js');
        
 // the 'fluxy' version creates actions directly in dispatcher, which reduces verbosity
@@ -51,11 +49,11 @@ dispatcher.connectTo( NanoFlux.createStore('shopStore', {
 );
 // setting NanoFlux globally omits the need of further imports throughout your app
 window.NanoFlux = NanoFlux;
-</code></pre>
+{% endhighlight %}
 
 Here's how you may use it in your views:
 
-<pre><code data-trim class="javascript">   
+{% highlight javascript %}   
 var ProductContainer = React.createClass({
 
 	// get actions and store
@@ -89,4 +87,4 @@ var ProductContainer = React.createClass({
         )
     }
 });
-</code></pre>
+{% endhighlight %}

@@ -49,16 +49,16 @@ background-img: "../img/nano-bg.jpg"
 ##############################
 
 dynamic-typing: True
-shuffle: True # Shuffle the lines.
+shuffle: False # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "tiny Flux implementation with comfortable API"
-  - text: "faster than most implementations"
-  - text: "less boilerplate, more comfort"
+  - text: "tiny full Flux implementation"
+  - text: "no dependencies, library/framework agnostic"
+  - text: "intuitive API, less boilerplate, fast"
 
 me-img: "/img/jetpacktocat.png"
 
@@ -171,7 +171,7 @@ social:
 pages_list:
   About: 'about'
   Features: 'features'
-  Getting Started: 'latest-post'
+  Quickstart: 'quickstart'
   Contact: 'contact'
 
 # Exclusion list from the generated _site

@@ -5,18 +5,57 @@ title: Quickstart
 ---
 ## Quickstart
 
-Just get the npm package:
+Pull package from npm or bower
 
-<pre>
-    <code data-trim class="bash">
-        npm install nanoflux --save
-    </code>
-</pre>
+<pre><code class="shell">
+npm install nanoflux --save
+bower install nanoflux
+</code></pre>
 
-Or pull the bower package:
+Define your Store(s) in a separate file
 
-<pre>
-    <code class="bash">
-        bower install nanoflux
-    </code>
-</pre>
+<pre><code class="javascript">
+
+    import ProductService from './services/productservice';
+
+    var _products = null;
+
+    export default {
+        // a state getter usable by subscribed views
+        getProducts : {
+            return _products; // remember: it's immutable
+        },
+        // onLoadProducts is automatically mapped (convention) to action 'loadProducts'
+        onLoadProducts : function(){
+            ProductService.loadProducts().then( (products) => {
+                    // it's highly recommended to use immutable structures
+                    _products = Immutable(products);
+                    this.notify(); // notifies all subscribed views
+                }
+            );
+        },
+        onAddProduct : function(product){
+			_products = _products.concat(Immutable(product));
+            this.notify();
+        }
+    }
+</code></pre>
+
+Wire up your Actions, Dispatcher(s), and Stores on your app's starting point
+<pre><code class="javascript">
+    import NanoFlux from '../node_modules/nanoflux/dist/nanoflux.min';
+    import ProductStore = require('./stores/productstore');
+
+    // creates a named dispatcher, which is accessible using NanoFlux.getDispatcher('dispatcher');
+    var dispatcher = NanoFlux.createDispatcher('dispatcher', ['addProduct','loadProducts'] );
+    dispatcher.connectTo(ProductStore);
+
+    // add NanoFlux to global variable, for easier life
+    window.NanoFlux = NanoFlux;
+    // We pretend to use only one dispatcher, so we could add it here also
+    window.NanoFlux.Dispatcher = dispatcher;
+</code></pre>
+
+
+Usage in your components is straightforward
+
