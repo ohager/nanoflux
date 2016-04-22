@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: Modifying the Contact
-category: tech
+category: docs
 tags: [ 'tutorial' ]
 ---
 

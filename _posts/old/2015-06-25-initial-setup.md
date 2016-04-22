@@ -2,7 +2,7 @@
 layout: post
 section-type: post
 title: Initial setup
-category: tech
+category: docs
 tags: [ 'tutorial' ]
 ---
 

@@ -1,9 +1,22 @@
+table{
+    font-size: 18px;
+    margin: 1em;
+}
+
 #about{
     background-color: #191F58;
 }
 
 #features{
-    background-color: #116611;
+    background-color: #457314;
+}
+
+#quickstart{
+    background-color: #6F1335;
+}
+
+#latest-post{
+    background-color: #7F6316;
 }
 
 #features [class*="flaticon-"]:before{
@@ -22,4 +35,14 @@
 
 #features h3{
     margin-top: 1em;
+}
+
+.nanoflux-in-text sup{
+    margin: 0;
+    margin-left: -16px;
+    font-size: 100%;
+}
+
+.nanoflux-in-text sup:before{
+    font-size: 50%;
 }
