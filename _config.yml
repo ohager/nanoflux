@@ -136,8 +136,9 @@ email: "oliver@devbutze.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "I am a passionate software craftsman working at Dextra Ltda, one of the best Dev companies in Brazil."
-author_blurb_image: "/img/author.png"
+author_blurb: "I am a passionate software craftsman working at <a href='http://dextra.digital/'>Dextra</a>"
+author_blurb_image: "/img/devbutze.png"
+author_blurb_homepage: "https://devbutze.com"
 
 ##################
 # Social Buttons #
@@ -148,8 +149,8 @@ social:
  #   url: "https://facebook.com/"
  # - title: "twitter"
  #   url: "https://twitter.com/"
- - title: "github"
-   url: "https://github.com/ohager/nanoflux"
+ #- title: "github"
+ #  url: "https://github.com/ohager/nanoflux"
  # - title: "bitcoin"
  #   url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
  # - title: "rss"

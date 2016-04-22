@@ -275,10 +275,11 @@ a {
 
     /* Added in { Personal } */
     &#post {
-        div.author img {
+        div.author a img {
             border: 0px;
             margin-bottom: 20px;
             padding: 4px;
+            max-width: 64px;
         }
     }
 }
