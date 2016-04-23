@@ -6,6 +6,51 @@ category: docs
 tags: [ 'tutorial' ]
 ---
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script>
+ google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Implementation', 'KiB', 'Ops/Sec'],
+          ['Facebook', 2, 163983.67],
+          ['NanoFlux', 3.5, 157380],
+          ['Reflux', 18, 61861.33],
+          ['Alt', 23, 27704.33],
+          ['DeLorean', 20, 9350.33]
+        ]);
+
+        var options = {
+          width: 800,
+          height: 450,
+	       chartArea: {
+	            backgroundColor: 'transparent',
+	       },
+	       colors: ['#DEAE26', '#1A7889'],
+          chart: {
+            title: 'Flux Implementations Quantitative Comparison',
+            subtitle: 'Size (minified, not gzipped) on the left, runtime performance on the right (run on Dell XPS15 i7)'
+          },
+          bars: 'vertical',
+          series: {
+            0: { axis: 'size' }, 
+            1: { axis: 'perf' } 
+          },
+          axes: {
+            x: {
+              size: {side: 'left', label: 'kilobytes'},
+              perf: {side: 'right', label: 'operations per second'}
+            }
+          }
+        };
+
+      var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    };
+</script>
+
 ## Comparison to Facebook's Implementation
 
 From an architectural point of view, the main difference is that [Facebook's Flux implementation](https://github.com/facebook/flux) provides 
@@ -16,42 +61,22 @@ and multiple dispatchers, but IMHO this would only be a preferable scenario for 
 For more comfort, __nanoflux__ supports a 'fluxy' way, which means, that a dispatcher provides actions directly without the need of a dedicated *ActionProvider*. 
 This can be quite handy in less complex applications and reduces much of boilerplate code. Of course, __nanoflux__  supports the original concept with separated *ActionProvider*. 
 
-The verbosity may be one of the 'weakest' aspects of Facebook's Flux: this is due to the fact, that Facebook provides the Dispatcher only. 
-A *Store* and/or an *ActionProvider* is not part of their library, and therefore Facebook's Flux implementation is very lightweight, too. 
-And even a bit smaller than __nanoflux__. The developer gains more liberty on implementation decisions, but for the costs of more work. 
-For example, it is left to the developer how stores and actions may interoperate, p.e. common approaches base on event emitters. 
-
-In this point __nanoflux__ offers slightly less flexibility with its a pure functional approach only - at least regarding 
-the dispatcher-store-binding - but is more comfortable. 
- 
-## Size
-__nanoflux__ is a really tiny implementation, although it offers *much* more comfort than the reference implementation from Facebook.
-
-| Implementation   | Size |
-|:-----------------|:-----------:|
-|fb.flux.min.js|~2 KiB| 
-|nanoflux.min.js|~3.5 KiB| 
-|reflux.min.js|~18 KiB| 
-|delorean.min.js|~20 KiB|
-|alt.min.js|~23 KiB|
+The verbosity may be one of the 'weakest' aspects of Facebook's Flux: this is due to the fact, that Facebook provides the Dispatcher only, 
+ where the mapping has to be established entirely through the implementer, which turns in verbose code. Facebook Flux does not offer any
+*Store* and/or an *ActionProvider* helpers, which turns the implementation in a very lightweight one, too; even smaller than __nanoflux__. 
+One of the __nanoflux__ features is it's convention based automapping for actions and store functions. In this point __nanoflux__ offers slightly 
+less flexibility with its a pure functional approach only - at least regarding the action-dispatcher-store-binding - but is *much* more comfortable. 
+On the other hand, the developer gains with Facebook Flux more liberty on implementation decisions. For example, it is left to the developer how 
+stores and actions may interoperate, p.e. common approaches base on event emitters. 
 
 
-## Performance
+## Quantitative Comparison with other implementations
 
-__nanoflux__  use synchronous function calls, that makes __nanoflux__ quite fast. Synchronous cycles guarantee consistent dispatch cycles.
+__nanoflux__ is a really tiny and also fast implementation, as the following chart depicts.
+Obviously, the reference implementation from Facebook is slightly superior, but as mentioned above it offers *much* less comfort than __nanoflux__.
 
-Here are some results of benchmarks for entire *action-dispatch-notify*-cycles:
+<div id="dual_x_div" style="width: 900px; height: 500px; margin: auto"></div> 
 
-1. fbflux-perf: 163983.67 op/s (0.00 op/s) - 100.00%
-2. nanoflux-fluxy-perf: 157380.00 op/s (-6603.67 op/s) - 95.97%
-3. nanoflux-fullflux-perf: 151334.33 op/s (-12649.34 op/s) - 92.29%
-4. reflux-perf: 61861.33 op/s (-102122.34 op/s) - 37.72%
-5. alt-perf: 27704.33 op/s (-136279.34 op/s) - 16.89%
-6. delorean-perf: 9350.33 op/s (-154633.34 op/s) - 5.70%
-
-The benchmark code is available under `./perf`.
-
-Currently, all measuring is done server side using `nodejs` (listed results run on Dell XPS15 i7). 
-I think it is slightly slower than Facebooks implementation, as __nanoflux__ uses a comfortable auto-binding, 
-without verbose switch-case-statements like the Facebook version. Nevertheless, it should be fast enough :)
+Currently, all performance measuring is done server side using `nodejs`. I think it is slightly slower than Facebooks implementation, 
+as __nanoflux__ uses a comfortable auto-binding, without verbose switch-case-statements like the Facebook version. Nevertheless, it should be fast enough :)
 

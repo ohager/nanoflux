@@ -1,24 +1,35 @@
 
-<!-- Index Layout Start -->
+<!-- Blog Layout Start -->
 
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
   {% include head.html %}
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
+  <body>
 
     {% include navigation.html %}
 
-    {% include header.html %}
+    <section id="page" class="container content-section text-center">
 
-    {% for p in site.pages_list %}
-      {% for page in site.pages %}
-        {% if p[1] == page.section-type %}
-          {% include {{ page.path }} %}
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+
+        {% include swipe-instructions.html %}
+
+        {{ page.content | markdownify }}
+
+        <div>
+          {% for post in paginator.posts %}
+            {% include post-list.html%}
+          {% endfor %}
+        </div>
+
+        {% include pagination.html %}
+
+        </div>
+      </div>
+    </section>
 
     {% include footer.html %}
 
@@ -27,4 +38,4 @@
   </body>
 </html>
 
-<!-- Index Layout End -->
+<!-- Blog Layout End -->

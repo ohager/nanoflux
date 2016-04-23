@@ -15,8 +15,17 @@ table{
     background-color: #6F1335;
 }
 
+.content-section pre{
+    max-width: 800px;
+    margin: 0 auto 2em auto;
+}
+
 #latest-post{
     background-color: #7F6316;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    margin-left: 0px;
 }
 
 #features [class*="flaticon-"]:before{
@@ -39,10 +48,13 @@ table{
 
 .nanoflux-in-text sup{
     margin: 0;
-    margin-left: -16px;
     font-size: 100%;
 }
 
 .nanoflux-in-text sup::before{
     font-size: 50%;
+}
+
+#post.container.content-section{
+    padding-bottom: 0;
 }

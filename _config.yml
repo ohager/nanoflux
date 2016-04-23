@@ -136,7 +136,7 @@ email: "oliver@devbutze.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "I am a passionate software craftsman working at <a href='http://dextra.digital/'>Dextra</a>"
+author_blurb:
 author_blurb_image: "/img/devbutze.png"
 author_blurb_homepage: "https://devbutze.com"
 
@@ -172,7 +172,7 @@ pages_list:
   About: 'about'
   Features: 'features'
   Quickstart: 'quickstart'
-  Contact: 'contact'
+  Credits: 'credits'
 
 # Exclusion list from the generated _site
 
@@ -180,7 +180,7 @@ exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
 
 # Pagination path
 
-paginate_path: "blog/page:num/"
+paginate_path: "docs/page:num/"
 
 # Enable minification SASS
 

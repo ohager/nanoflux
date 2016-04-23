@@ -75,7 +75,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
   {% endif %}
 
-  {% if page.section-type == "post" or page.section-type == "blog" or page.section-type == "index" or page.section-type == "tag" %}
+  {% if page.section-type == "post" or page.section-type == "blog" or page.section-type == "index" or page.section-type == "tag" or page.section-type == "docs" %}
 
     <!-- Comments Counter Start -->
 
@@ -199,7 +199,7 @@ function addTohistory() {
 
 {% endif %}
 
-{% if page.section-type == "blog" %}
+{% if page.section-type == "blog" or page.section-type == "docs" %}
 
   <!-- Blog Gesture Navigation Start -->
 
@@ -230,7 +230,7 @@ function addTohistory() {
 
 {% endif %}
 
-{% if page.section-type == "blog" %}
+{% if page.section-type == "blog" or page.section-type == "docs" %}
 
   <!-- Swipe Instructions for Blog Start -->
 

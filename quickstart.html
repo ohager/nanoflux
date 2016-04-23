@@ -5,22 +5,42 @@ title: Quickstart
 ---
 ## Quickstart
 
+<small>Or go straight to <a href="./docs/">documentation</a></small>
+
 Pull package from npm or bower
 
 <pre><code class="shell">
-npm install nanoflux --save
-bower install nanoflux
+
+    npm install nanoflux --save
+    bower install nanoflux
+
 </code></pre>
 
-Define your Store(s) in a separate file
-
+Setup NanoFlux globally at the application's entry point, before any usage of NanoFlux. <br/>
+In this scenario we pretend to use a single *Dispatcher* only, <br/>
+although NanoFlux provides the ability to create multiple dispatchers.
 <pre><code class="javascript">
+    import NanoFlux from '../node_modules/nanoflux/dist/nanoflux.min';
+    window.NanoFlux = NanoFlux;
+    // creates a named dispatcher, which is also accessible using NanoFlux.getDispatcher('dispatcher');
+    // Here we use the 'fluxy' way, where actions are part of the dispatcher.
+    // This way we avoid the need of additional action creators, reducing code.
+    // Note: The action names are used for stores function mapping, e.g. 'addProduct' maps to 'onAddProduct'
+    window.NanoFlux.Dispatcher = NanoFlux.createDispatcher('dispatcher', ['addProduct','loadProducts'] );
+</code></pre>
 
+
+Define your *Store* in a separate file.
+<pre><code class="javascript">
+    // it's highly recommended to use immutable structures
+    import Immutable from '../node_module/seamless-immutable/seamless-immutable.production.min';
     import ProductService from './services/productservice';
 
     var _products = null;
 
-    export default {
+    // creates a store with name 'productStore'. It is assumed that NanoFlux is already global.
+    // the store is accessible using NanoFlux.getStore('productStore')
+    var store = NanoFlux.createStore('productStore', {
         // a state getter usable by subscribed views
         getProducts : {
             return _products; // remember: it's immutable
@@ -28,34 +48,52 @@ Define your Store(s) in a separate file
         // onLoadProducts is automatically mapped (convention) to action 'loadProducts'
         onLoadProducts : function(){
             ProductService.loadProducts().then( (products) => {
-                    // it's highly recommended to use immutable structures
                     _products = Immutable(products);
                     this.notify(); // notifies all subscribed views
                 }
             );
         },
         onAddProduct : function(product){
-			_products = _products.concat(Immutable(product));
+            _products = _products.concat(Immutable(product));
             this.notify();
         }
-    }
+    });
+
+    // Now, we connect the store to our globally set dispatcher.
+    NanoFlux.Dispatcher.connectTo(store);
 </code></pre>
 
-Wire up your Actions, Dispatcher(s), and Stores on your app's starting point
+Pronto! Now, we are ready to use our store in our components.
 <pre><code class="javascript">
-    import NanoFlux from '../node_modules/nanoflux/dist/nanoflux.min';
-    import ProductStore = require('./stores/productstore');
+    class ProductContainer extends React.Component{
 
-    // creates a named dispatcher, which is accessible using NanoFlux.getDispatcher('dispatcher');
-    var dispatcher = NanoFlux.createDispatcher('dispatcher', ['addProduct','loadProducts'] );
-    dispatcher.connectTo(ProductStore);
+        constructor(props){
+            super(props);
+            this.state = { products : [] };
+            this.productStore = NanoFlux.getStore('productStore'); // getting our store
+            // next line binds 'this' to our callback, so there's no need for additional binding
+            this.subscription = this.productStore.subscribe(this, this.onProductsUpdated);
+        }
 
-    // add NanoFlux to global variable, for easier life
-    window.NanoFlux = NanoFlux;
-    // We pretend to use only one dispatcher, so we could add it here also
-    window.NanoFlux.Dispatcher = dispatcher;
+        onProductsUpdated(){
+            let products = this.productStore.getProducts();
+            this.setState({ products : products});
+        }
+
+        componentDidMount(){
+            NanoFlux.Dispatcher.loadProducts();
+        }
+
+        componentWillUnmount(){
+            // stop listening to store changes.
+            this.subscription.unsubscribe();
+        }
+
+        render(){
+            // ... your render stuff
+        )
+    }
+});
+
 </code></pre>
-
-
-Usage in your components is straightforward
 
