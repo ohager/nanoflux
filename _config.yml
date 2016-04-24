@@ -56,7 +56,7 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "tiny full Flux implementation"
+  - text: "microsized full flux implementation"
   - text: "no dependencies, library/framework agnostic"
   - text: "intuitive API, less boilerplate, fast"
 

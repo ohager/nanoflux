@@ -60,7 +60,25 @@ table{
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 100px;
+    font-size: 8vw;
     opacity: 0.5;
     cursor: pointer;
+    text-transform: lowercase;
 }
+
+#spin-molecule{
+    width: 4vw;
+    vertical-align: super;
+    -webkit-animation:spin 40s linear infinite;
+    -moz-animation:spin 40s linear infinite;
+    animation:spin 40s linear infinite;
+}
+
+@-moz-keyframes spin { 100% {
+    -moz-transform: rotate(360deg);
+} }
+@-webkit-keyframes spin { 100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin { 100% {
+    transform:rotate(360deg); } }
