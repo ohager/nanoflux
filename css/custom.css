@@ -58,3 +58,8 @@ table{
 #post.container.content-section{
     padding-bottom: 0;
 }
+
+.intro .intro-body .brand-heading {
+    font-size: 100px;
+    opacity: 0.5;
+}

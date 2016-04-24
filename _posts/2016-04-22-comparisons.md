@@ -9,46 +9,54 @@ tags: [ 'tutorial' ]
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script>
+
  google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawStuff);
+ google.charts.setOnLoadCallback(drawStuff);
 
-      function drawStuff() {
-        var data = new google.visualization.arrayToDataTable([
-          ['Implementation', 'KiB', 'Ops/Sec'],
-          ['Facebook', 2, 163983.67],
-          ['NanoFlux', 3.5, 157380],
-          ['Reflux', 18, 61861.33],
-          ['Alt', 23, 27704.33],
-          ['DeLorean', 20, 9350.33]
-        ]);
+  function drawStuff() {
+    var data = new google.visualization.arrayToDataTable([
+      ['Implementation', 'KiB', 'Ops/Sec'],
+      ['Facebook', 2, 163983.67],
+      ['NanoFlux', 3.5, 157380],
+      ['Reflux', 18, 61861.33],
+      ['Alt', 23, 27704.33],
+      ['DeLorean', 20, 9350.33]
+    ]);
 
-        var options = {
-          width: 800,
-          height: 450,
-	       chartArea: {
-	            backgroundColor: 'transparent',
-	       },
-	       colors: ['#DEAE26', '#1A7889'],
-          chart: {
-            title: 'Flux Implementations Quantitative Comparison',
-            subtitle: 'Size (minified, not gzipped) on the left, runtime performance on the right (run on Dell XPS15 i7)'
-          },
-          bars: 'vertical',
-          series: {
-            0: { axis: 'size' }, 
-            1: { axis: 'perf' } 
-          },
-          axes: {
-            x: {
-              size: {side: 'left', label: 'kilobytes'},
-              perf: {side: 'right', label: 'operations per second'}
-            }
-          }
-        };
+	var width= 800;
+	while($(this).outerWidth() < width){
+		width = width * (2/3);
+	}
+	var height = width * (3/4);
+	console.log(width + ',' + height);
 
-      var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
-      chart.draw(data, google.charts.Bar.convertOptions(options));
+    var options = {
+      width: width,
+      height: height,
+       chartArea: {
+            backgroundColor: 'transparent',
+       },
+       colors: ['#DEAE26', '#1A7889'],
+      chart: {
+        title: 'Flux Implementations Quantitative Comparison',
+        subtitle: 'Size (minified, not gzipped) on the left, runtime performance on the right (run on Dell XPS15 i7)'
+      },
+      bars: 'vertical',
+      series: {
+        0: { axis: 'size' }, 
+        1: { axis: 'perf' } 
+      },
+      axes: {
+        x: {
+          size: {side: 'left', label: 'kilobytes'},
+          perf: {side: 'right', label: 'operations per second'}
+        }
+      }
     };
+
+  var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
+  chart.draw(data, google.charts.Bar.convertOptions(options));
+};
 </script>
 
 ## Comparison to Facebook's Implementation
@@ -75,7 +83,7 @@ stores and actions may interoperate, p.e. common approaches base on event emitte
 __nanoflux__ is a really tiny and also fast implementation, as the following chart depicts.
 Obviously, the reference implementation from Facebook is slightly superior, but as mentioned above it offers *much* less comfort than __nanoflux__.
 
-<div id="dual_x_div" style="width: 900px; height: 500px; margin: auto"></div> 
+<div id="dual_x_div" style="width:800px;margin: auto"></div> 
 
 Currently, all performance measuring is done server side using `nodejs`. I think it is slightly slower than Facebooks implementation, 
 as __nanoflux__ uses a comfortable auto-binding, without verbose switch-case-statements like the Facebook version. Nevertheless, it should be fast enough :)

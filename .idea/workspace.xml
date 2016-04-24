@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-04-22-api.md" afterPath="$PROJECT_DIR$/_posts/2016-04-22-api.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-04-22-comparisons.md" afterPath="$PROJECT_DIR$/_posts/2016-04-22-comparisons.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" afterPath="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/credits.html" afterPath="$PROJECT_DIR$/credits.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quickstart.html" afterPath="$PROJECT_DIR$/quickstart.html" />
     </list>
     <ignored path="nanoflux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="105" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="105" />
+            <state relative-caret-position="796">
+              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="104" selection-start-line="7" selection-start-column="104" selection-end-line="7" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -51,8 +66,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="657">
+              <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -61,21 +76,51 @@
       <file leaf-file-name="quickstart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quickstart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="153" selection-start-line="9" selection-start-column="153" selection-end-line="9" selection-end-column="153" />
+            <state relative-caret-position="442">
+              <caret line="50" column="60" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-04-22-api.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="credits.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/credits.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="98" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-04-22-api.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-api.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+            <state relative-caret-position="640">
+              <caret line="340" column="40" selection-start-line="340" selection-start-column="40" selection-end-line="340" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="796">
+              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,51 +132,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-04-22-getting-started.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-getting-started.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2346">
-              <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,10 +161,8 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/404.html" />
-        <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/latest-post.html" />
         <option value="$PROJECT_DIR$/_includes/features.html" />
         <option value="$PROJECT_DIR$/_includes/quicstart.html" />
@@ -197,15 +197,17 @@
         <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/_site/docs/index.html" />
         <option value="$PROJECT_DIR$/_includes/about.html" />
-        <option value="$PROJECT_DIR$/credits.html" />
         <option value="$PROJECT_DIR$/_includes/navigation.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/css/custom.css" />
-        <option value="$PROJECT_DIR$/_posts/2016-04-22-comparisons.md" />
-        <option value="$PROJECT_DIR$/quickstart.html" />
-        <option value="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" />
+        <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-api.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" />
+        <option value="$PROJECT_DIR$/quickstart.html" />
+        <option value="$PROJECT_DIR$/_posts/2016-04-22-comparisons.md" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/credits.html" />
       </list>
     </option>
   </component>
@@ -512,7 +514,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="qui&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;po&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/post.html&#10;fo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;foo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;con&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;nav&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;head&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/header.html&#10;cus&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;foot&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;js&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/js.html&#10;conf&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;quic&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/quickstart.html&#10;fea&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;custom&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;gra&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;gray&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_site/css/grayscale.css&#10;cu&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;about&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;c&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gr&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;grays&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;feat&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;abou&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;READ&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;action&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/actioncreator.js&#10;store&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/store.js&#10;read&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;pack&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/package.json&#10;.git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore" />
+    <property name="SearchEverywhereHistoryKey" value="cred&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/credits.html&#10;foot&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;about&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;cust&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;quicks&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;qui&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;po&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/post.html&#10;fo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;foo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;con&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;nav&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;head&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/header.html&#10;cus&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;js&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/js.html&#10;conf&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;quic&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/quickstart.html&#10;fea&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;custom&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;gra&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;gray&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_site/css/grayscale.css&#10;cu&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;c&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gr&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;grays&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;feat&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;abou&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;READ&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;action&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/actioncreator.js&#10;store&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/store.js&#10;read&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;pack&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/package.json&#10;.git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore" />
     <property name="JavaScriptLanguageLevel" value="JSX" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -661,7 +663,7 @@
       <workItem from="1461258444087" duration="28800000" />
       <workItem from="1461331545509" duration="20857000" />
       <workItem from="1461386108114" duration="274000" />
-      <workItem from="1461438638184" duration="3714000" />
+      <workItem from="1461438638184" duration="13690000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -723,7 +725,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86605000" />
+    <option name="totallyTimeSpent" value="96581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -799,20 +801,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_includes/social-buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/share.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/grayscale.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -838,13 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/syntax-highlight.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -880,13 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1061,25 +1035,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/credits.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/credits.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,45 +1066,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2346">
           <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-comparisons.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quickstart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="153" selection-start-line="9" selection-start-column="153" selection-end-line="9" selection-end-column="153" />
           <folding />
         </state>
       </provider>
@@ -1155,19 +1079,32 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+        <state relative-caret-position="742">
+          <caret line="89" column="18" selection-start-line="55" selection-start-column="0" selection-end-line="89" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/_includes/web-app.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/syntax-highlight.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1177,8 +1114,78 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+        <state relative-caret-position="640">
+          <caret line="340" column="40" selection-start-line="340" selection-start-column="40" selection-end-line="340" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quickstart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="50" column="60" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-comparisons.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="104" selection-start-line="7" selection-start-column="104" selection-end-line="7" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/credits.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="98" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
           <folding />
         </state>
       </provider>
