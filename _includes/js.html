@@ -25,7 +25,10 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   <!-- Collapse navbar when navbar-brand is clicked -->
 
   <script>
-  $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});
+
+      $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});
+
+
   </script>
 
 {% endif %}
@@ -267,6 +270,29 @@ function addTohistory() {
   </script>
 
   <!-- Swipe Instructions for Post End -->
+
+{% endif %}
+
+
+{% if page.section-type == "index" %}
+
+<script type="text/javascript" src="{{site.baseurl}}/js/snabbt.min.js"></script>
+<script type="text/javascript">
+
+    var introTitle = $('#intro-title');
+
+    introTitle.click( function(){
+        $(this).snabbt('attention', {
+            rotation: [0, 0, Math.PI/2],
+            springConstant: 1.9,
+            springDeceleration: 0.9
+        });
+    });
+
+    setTimeout( function(){ introTitle.click(); }, 1500);
+
+
+</script>
 
 {% endif %}
 

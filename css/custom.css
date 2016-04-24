@@ -62,4 +62,5 @@ table{
 .intro .intro-body .brand-heading {
     font-size: 100px;
     opacity: 0.5;
+    cursor: pointer;
 }
