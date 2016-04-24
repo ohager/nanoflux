@@ -296,4 +296,24 @@ function addTohistory() {
 
 {% endif %}
 
+{% if page.section-type == "post" %}
+
+<script type="text/javascript">
+    var $root= $('html, body');
+
+    $('a').click(function(){
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $( '[name="' + href.substr(1) + '"]').offset().top
+        }, 1500, 'easeInOutExpo', function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
+
+</script>
+
+
+{% endif %}
+
 <!-- Javascript End -->
