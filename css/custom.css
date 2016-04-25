@@ -64,11 +64,16 @@ table{
     opacity: 0.5;
     cursor: pointer;
     text-transform: lowercase;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 @media (max-width: 768px){
     .intro .intro-body .intro-text{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
