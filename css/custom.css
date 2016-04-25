@@ -66,6 +66,12 @@ table{
     text-transform: lowercase;
 }
 
+@media (max-width: 768px){
+    .intro .intro-body .intro-text{
+        font-size: 18px;
+    }
+}
+
 #spin-molecule{
     width: 4vw;
     vertical-align: super;
