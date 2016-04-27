@@ -291,6 +291,14 @@ function addTohistory() {
 
     setTimeout( function(){ introTitle.click(); }, 1500);
 
+    (function(){})(
+        $.getJSON("https://api.github.com/repos/ohager/nanoflux/releases").done(function(result){
+            var latestVersion = result[0];
+            var element = $('#version a');
+            $(element).attr('href', latestVersion.html_url);
+            $(element).html(latestVersion.tag_name);
+        })
+    )
 
 </script>
 

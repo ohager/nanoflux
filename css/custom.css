@@ -71,6 +71,20 @@ table{
     user-select: none;
 }
 
+.justified {
+    text-align: justify;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.versionTag {
+}
+
+
+.quickstart {
+
+}
+
 @media (max-width: 768px){
     .intro .intro-body .intro-text{
         font-size: 16px;

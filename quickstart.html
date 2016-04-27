@@ -7,7 +7,9 @@ title: Quickstart
 
 <small>Or go straight to <a href="./docs/">documentation</a></small>
 
+<p class="justified">
 Pull package from <a href="https://www.npmjs.com/package/nanoflux" target="_blank">npm</a> or <a href="http://bower.io/search/?q=nanoflux" target="_blank">bower</a>
+</p>
 
 <pre><code class="shell">
 
@@ -16,9 +18,12 @@ Pull package from <a href="https://www.npmjs.com/package/nanoflux" target="_blan
 
 </code></pre>
 
+<p class="justified">
 Setup NanoFlux globally at the application's entry point, before any usage of NanoFlux. <br/>
 In this scenario we pretend to use a single *Dispatcher* only, <br/>
 although NanoFlux provides the ability to create multiple dispatchers.
+</p>
+
 <pre><code class="javascript">
     import NanoFlux from '../node_modules/nanoflux/dist/nanoflux.min';
     window.NanoFlux = NanoFlux;
@@ -30,7 +35,10 @@ although NanoFlux provides the ability to create multiple dispatchers.
 </code></pre>
 
 
+<p class="justified">
 Define your *Store* in a separate file.
+</p>
+
 <pre><code class="javascript">
     // it's highly recommended to use immutable structures
     import Immutable from '../node_module/seamless-immutable/seamless-immutable.production.min';
@@ -65,7 +73,10 @@ Define your *Store* in a separate file.
     NanoFlux.Dispatcher.connectTo(store);
 </code></pre>
 
+<p class="justified">
 Pronto! Now, we are ready to use our store in our components.
+</p>
+
 <pre><code class="javascript">
     class ProductContainer extends React.Component{
 
