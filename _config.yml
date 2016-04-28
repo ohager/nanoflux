@@ -102,7 +102,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-#disqus-shortname: "panossakkos"
+disqus-shortname: "nanoflux"
 
 syntax-highlight: True
 
