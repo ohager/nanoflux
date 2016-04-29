@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-04-22-api.md" afterPath="$PROJECT_DIR$/_posts/2016-04-22-api.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" afterPath="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" />
     </list>
     <ignored path="nanoflux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,16 +53,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grayscale.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/css/grayscale.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="363" selection-start-line="4" selection-start-column="360" selection-end-line="4" selection-end-column="363" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="js.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/js.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -104,14 +93,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2016-04-22-api.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2016-04-22-api.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-api.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="117" column="16" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+            <state relative-caret-position="187">
+              <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-04-22-fullflux-vs-fluxy.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -183,7 +185,6 @@
         <option value="$PROJECT_DIR$/_includes/about.html" />
         <option value="$PROJECT_DIR$/_includes/navigation.html" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
-        <option value="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-comparisons.md" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/credits.html" />
@@ -196,6 +197,7 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-api.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" />
       </list>
     </option>
   </component>
@@ -488,7 +490,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;api&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;docs&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/categories/docs.html&#10;config&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;quick&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;cus&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;custom&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;conf&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gray&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_site/css/grayscale.css&#10;cred&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/credits.html&#10;ap&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;js&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/js.html&#10;con&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;header&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/header.html&#10;inde&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/index.html&#10;head&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/head.html&#10;foot&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;about&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;cust&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;quicks&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;qui&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;po&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/post.html&#10;fo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;foo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;nav&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;quic&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/quickstart.html&#10;fea&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;gra&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;cu&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;c&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gr&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;grays&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;feat&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;abou&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;READ&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;action&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/actioncreator.js&#10;store&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/store.js&#10;read&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;pack&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/package.json&#10;.git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore" />
+    <property name="SearchEverywhereHistoryKey" value="fluxy&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-fullflux-vs-fluxy.md&#10;git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;api&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;docs&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/categories/docs.html&#10;config&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;quick&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;cus&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;custom&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;conf&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gray&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_site/css/grayscale.css&#10;cred&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/credits.html&#10;ap&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;js&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/js.html&#10;con&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;header&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/header.html&#10;inde&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/index.html&#10;head&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/head.html&#10;foot&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;about&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;cust&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;quicks&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;qui&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;po&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/post.html&#10;fo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;foo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;nav&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;quic&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/quickstart.html&#10;fea&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;gra&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;cu&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;c&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gr&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;grays&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;feat&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;abou&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;READ&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;action&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/actioncreator.js&#10;store&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/store.js&#10;read&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;pack&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/package.json&#10;.git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore" />
     <property name="JavaScriptLanguageLevel" value="JSX" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -643,7 +645,7 @@
       <workItem from="1461614345967" duration="162000" />
       <workItem from="1461774225067" duration="3852000" />
       <workItem from="1461847606242" duration="656000" />
-      <workItem from="1461929466550" duration="495000" />
+      <workItem from="1461929466550" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -705,7 +707,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109716000" />
+    <option name="totallyTimeSpent" value="109836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1011,16 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-comparisons.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -1160,8 +1152,19 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="117" column="16" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+        <state relative-caret-position="187">
+          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding />
         </state>
       </provider>

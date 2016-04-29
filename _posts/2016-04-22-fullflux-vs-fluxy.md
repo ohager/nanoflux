@@ -13,13 +13,12 @@ The following examples are analogue. The difference is, that in the fluxy versio
 
 #### Full Flux
 {% highlight javascript %}
-var dispatcher = NanoFlux.getDispatcher();
-var myActions = NanoFlux.createActions('myActions', dispatcher, {
+var myActions = NanoFlux.createActions('myActions', NanoFlux.getDispatcher(), {
 	addItem  : function(item){
-		dispatcher.dispatch('addItem', item);		
+		this.dispatch('addItem', item);		
 	},
 	loadItems : function(){
-		dispatcher.dispatch('loadItems');
+		this.dispatch('loadItems');
 	}
 });
 
