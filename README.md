@@ -1,5 +1,6 @@
 # nanoflux
 
+[__PROJECT SITE__](http://ohager.github.io/nanoflux/)
 
 __nanoflux__ is a *very* lightweight (about 3.5 KiB minified, and 1.25 KiB gzipped) dependency-free Flux implementation.
 
@@ -15,8 +16,7 @@ Furthermore, __nanoflux__ uses a pure functional approach as a performant soluti
 - Pure Functional approach (totally event less)
 - Support for full Flux using full stack of ActionProvider/Creator, Dispatcher, and Stores
 - Support for a simplified 'fluxy' concept, where Dispatcher is also ActionProvider
-- No singleton
-- Interoperable Stores
+- Interoperable/Chainable Stores
 - Multiple Dispatchers
 - Built in ActionCreator (*new*)
 - Quite fast (*recently optimized*)
