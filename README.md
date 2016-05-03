@@ -1,3 +1,5 @@
+https://travis-ci.org/ohager/nanoflux.svg?branch=master
+
 # nanoflux
 
 [__PROJECT SITE__](http://ohager.github.io/nanoflux/)
