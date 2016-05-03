@@ -1,4 +1,4 @@
-https://travis-ci.org/ohager/nanoflux.svg?branch=master
+[![Build Status](https://travis-ci.org/ohager/nanoflux.svg?branch=master)](https://travis-ci.org/ohager/nanoflux)
 
 # nanoflux
 
