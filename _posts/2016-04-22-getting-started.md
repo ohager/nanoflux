@@ -19,7 +19,7 @@ Pull the package in your project's directory using either `npm`, or `bower`:
 Once included in your project you need to define your stores, and wire them with your dispatcher(s):
   
 {% highlight javascript %} 
-var NanoFlux = require('../node_modules/nanoflux/dist/nanoflux.min.js');
+var NanoFlux = require('nanoflux');
        
 // the 'fluxy' version creates actions directly in dispatcher, which reduces verbosity
 // the dispatcher can be fetched using NanoFlux.getDispatcher([dispatcherName]);
@@ -30,7 +30,7 @@ var dispatcher = NanoFlux.createDispatcher('dispatcher', ['loadProducts', 'addPr
 dispatcher.connectTo( NanoFlux.createStore('shopStore', {        
         _products : null,
     
-        getProducts : { return this._products; }, // returns immutable
+        getProducts : function(){ return this._products; }, // returns immutable
     
         // automatically mapped using the convention on + [ActionName]
         onLoadProducts : function(){
