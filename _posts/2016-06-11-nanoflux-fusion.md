@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Getting Started
+title: Nanoflux Fusion
 category: docs
 tags: [ 'tutorial' ]
 ---
