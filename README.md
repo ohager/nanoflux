@@ -26,6 +26,9 @@ Furthermore, __nanoflux__ uses a pure functional approach as a performant soluti
 - Quite fast (*recently optimized*)
 - CommonJS, RequireJS ready
 
+> Hint: Have a look at [nanoflux-fusion](https://github.com/ohager/nanoflux-fusion), which is an upcoming extension for 
+*nanoflux* providing a even more comfortable API inspired by [redux](http://redux.js.org/)
+
 
 # Comparison to Facebook's Implementation
 
@@ -185,11 +188,3 @@ Use `npm run <task>` to execute additional task. Available tasks are:
  
 - test : Runs all tests
 - benchmark : Runs a performance benchmark for different Flux Implementations. 
-
-# TO DO
-
-- Exhaustive Field-Testing
-- More Performance Benchmarks
-- Client side Benchmarks
-- Neat diagrams for benchmark results
-
