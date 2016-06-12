@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/ohager/nanoflux.svg?branch=master)](https://travis-ci.org/ohager/nanoflux)
+[![npm version](https://img.shields.io/npm/v/nanoflux.svg?style=flat-square)](https://www.npmjs.com/package/nanoflux)
+[![npm downloads](https://img.shields.io/npm/dm/nanoflux.svg?maxAge=2592000)](https://www.npmjs.com/package/nanoflux)
 
 # nanoflux
 
