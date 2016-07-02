@@ -84,3 +84,46 @@ removeItem("item1");
 
        
 {% endhighlight %}
+
+### Multiple Fusionators
+
+With the growth of the project a single Fusionator would become quite large, and it could be cumbersome to find adequate actor names.
+Fortunately, *Fusion* is capable to support multiple Fusionators. Each Fusionator has its own namespace, avoiding naming conflicts though.
+
+If namespace is not given (good for simpler scenarios) the default namespace is used. 
+
+#### Multiple Fusionator Example
+
+{% highlight javascript %} 
+var NanoFlux = require('nanoflux-fusion');
+var fusionStore = NanoFlux.getFusionStore();
+
+
+var subscription = fusionStore.subscribe(this, function(state){
+    // ...
+});
+
+var FooFusionatorNS = "FooFusionator";
+var BarFusionatorNS = "BarFusionator";
+
+// Fusionator in FooFusionatorNS namespace
+NanoFlux.createFusionator({
+	foo : function(previousState, args){
+		return { foo : args[0] };
+	},
+}, FooFusionatorNS); /// <-- NAMESPACE as second argument
+
+// Fusionator in BarFusionatorNS namespace 
+NanoFlux.createFusionator({
+	// won't conflict with other Fusionator due to namespacing
+	foo : function(previousState, args){
+		return { foo : args[0] };
+	},
+}, BarFusionatorNS); /// <-- NAMESPACE as second argument
+
+// gets the fusion actors for different Fusionators
+var foo1 = NanoFlux.getFusionActor("foo", FooFusionatorNS); /// <-- NAMESPACE as second argument
+var foo2 = NanoFlux.getFusionActor("foo", BarFusionatorNS); /// <-- NAMESPACE as second argument
+       
+{% endhighlight %}
+
