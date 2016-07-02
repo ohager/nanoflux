@@ -8,7 +8,7 @@ tags: [ 'tutorial' ]
 
 ## Nanoflux Fusion 
 
-Nanoflux Fusion is an extension that adopts the Redux approach using reducer functions (I call them *Fusionators*) to
+Nanoflux Fusion is an evolution of Nanoflux that adopts the Redux approach using reducer functions (I call them *Fusionators*) to
  change the state inside the one and only store. 
 
 {% highlight shell %}
@@ -17,7 +17,7 @@ Nanoflux Fusion is an extension that adopts the Redux approach using reducer fun
   
 ## Differences to (Nano)Flux
 
-First of all, using *Fusion* you won't loose any of the original functionality, but you'll gain a very comfortable way to 
+First of all, using *Fusion* you won't lose any of the original functionality, but you'll gain a very comfortable way to 
 deal with application state. While the traditional approach uses Actions, Dispatcher(s) and Stores, the evolved *Fusion* 
 reduces the architecture to several Actions, which I call Actors in this case, and a single Store. Although, the Dispatcher 
 still exists, the user won't get in touch with it, as it is a hidden implementation detail. The main difference is, 
@@ -32,13 +32,55 @@ A *Fusionator* is a function that receives the previous state and the action arg
 Usually, the implementation distinguishes between several action types using if- or switch-statements. While 
 this grows proportionally to applications size, it is possible to break the logic in multiple *Fusionators*.
 
-{% highlight javascript %} 
-var NanoFlux = require('nanoflux-fusion');
-       
-// todo example       
-       
-{% endhighlight %}
-
 ### Actors
 
-TO DO
+Actors are called like normal functions with any kind of parameter. When a Fusionator is created, 
+the actors are constructed also and are available via __getFusionActor()__
+
+#### Simple Example
+
+{% highlight javascript %} 
+var NanoFlux = require('nanoflux-fusion');
+
+// NanoFlux provides a dedicated store
+var fusionStore = NanoFlux.getFusionStore();
+
+// subscription is the same as in NanoFlux, note that the function passes a state (which is immutable)
+var subscription = fusionStore.subscribe(this, function(state){
+	// ... do something with the state
+	// state is also available via fusionStore.getState()
+	console.log("Items:", state.items);
+});
+
+// the 'fusionator' is responsible for the state manipulation
+// it is called with two arguments, the previous state
+// and an arguments array containing the arguments passed on actors call.
+NanoFlux.createFusionator({
+	// the given function name is used as reference for getFusionActor() 
+	addItem : function(previousState, args){
+		var currentItems = previousState.items ? previousState.items.slice() :[] ;
+		currentItems.push(args[0]);
+		return { items : currentItems };
+	},
+	removeItem : function(previousState, args){
+		if (!previousState.items || previousState.items.length == 0) return {};
+
+		var items = previousState.items.filter(function (item) {
+			return item.name !== args[0].name;
+		});
+		return {items: items}
+	}
+});
+
+// gets the fusion actors, i.e. have the same name as defined above
+var addItem = NanoFlux.getFusionActor("addItem");
+var removeItem = NanoFlux.getFusionActor("removeItem");
+
+// use the actors as simple action functions
+addItem({ name: "item1", value : 1 });
+addItem({ name: "item2", value : 2 });
+
+removeItem("item1");
+
+       
+{% endhighlight %}
