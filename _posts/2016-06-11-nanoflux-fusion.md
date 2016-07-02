@@ -98,11 +98,11 @@ If namespace is not given (good for simpler scenarios) the default namespace is 
 var NanoFlux = require('nanoflux-fusion');
 var fusionStore = NanoFlux.getFusionStore();
 
-
 var subscription = fusionStore.subscribe(this, function(state){
     // ...
 });
 
+// the fusionator namespaces
 var FooFusionatorNS = "FooFusionator";
 var BarFusionatorNS = "BarFusionator";
 
