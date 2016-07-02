@@ -139,7 +139,7 @@ It is currently tested with the
  - [RSVP](https://github.com/tildeio/rsvp.js/)
  - [Bluebird](https://github.com/petkaantonov/bluebird/)
  
- ### Example
+### Asynchronous Actor Example
  
 ```javascript
 
