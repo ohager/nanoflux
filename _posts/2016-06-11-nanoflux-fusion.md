@@ -127,3 +127,60 @@ var foo2 = NanoFlux.getFusionActor("foo", BarFusionatorNS); /// <-- NAMESPACE as
        
 {% endhighlight %}
 
+## Asynchronous Actors
+
+*Fusion* supports asynchronous actions out-of-the-box. If a Fusionator returns a promise instead of a state object,
+the promise will be executed, i.e. action is asynchronous. The state shall be passed as argument of the resolver. 
+Chaining is also possible. *Fusion* aims to support all [A+ compliant](https://promisesaplus.com/) implementations. 
+It is currently tested with the 
+
+ - [native Promise-API](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/)
+ - [Q](https://github.com/kriskowal/q/)
+ - [RSVP](https://github.com/tildeio/rsvp.js/)
+ - [Bluebird](https://github.com/petkaantonov/bluebird/)
+ 
+ ### Example
+ 
+```javascript
+
+function asyncA(arg1){
+	return new Promise(function(resolve,reject){
+		setTimeout(function(){
+			// returns state to be merged
+			resolve({a: arg1);
+		}, 500)
+	})
+}
+ 
+function asyncB(arg1){
+	return new Promise(function(resolve,reject){
+		setTimeout(function(){
+			var newState = arg1;
+			newState.b = 5 + arg1.a;
+			resolve(newState);
+		}, 500)
+	})
+}
+
+var asyncFusionator = NanoFlux.createFusionator({
+	
+	simplePromise: function(prevState, args){
+			return asyncA(args[0]); 
+	}	
+	chainedPromises: function(prevState, args){
+		return asyncA(args[0]).then(function(data){
+			console.log(data); // data = {a: 5} 
+			return asyncB(data);  
+		});
+	}
+});
+
+var simplePromise = NanoFlux.getFusionActor("simplePromise");
+var chainedPromises = NanoFlux.getFusionActor("chainedPromises");
+
+// call the actions
+simplePromise(5); // state will be { a: 5 }
+chainedPromises(5); // state will be { a: 5, b: 10 }
+
+```  
+
