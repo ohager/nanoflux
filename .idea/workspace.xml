@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/swipe-instructions.html" afterPath="$PROJECT_DIR$/_includes/swipe-instructions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" afterPath="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
     </list>
     <ignored path="nanoflux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_layouts/blog.html">
+      <file leaf-file-name="2016-06-11-nanoflux-fusion.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="-44">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -99,10 +101,10 @@
         <option value="$PROJECT_DIR$/quickstart.html" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-getting-started.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-comparisons.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_includes/swipe-instructions.html" />
+        <option value="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
       </list>
     </option>
   </component>
@@ -447,7 +449,7 @@
       <workItem from="1465650620993" duration="274000" />
       <workItem from="1465655047726" duration="2379000" />
       <workItem from="1467483746538" duration="3514000" />
-      <workItem from="1467647061246" duration="816000" />
+      <workItem from="1467647061246" duration="1233000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -509,7 +511,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116819000" />
+    <option name="totallyTimeSpent" value="117236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
@@ -868,17 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="141" column="23" selection-start-line="141" selection-start-column="23" selection-end-line="141" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-comparisons.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -982,6 +973,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <marker date="1467647055595" expanded="true" signature="73:701" ph="..." />
+            <marker date="1467647055595" expanded="true" signature="110:693" ph="..." />
+            <marker date="1467647055595" expanded="true" signature="216:624" ph="..." />
+            <marker date="1467647055595" expanded="true" signature="241:609" ph="..." />
+            <marker date="1467647055595" expanded="true" signature="315:596" ph="..." />
+            <marker date="1467647055595" expanded="true" signature="419:541" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding />
         </state>
       </provider>

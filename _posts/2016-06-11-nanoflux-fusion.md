@@ -8,7 +8,7 @@ tags: [ 'tutorial' ]
 
 ## Nanoflux Fusion 
 
-Nanoflux Fusion is an evolution of Nanoflux that adopts the Redux approach using reducer functions (I call them *Fusionators*) to
+__Nanoflux Fusion__ is an evolution of Nanoflux that adopts the Redux approach using reducer functions (I call them *Fusionators*) to
  change the state inside the one and only store. 
 
 {% highlight shell %}
@@ -19,7 +19,7 @@ Nanoflux Fusion is an evolution of Nanoflux that adopts the Redux approach using
 
 First of all, using *Fusion* you won't lose any of the original functionality, but you'll gain a very comfortable way to 
 deal with application state. While the traditional approach uses Actions, Dispatcher(s) and Stores, the evolved *Fusion* 
-reduces the architecture to several Actions, which I call Actors in this case, and a single Store. Although, the Dispatcher 
+reduces the architecture to several Actions, which I call Actors in this case, and a __single__ Store. Although, the Dispatcher 
 still exists, the user won't get in touch with it, as it is a hidden implementation detail. The main difference is, 
 that there's no need to implement the Store, as the state manipulation is done within the assign/merge/fuse/reduce functions 
 (named *Fusionators*), which are handled by the dedicated Fusion store. The *Fusion* interface provides also a special 
@@ -42,7 +42,7 @@ the actors are constructed also and are available via __getFusionActor()__
 {% highlight javascript %} 
 var NanoFlux = require('nanoflux-fusion');
 
-// NanoFlux provides a dedicated store
+// NanoFlux provides a single, one-and-only dedicated store
 var fusionStore = NanoFlux.getFusionStore();
 
 // subscription is the same as in NanoFlux, note that the function passes a state (which is immutable)
@@ -60,6 +60,8 @@ NanoFlux.createFusionator({
 	addItem : function(previousState, args){
 		var currentItems = previousState.items ? previousState.items.slice() :[] ;
 		currentItems.push(args[0]);
+		// IMPORTANT: Here an *object* is returned
+		// The object represents (a part of) the application state 
 		return { items : currentItems };
 	},
 	removeItem : function(previousState, args){
