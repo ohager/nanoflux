@@ -11,6 +11,10 @@ table{
     background-color: #457314;
 }
 
+#fusion{
+    background-color: #4B1053;
+}
+
 #quickstart{
     background-color: #6F1335;
 }
@@ -28,7 +32,8 @@ table{
     margin-left: 0px;
 }
 
-#features [class*="flaticon-"]:before{
+#features [class*="flaticon-"]:before,
+#fusion [class*="flaticon-"]:before{
     font-size: 6em;
     margin: 0;
     padding: 16px;
@@ -42,7 +47,8 @@ table{
     border: 2px solid white;
 }
 
-#features h3{
+#features h3,
+#fusion h3{
     margin-top: 1em;
 }
 
