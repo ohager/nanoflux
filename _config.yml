@@ -33,7 +33,7 @@ lang: "en"
 author: "Oliver Häger"
 title: "nanoflux"
 description: "nanoflux - a lightweight and comfortable Flux implementation"
-keywords: "häger, oliver, nanoflux, flux, npm, bower"
+keywords: "häger, oliver, nanoflux, flux, npm, bower, redux, reflux"
 favicon: "/img/favicon.ico"
 
 ################
@@ -99,8 +99,8 @@ reddit-share: True
 google-plus-share: True
 tumblr-share: True
 pinterest-share: True
-pocket-share: True
-vkontakte-share: True
+pocket-share: False
+vkontakte-share: False
 
 disqus-shortname: "nanoflux"
 
