@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+      <file leaf-file-name="fusion.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fusion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="677">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/404.html" />
         <option value="$PROJECT_DIR$/latest-post.html" />
         <option value="$PROJECT_DIR$/_includes/features.html" />
         <option value="$PROJECT_DIR$/_includes/quicstart.html" />
@@ -101,8 +100,9 @@
         <option value="$PROJECT_DIR$/_includes/credits.html" />
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/about.html" />
-        <option value="$PROJECT_DIR$/fusion.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_includes/fusion.html" />
+        <option value="$PROJECT_DIR$/fusion.html" />
       </list>
     </option>
   </component>
@@ -218,7 +218,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,7 +232,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
+              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,7 +405,7 @@
       <workItem from="1465650620993" duration="274000" />
       <workItem from="1465655047726" duration="2379000" />
       <workItem from="1467483746538" duration="3514000" />
-      <workItem from="1467647061246" duration="5580000" />
+      <workItem from="1467647061246" duration="5904000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -467,7 +467,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121583000" />
+    <option name="totallyTimeSpent" value="121907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
@@ -581,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -638,13 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1043,30 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/fusion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467647055424" expanded="true" signature="106:240" ph="..." />
-            <marker date="1467647055424" expanded="true" signature="126:229" ph="..." />
-            <marker date="1467647055424" expanded="true" signature="170:220" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/quickstart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467647055544" expanded="true" signature="111:304" ph="..." />
-            <marker date="1467647055544" expanded="true" signature="131:234" ph="..." />
-            <marker date="1467647055544" expanded="true" signature="175:225" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-313">
@@ -1150,26 +1112,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fusion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="41" column="30" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="30" />
-          <folding>
-            <marker date="1467652642880" expanded="true" signature="92:758" ph="..." />
-            <marker date="1467652642880" expanded="true" signature="119:254" ph="..." />
-            <marker date="1467652642880" expanded="true" signature="282:425" ph="..." />
-            <marker date="1467652642880" expanded="true" signature="453:577" ph="..." />
-            <marker date="1467652642880" expanded="true" signature="605:751" ph="..." />
-            <marker date="1467652642880" expanded="true" signature="763:1252" ph="..." />
-            <marker date="1467652642880" expanded="true" signature="1258:1377" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1467652642898" expanded="true" signature="542:551" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="831:836" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="1347:1351" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="1361:1366" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="1394:1398" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="1411:1416" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="1495:1497" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="1511:1514" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="1529:1533" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="1962:1966" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2275:2277" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2289:2291" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2306:2310" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2321:2325" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2341:2345" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2362:2366" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2381:2385" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2405:2409" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2424:2428" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2446:2450" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2465:2470" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2488:2493" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="2543:2547" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="4353:4363" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="4375:4390" ph="..." />
+            <marker date="1467652642898" expanded="true" signature="4395:4401" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <marker date="1467647055399" expanded="true" signature="106:240" ph="..." />
+            <marker date="1467647055399" expanded="true" signature="126:229" ph="..." />
+            <marker date="1467647055399" expanded="true" signature="170:220" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/quickstart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <marker date="1467647055544" expanded="true" signature="111:304" ph="..." />
+            <marker date="1467647055544" expanded="true" signature="131:234" ph="..." />
+            <marker date="1467647055544" expanded="true" signature="175:225" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/fusion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <marker date="1467652964122" expanded="true" signature="106:346" ph="..." />
+            <marker date="1467652964122" expanded="true" signature="126:229" ph="..." />
+            <marker date="1467652964122" expanded="true" signature="170:220" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fusion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
