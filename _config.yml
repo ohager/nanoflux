@@ -172,7 +172,7 @@ pages_list:
   About: 'about'
   Features: 'features'
   Quickstart: 'quickstart'
-  Nanoflux Fusion: 'fusion'
+  Fusion: 'fusion'
   Credits: 'credits'
 
 # Exclusion list from the generated _site
