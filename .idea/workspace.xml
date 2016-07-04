@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-313">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="176">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,11 +98,11 @@
         <option value="$PROJECT_DIR$/_posts/2016-04-22-comparisons.md" />
         <option value="$PROJECT_DIR$/_includes/swipe-instructions.html" />
         <option value="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
-        <option value="$PROJECT_DIR$/about.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/fusion.html" />
         <option value="$PROJECT_DIR$/_includes/credits.html" />
         <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/fusion.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -246,7 +246,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="swipe&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/swipe-instructions.html&#10;.git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;fluxy&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-fullflux-vs-fluxy.md&#10;git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;api&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;docs&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/categories/docs.html&#10;config&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;quick&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;cus&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;custom&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;conf&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gray&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_site/css/grayscale.css&#10;cred&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/credits.html&#10;ap&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;js&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/js.html&#10;con&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;header&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/header.html&#10;inde&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/index.html&#10;head&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/head.html&#10;foot&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;about&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;cust&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;quicks&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;qui&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;po&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/post.html&#10;fo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;foo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;nav&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;quic&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/quickstart.html&#10;fea&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;gra&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;cu&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;c&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gr&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;grays&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;feat&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;abou&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;READ&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;action&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/actioncreator.js&#10;store&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/store.js&#10;read&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;pack&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/package.json" />
+    <property name="SearchEverywhereHistoryKey" value="navi&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;header&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/header.html&#10;swipe&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/swipe-instructions.html&#10;.git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;fluxy&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-fullflux-vs-fluxy.md&#10;git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;api&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;docs&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/categories/docs.html&#10;config&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;quick&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;cus&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;custom&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;conf&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gray&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_site/css/grayscale.css&#10;cred&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/credits.html&#10;ap&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;js&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/js.html&#10;con&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;inde&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/index.html&#10;head&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/head.html&#10;foot&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;about&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;cust&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;quicks&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;qui&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;po&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/post.html&#10;fo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;foo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;nav&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;quic&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/quickstart.html&#10;fea&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;gra&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;cu&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;c&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gr&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;grays&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;feat&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;abou&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;READ&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;action&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/actioncreator.js&#10;store&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/store.js&#10;read&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;pack&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/package.json" />
     <property name="JavaScriptLanguageLevel" value="JSX" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -405,7 +405,7 @@
       <workItem from="1465650620993" duration="274000" />
       <workItem from="1465655047726" duration="2379000" />
       <workItem from="1467483746538" duration="3514000" />
-      <workItem from="1467647061246" duration="5210000" />
+      <workItem from="1467647061246" duration="5580000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -467,7 +467,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121213000" />
+    <option name="totallyTimeSpent" value="121583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
@@ -982,42 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="145" selection-start-line="9" selection-start-column="145" selection-end-line="9" selection-end-column="145" />
-          <folding>
-            <marker date="1467647055463" expanded="true" signature="44:683" ph="..." />
-            <marker date="1467647055463" expanded="true" signature="71:673" ph="..." />
-            <marker date="1467647055463" expanded="true" signature="99:664" ph="..." />
-            <marker date="1467647055463" expanded="true" signature="123:653" ph="..." />
-            <marker date="1467647055463" expanded="true" signature="173:638" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <marker date="1467647055524" expanded="true" signature="96:2069" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="122:2062" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="154:719" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="264:315" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="421:713" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="496:708" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="530:695" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="870:2053" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="904:2042" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="1069:1158" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="1310:1752" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="1810:1882" ph="..." />
-            <marker date="1467647055524" expanded="true" signature="1897:2030" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1036,18 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <marker date="1467648753699" expanded="true" signature="85:725" ph="..." />
-            <marker date="1467648753699" expanded="true" signature="1162:1269" ph="..." />
-            <marker date="1467648753699" expanded="true" signature="1274:1440" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1061,56 +1013,6 @@
         <state relative-caret-position="242">
           <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fusion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <marker date="1467651801276" expanded="true" signature="92:756" ph="..." />
-            <marker date="1467651801276" expanded="true" signature="119:254" ph="..." />
-            <marker date="1467651801276" expanded="true" signature="282:425" ph="..." />
-            <marker date="1467651801276" expanded="true" signature="453:577" ph="..." />
-            <marker date="1467651801276" expanded="true" signature="605:749" ph="..." />
-            <marker date="1467651801276" expanded="true" signature="761:1250" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="174" column="2" selection-start-line="174" selection-start-column="2" selection-end-line="174" selection-end-column="2" />
-          <folding>
-            <marker date="1467651647126" expanded="true" signature="486:495" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="775:780" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="1291:1295" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="1305:1310" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="1338:1342" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="1355:1360" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="1439:1441" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="1455:1458" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="1473:1477" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="1906:1910" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2219:2221" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2233:2235" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2250:2254" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2265:2269" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2285:2289" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2306:2310" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2325:2329" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2349:2353" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2368:2372" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2390:2394" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2409:2414" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2432:2437" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="2487:2491" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="4297:4307" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="4319:4334" ph="..." />
-            <marker date="1467651647126" expanded="true" signature="4339:4345" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1169,6 +1071,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-313">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <marker date="1467652273111" expanded="true" signature="5:46" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="54:88" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="99:133" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="142:176" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="189:223" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="245:299" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="313:347" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="464:489" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="565:1074" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1100:1124" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1147:1186" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1217:1240" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1273:1299" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1335:1669" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1682:1754" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1768:1771" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1786:1790" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1817:1887" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1853:1885" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="1903:2082" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="2105:2153" ph="..." />
+            <marker date="1467652273111" expanded="true" signature="2112:2151" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="2178:2229" ph="..." />
+            <marker date="1467652273111" expanded="true" signature="2185:2227" ph="{...}" />
+            <marker date="1467652273111" expanded="true" signature="2247:2289" ph="..." />
+            <marker date="1467652273111" expanded="true" signature="2254:2287" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <marker date="1467652419364" expanded="true" signature="85:725" ph="..." />
+            <marker date="1467652419364" expanded="true" signature="1162:1269" ph="..." />
+            <marker date="1467652419364" expanded="true" signature="1274:1411" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="56" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <marker date="1467647055524" expanded="true" signature="96:2069" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="122:2062" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="154:719" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="264:315" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="421:713" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="496:708" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="530:695" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="870:2053" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="904:2042" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="1069:1158" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="1310:1752" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="1810:1882" ph="..." />
+            <marker date="1467647055524" expanded="true" signature="1897:2030" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1467647055463" expanded="true" signature="44:683" ph="..." />
+            <marker date="1467647055463" expanded="true" signature="71:673" ph="..." />
+            <marker date="1467647055463" expanded="true" signature="99:664" ph="..." />
+            <marker date="1467647055463" expanded="true" signature="123:653" ph="..." />
+            <marker date="1467647055463" expanded="true" signature="173:638" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fusion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <marker date="1467652642880" expanded="true" signature="92:758" ph="..." />
+            <marker date="1467652642880" expanded="true" signature="119:254" ph="..." />
+            <marker date="1467652642880" expanded="true" signature="282:425" ph="..." />
+            <marker date="1467652642880" expanded="true" signature="453:577" ph="..." />
+            <marker date="1467652642880" expanded="true" signature="605:751" ph="..." />
+            <marker date="1467652642880" expanded="true" signature="763:1252" ph="..." />
+            <marker date="1467652642880" expanded="true" signature="1258:1377" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

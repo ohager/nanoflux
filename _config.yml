@@ -5,6 +5,7 @@
 
 url: "https://ohager.github.io"
 repo: "https://github.com/ohager/nanoflux"
+fusionrepo: "https://github.com/ohager/nanoflux-fusion"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
