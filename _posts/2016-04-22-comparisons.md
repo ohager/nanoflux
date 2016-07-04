@@ -19,6 +19,7 @@ tags: [ 'tutorial' ]
       ['Facebook', 2, 163983.67],
       ['NanoFlux', 3.5, 157380],
       ['Reflux', 18, 61861.33],
+      ['NanoFlux Fusion(*)', 6, 33680],
       ['Alt', 23, 27704.33],
       ['DeLorean', 20, 9350.33]
     ]);
@@ -88,3 +89,4 @@ Obviously, the reference implementation from Facebook is slightly superior, but 
 Currently, all performance measuring is done server side using `nodejs`. I think it is slightly slower than Facebooks implementation, 
 as __nanoflux__ uses a comfortable auto-binding, without verbose switch-case-statements like the Facebook version. Nevertheless, it should be fast enough :)
 
+> Note: __Nanoflux Fusion__ maintains immutable states, therefore it's runtime performance is implicitely worse than any implementation dealing with mutable states.
