@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-04-22-api.md" afterPath="$PROJECT_DIR$/_posts/2016-04-22-api.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fusion.html" afterPath="$PROJECT_DIR$/fusion.html" />
     </list>
     <ignored path="nanoflux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,16 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2016-04-22-api.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-api.md">
+      <file leaf-file-name="fusion.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fusion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="286" column="46" selection-start-line="286" selection-start-column="46" selection-end-line="286" selection-end-column="46" />
+            <state relative-caret-position="126">
+              <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -100,11 +97,11 @@
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_includes/fusion.html" />
-        <option value="$PROJECT_DIR$/fusion.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
         <option value="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-api.md" />
+        <option value="$PROJECT_DIR$/fusion.html" />
       </list>
     </option>
   </component>
@@ -423,7 +420,7 @@
       <workItem from="1467647061246" duration="6092000" />
       <workItem from="1467719909502" duration="91000" />
       <workItem from="1467720441618" duration="2690000" />
-      <workItem from="1467726137169" duration="1557000" />
+      <workItem from="1467726137169" duration="1641000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -485,7 +482,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126433000" />
+    <option name="totallyTimeSpent" value="126517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1924" height="1038" extended-state="0" />
@@ -852,13 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fusion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -906,13 +896,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-api.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="286" column="46" selection-start-line="286" selection-start-column="46" selection-end-line="286" selection-end-column="46" />
+        <state relative-caret-position="1058">
+          <caret line="286" column="45" selection-start-line="286" selection-start-column="45" selection-end-line="286" selection-end-column="45" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fusion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
