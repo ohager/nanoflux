@@ -29,8 +29,7 @@ action creator, which returns action functions (named *Actors*).
 
 *Fusionators* are implemented by the user and defines the logic *how* state will change.
 A *Fusionator* is a function that receives the previous state and the action arguments and returns the new state. 
-Usually, the implementation distinguishes between several action types using if- or switch-statements. While 
-this grows proportionally to applications size, it is possible to break the logic in multiple *Fusionators*.
+While this grows proportionally to applications size, it is possible to break the logic in multiple *Fusionators*.
 
 ### Actors
 
