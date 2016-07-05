@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" afterPath="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" afterPath="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" />
     </list>
     <ignored path="nanoflux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2016-07-05-fusion-api.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md">
+      <file leaf-file-name="2016-06-11-nanoflux-fusion.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+            <state relative-caret-position="154">
+              <caret line="130" column="27" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -104,8 +103,8 @@
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-api.md" />
         <option value="$PROJECT_DIR$/fusion.html" />
-        <option value="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
         <option value="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
       </list>
     </option>
   </component>
@@ -424,7 +423,7 @@
       <workItem from="1467647061246" duration="6092000" />
       <workItem from="1467719909502" duration="91000" />
       <workItem from="1467720441618" duration="2690000" />
-      <workItem from="1467726137169" duration="2519000" />
+      <workItem from="1467726137169" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -486,7 +485,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127395000" />
+    <option name="totallyTimeSpent" value="127474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1924" height="1038" extended-state="0" />
@@ -904,10 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="130" column="21" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="21" />
+        <state relative-caret-position="533">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -915,10 +914,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="154">
+          <caret line="130" column="27" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="27" />
           <folding />
         </state>
       </provider>
