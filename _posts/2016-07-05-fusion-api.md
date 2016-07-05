@@ -72,14 +72,14 @@ __`getFusionActor( actorId, namespace? )`__
 
 Returns a function object, i.e. a specific action for a specific Fusionator. Actors are created automatically when a calling [*createFusionator()*](#createFusionator).
 The *actorId* is the functions name defined in the Fusionator. Using namespaces helps to avoid naming collisions, when using
-multiple Fusionators.
+multiple Fusionators. If namespace is not given, the default namespace is used.
 
  
  {% highlight javascript %}
  var fooNS = 'fooNamespace';
  
  NanoFlux.createFusionator({
- 	// will be mapped to actor name 'addItem'
+ 	// will be mapped to actor name 'myAction'
  	myAction  : function(previousState, args){
  		return { 
  		    bar: { foo:  "foo"}, 
