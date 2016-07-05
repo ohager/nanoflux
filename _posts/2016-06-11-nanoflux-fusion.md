@@ -128,6 +128,7 @@ var foo2 = NanoFlux.getFusionActor("foo", BarFusionatorNS); /// <-- NAMESPACE as
        
 {% endhighlight %}
 
+<a name='asynchronous'></a>
 ## Asynchronous Actors
 
 *Fusion* supports asynchronous actions out-of-the-box. If a Fusionator returns a promise instead of a state object,

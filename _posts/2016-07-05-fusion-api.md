@@ -47,6 +47,8 @@ where *previousState* is the __immutable__ application state, and *argumentList*
 The optional *namespace* argument can be used when breaking Fusionators in smaller units (important for larger applications). 
 They avoid namespace collisions, as it could be cumbersome to invent non-colliding action names :)  
 
+For [asynchronous operations](http://ohager.github.io/nanoflux/docs/2016/06/11/nanoflux-fusion.html#asynchronous) you may return a [A+ compliant](https://promisesaplus.com/) Promise object, where the state *shall* returned as argument of the resolver function.
+
 This method does return nothing! 
 
 > Note: The returned object can be of any complexity, as immutability is done recursively. Although, this may have 
