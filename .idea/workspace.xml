@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" afterPath="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" />
     </list>
     <ignored path="nanoflux.iws" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="2016-07-05-fusion-api.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+            <state relative-caret-position="572">
+              <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -423,7 +424,7 @@
       <workItem from="1467647061246" duration="6092000" />
       <workItem from="1467719909502" duration="91000" />
       <workItem from="1467720441618" duration="2690000" />
-      <workItem from="1467726137169" duration="938000" />
+      <workItem from="1467726137169" duration="1366000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -485,7 +486,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125814000" />
+    <option name="totallyTimeSpent" value="126242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1924" height="1038" extended-state="0" />
@@ -905,8 +906,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        <state relative-caret-position="572">
+          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
           <folding />
         </state>
       </provider>

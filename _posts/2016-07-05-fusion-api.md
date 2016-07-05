@@ -25,7 +25,7 @@ __`getFusionStore()`__
 __nanoflux Fusion__ works with a dedicated single store only. This method returns this store, i.e. a normal *nanoflux* store. 
 It is already connected to the default dispatcher, so there`s no need to care about the internals. 
 
-This store has only two public method, which are  
+This store has only two public functions, which are  
 
  - `getState()`, which returns the __immutable__ application state.
  - `subscribe()`, which connects components to listen to changes on this store (the same as in *nanoflux*)
@@ -35,10 +35,8 @@ __`createFusionator( descriptor, namespaces )`__
 
 Creates a Fusionator with optional namespace.
  
-The descriptor is a JSON object containing the Fusionators available methods. The method __must__ return a JSON object, which
- is/will be part of the application state. 
- 
-Each function of a Fusionator has the following signature
+The *descriptor* is a JSON object containing the Fusionators available functions. The method __must__ return a JSON object, which
+ is/will be part of the application state. Each function of a Fusionator has the following signature
 
 {% highlight javascript %}
 function(previousState, argumentList)
