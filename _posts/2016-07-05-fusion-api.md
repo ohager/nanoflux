@@ -10,8 +10,8 @@ tags: [ 'tutorial' ]
 
 #### [Fusion API](#fusionAPI)
 - __[getFusionStore()](#getFusionStore)__
-- __[createFusionator(descriptor, namespace?)](#createFusionator)
-- __[getFusionActor(actionName, namespace?)](#getFusionActor)
+- __[createFusionator(descriptor, namespace?)](#createFusionator)__
+- __[getFusionActor(actionName, namespace?)](#getFusionActor)__
 
 ## <a name='fusionAPI'></a> NanoFlux Fusion API
 
