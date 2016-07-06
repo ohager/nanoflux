@@ -31,12 +31,13 @@ This store has only two public functions, which are
  - `subscribe()`, which connects components to listen to changes on this store (the same as in *nanoflux*)
 
 <a name='createFusionator'></a>
-__`createFusionator( descriptor, namespaces )`__
+__`createFusionator( descriptor, namespace? )`__
 
 Creates a Fusionator with optional namespace.
  
-The *descriptor* is a JSON object containing the Fusionators available functions. The method __must__ return a JSON object, which
- is/will be part of the application state. Each function of a Fusionator has the following signature
+The *descriptor* is a JSON object containing the Fusionators available functions. The method __must__ return a JSON object 
+or a [A+ compliant](https://promisesaplus.com/) Promise in case of [asynchronous actions](http://ohager.github.io/nanoflux/docs/2016/06/11/nanoflux-fusion.html#asynchronous). 
+The passed object will become part of the application state then. Each function of a Fusionator has the following signature
 
 {% highlight javascript %}
 function(previousState, argumentList)
@@ -44,14 +45,10 @@ function(previousState, argumentList)
  
 where *previousState* is the __immutable__ application state, and *argumentList* is an array of arguments passed on the related Actors call.
 
-The optional *namespace* argument can be used when breaking Fusionators in smaller units (important for larger applications). 
-They avoid namespace collisions, as it could be cumbersome to invent non-colliding action names :)  
+The optional *namespace* argument should be used when breaking Fusionators apart (important for larger applications). With namespace you avoid
+naming collisions. If a namespace is not given the default namespace is used.
 
-For [asynchronous operations](http://ohager.github.io/nanoflux/docs/2016/06/11/nanoflux-fusion.html#asynchronous) you may return a [A+ compliant](https://promisesaplus.com/) Promise object, where the state *shall* returned as argument of the resolver function.
-
-This method does return nothing! 
-
-> Note: The returned object can be of any complexity, as immutability is done recursively. Although, this may have 
+> Note: The state object can be of any complexity, as immutability is done recursively. Although, this may have 
 impact on runtime performance, it was proven that performance is sufficient even for several thousand states.
   
 {% highlight javascript %}
@@ -72,7 +69,7 @@ __`getFusionActor( actorId, namespace? )`__
 
 Returns a function object, i.e. a specific action for a specific Fusionator. Actors are created automatically when a calling [*createFusionator()*](#createFusionator).
 The *actorId* is the functions name defined in the Fusionator. Using namespaces helps to avoid naming collisions, when using
-multiple Fusionators. If namespace is not given, the default namespace is used.
+multiple Fusionators. If namespace is not given the default namespace is used.
 
  
  {% highlight javascript %}
