@@ -31,7 +31,7 @@ This store has only two public functions, which are
  - `subscribe()`, which connects components to listen to changes on this store (the same as in *nanoflux*)
 
 <a name='createFusionator'></a>
-__`createFusionator( descriptor, namespace? )`__
+__`createFusionator( descriptor, initialState, namespace? )`__
 
 Creates a Fusionator with optional namespace.
  
@@ -45,6 +45,8 @@ function(previousState, argumentList)
  
 where *previousState* is the __immutable__ application state, and *argumentList* is an array of arguments passed on the related Actors call.
 
+Additionally, an initial state must be provided, i.e. a JSON object that describes your state at startup/before first action.
+
 The optional *namespace* argument should be used when breaking Fusionators apart (important for larger applications). With namespace you avoid
 naming collisions. If a namespace is not given the default namespace is used.
 
@@ -52,15 +54,22 @@ naming collisions. If a namespace is not given the default namespace is used.
 impact on runtime performance, it was proven that performance is sufficient even for several thousand states.
   
 {% highlight javascript %}
-NanoFlux.createFusionator({
+var descriptor = {
 	// will be mapped to actor name 'addItem'
 	addItem  : function(previousState, args){
-		var items = previousState.items || [];  
+		// items array is immutable, so we need to create a copy
+		var items = _.deepClone(previousState.items);
 		var item = args[0];		
 		items.push(item);
 		return { items: items }
 	}
-}, 'fooNamespace');
+};
+
+var initialState = { items: [] }
+
+NanoFlux.createFusionator(descriptor, initialState, 'fooNamespace');
+
+'fooNamespace');
 {% endhighlight %}
 
 
@@ -72,26 +81,35 @@ The *actorId* is the functions name defined in the Fusionator. Using namespaces 
 multiple Fusionators. If namespace is not given the default namespace is used.
 
  
- {% highlight javascript %}
- var fooNS = 'fooNamespace';
+{% highlight javascript %}
  
- NanoFlux.createFusionator({
- 	// will be mapped to actor name 'myAction'
- 	myAction  : function(previousState, args){
- 		return { 
- 		    bar: { foo:  "foo"}, 
- 		    a: args[0], // {a: 123, b: "text"}
- 		    b: args[1] // "2ndArg"
- 		}; 
- 	}
- }, fooNS);
+var descriptor = {
+	// will be mapped to actor name 'myAction'
+	myAction  : function(previousState, args){
+	    return { 
+	        bar: { foo:  "foo"}, 
+	        a: args[0], // {a: 123, b: "text"}
+	        b: args[1] // "2ndArg"
+	    }; 
+	}
+}
+
+var initialState = {
+	bar : {},
+	a: {},
+	b: {}
+};
+
+var fooNS = 'fooNamespace';
  
- // get Actor
- var myAction = NanoFlux.getFusionActor('myAction', fooNS);
- 
- // call Actor
- myAction({a: 123, b: "text"},"2ndArg");
- {% endhighlight %}
+NanoFlux.createFusionator(descriptor, initialState ,fooNS);
+  
+// get Actor
+var myAction = NanoFlux.getFusionActor('myAction', fooNS);
+
+// call Actor
+myAction({a: 123, b: "text"},"2ndArg");
+{% endhighlight %}
  
 
     

@@ -57,20 +57,24 @@ var subscription = fusionStore.subscribe(this, function(state){
 NanoFlux.createFusionator({
 	// the given function name is used as reference for getFusionActor() 
 	addItem : function(previousState, args){
-		var currentItems = previousState.items ? previousState.items.slice() :[] ;
+		// previousState is immutable, so we need to clone it (using lodash here)
+		var currentItems = _.deepClone(previousState.items);
 		currentItems.push(args[0]);
 		// IMPORTANT: Here an *object* is returned
 		// The object represents (a part of) the application state 
 		return { items : currentItems };
 	},
 	removeItem : function(previousState, args){
-		if (!previousState.items || previousState.items.length == 0) return {};
+		if (previousState.items.length == 0) return {};
 
 		var items = previousState.items.filter(function (item) {
-			return item.name !== args[0].name;
+			return item.name !== args[0];
 		});
 		return {items: items}
 	}
+},
+{
+	items: []
 });
 
 // gets the fusion actors, i.e. have the same name as defined above
@@ -110,17 +114,27 @@ var BarFusionatorNS = "BarFusionator";
 // Fusionator in FooFusionatorNS namespace
 NanoFlux.createFusionator({
 	foo : function(previousState, args){
-		return { foo : args[0] };
+		return { a : args[0] };
 	},
-}, FooFusionatorNS); /// <-- NAMESPACE as second argument
+}, 
+// initial state
+{
+	a : {}
+},
+FooFusionatorNS); /// <-- NAMESPACE as second argument
 
 // Fusionator in BarFusionatorNS namespace 
 NanoFlux.createFusionator({
 	// won't conflict with other Fusionator due to namespacing
 	foo : function(previousState, args){
-		return { foo : args[0] };
+		return { b : args[0] };
 	},
-}, BarFusionatorNS); /// <-- NAMESPACE as second argument
+}, 
+// initial state
+{
+	b : {}
+},
+BarFusionatorNS); /// <-- NAMESPACE as second argument
 
 // gets the fusion actors for different Fusionators
 var foo1 = NanoFlux.getFusionActor("foo", FooFusionatorNS); /// <-- NAMESPACE as second argument
@@ -149,18 +163,16 @@ It is currently tested with the
 function asyncA(arg1){
 	return new Promise(function(resolve,reject){
 		setTimeout(function(){
-			// returns state to be merged
-			resolve({a: arg1);
+			// returns state to be mergeds
+			resolve({a: arg1});
 		}, 500)
 	})
 }
  
-function asyncB(arg1){
+function asyncB(arg){
 	return new Promise(function(resolve,reject){
 		setTimeout(function(){
-			var newState = arg1;
-			newState.b = 5 + arg1.a;
-			resolve(newState);
+			resolve( {b: 5 + arg.a} );
 		}, 500)
 	})
 }
@@ -169,13 +181,18 @@ var asyncFusionator = NanoFlux.createFusionator({
 	
 	simplePromise: function(prevState, args){
 			return asyncA(args[0]); 
-	}	
+	},	
 	chainedPromises: function(prevState, args){
 		return asyncA(args[0]).then(function(data){
 			console.log(data); // data = {a: 5} 
 			return asyncB(data);  
 		});
 	}
+},
+// initial state
+{
+	a:0,
+	b:0
 });
 
 var simplePromise = NanoFlux.getFusionActor("simplePromise");
