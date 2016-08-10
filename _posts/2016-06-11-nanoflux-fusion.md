@@ -73,6 +73,7 @@ NanoFlux.createFusionator({
 		return {items: items}
 	}
 },
+// initial state
 {
 	items: []
 });

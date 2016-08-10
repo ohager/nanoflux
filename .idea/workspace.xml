@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" afterPath="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" afterPath="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" />
     </list>
     <ignored path="nanoflux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,21 +26,21 @@
         <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="681">
-                <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+              <first_editor relative-caret-position="373">
+                <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
                 <folding>
-                  <marker date="1470847252883" expanded="true" signature="5765:5910" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="5811:5907" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="5836:5898" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="5933:6051" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="5979:6048" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="6004:6039" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="6101:6348" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="6146:6178" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="6224:6346" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="6270:6341" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="6367:6369" ph="{...}" />
-                  <marker date="1470847252883" expanded="true" signature="6367:6381" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="5782:5927" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="5828:5924" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="5853:5915" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="5950:6068" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="5996:6065" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="6021:6056" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="6118:6365" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="6163:6195" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="6241:6363" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="6287:6358" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="6384:6386" ph="{...}" />
+                  <marker date="1470847371232" expanded="true" signature="6384:6398" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -439,7 +438,7 @@
       <workItem from="1467726137169" duration="3326000" />
       <workItem from="1467762869969" duration="21000" />
       <workItem from="1467808045077" duration="1331000" />
-      <workItem from="1470845796655" duration="1458000" />
+      <workItem from="1470845796655" duration="1577000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -501,7 +500,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131012000" />
+    <option name="totallyTimeSpent" value="131131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -914,21 +913,21 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="681">
-            <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+          <first_editor relative-caret-position="373">
+            <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
             <folding>
-              <marker date="1470847252883" expanded="true" signature="5765:5910" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="5811:5907" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="5836:5898" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="5933:6051" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="5979:6048" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="6004:6039" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="6101:6348" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="6146:6178" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="6224:6346" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="6270:6341" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="6367:6369" ph="{...}" />
-              <marker date="1470847252883" expanded="true" signature="6367:6381" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="5782:5927" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="5828:5924" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="5853:5915" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="5950:6068" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="5996:6065" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="6021:6056" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="6118:6365" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="6163:6195" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="6241:6363" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="6287:6358" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="6384:6386" ph="{...}" />
+              <marker date="1470847371232" expanded="true" signature="6384:6398" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
