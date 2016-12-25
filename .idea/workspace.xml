@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/nanoflux_node_modules.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nanoflux.iml" afterPath="$PROJECT_DIR$/.idea/nanoflux.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" afterPath="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" afterPath="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" />
     </list>
     <ignored path="nanoflux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,27 +27,56 @@
     <favorites_list name="nanoflux" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="2016-06-11-nanoflux-fusion.md" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="2016-06-11-nanoflux-fusion.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="373">
-                <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+              <first_editor relative-caret-position="785">
+                <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
                 <folding>
-                  <marker date="1470847371232" expanded="true" signature="5782:5927" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="5828:5924" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="5853:5915" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="5950:6068" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="5996:6065" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="6021:6056" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="6118:6365" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="6163:6195" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="6241:6363" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="6287:6358" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="6384:6386" ph="{...}" />
-                  <marker date="1470847371232" expanded="true" signature="6384:6398" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="5782:5927" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="5828:5924" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="5853:5915" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="5950:6068" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="5996:6065" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="6021:6056" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="6118:6365" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="6163:6195" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="6241:6363" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="6287:6358" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="6384:6398" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="6965:7021" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="7335:7709" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="7403:7571" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="7426:7513" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="7672:7706" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="8126:8375" ph="{...}" />
+                  <marker date="1482688243547" expanded="true" signature="8180:8372" ph="{...}" />
                 </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-07-05-fusion-api.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="572">
+                <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                <folding />
               </first_editor>
               <second_editor />
             </state>
@@ -105,7 +140,6 @@
         <option value="$PROJECT_DIR$/_posts/2016-04-22-fullflux-vs-fluxy.md" />
         <option value="$PROJECT_DIR$/quickstart.html" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-getting-started.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_posts/2016-04-22-comparisons.md" />
         <option value="$PROJECT_DIR$/_includes/swipe-instructions.html" />
         <option value="$PROJECT_DIR$/_includes/credits.html" />
@@ -117,6 +151,7 @@
         <option value="$PROJECT_DIR$/fusion.html" />
         <option value="$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md" />
         <option value="$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -129,9 +164,12 @@
   <component name="JsKarmaPackageDirSetting">
     <data>C:\coding\devbutze\projects\nanoflux\node_modules\karma</data>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1924" />
+    <option name="x" value="-9" />
+    <option name="width" value="1927" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -159,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -265,6 +302,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,6 +477,7 @@
       <workItem from="1467762869969" duration="21000" />
       <workItem from="1467808045077" duration="1331000" />
       <workItem from="1470845796655" duration="1577000" />
+      <workItem from="1482686572712" duration="1736000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -500,13 +539,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131131000" />
+    <option name="totallyTimeSpent" value="132867000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
+    <frame x="-9" y="0" width="1927" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35047218" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35044527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -661,13 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -896,8 +928,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1870">
-            <caret line="100" column="2" selection-start-line="100" selection-start-column="2" selection-end-line="100" selection-end-column="2" />
+          <first_editor relative-caret-position="572">
+            <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -913,21 +945,27 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="373">
-            <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+          <first_editor relative-caret-position="785">
+            <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
             <folding>
-              <marker date="1470847371232" expanded="true" signature="5782:5927" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="5828:5924" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="5853:5915" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="5950:6068" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="5996:6065" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="6021:6056" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="6118:6365" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="6163:6195" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="6241:6363" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="6287:6358" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="6384:6386" ph="{...}" />
-              <marker date="1470847371232" expanded="true" signature="6384:6398" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="5782:5927" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="5828:5924" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="5853:5915" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="5950:6068" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="5996:6065" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="6021:6056" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="6118:6365" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="6163:6195" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="6241:6363" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="6287:6358" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="6384:6398" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="6965:7021" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="7335:7709" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="7403:7571" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="7426:7513" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="7672:7706" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="8126:8375" ph="{...}" />
+              <marker date="1482688243547" expanded="true" signature="8180:8372" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -936,6 +974,14 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="130" column="27" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

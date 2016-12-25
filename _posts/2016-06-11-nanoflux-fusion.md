@@ -205,3 +205,67 @@ chainedPromises(5); // state will be { a: 5, b: 10 }
 
 ```  
 
+### Middleware 
+
+*Fusion* provides a simple middleware interface to apply generic functionality *before* states are merged into the application state.
+The `Fusion Store`'s `use` method accepts a function of the following structure
+ 
+ ```javascript
+ const middlewareFunction = function (newState, currentState){
+    // ... your implementation
+    return newState;
+ }
+ ```
+The `newState` argument is the state object returned from the Fusionator, while the `currentState` is the most recent application state. 
+The middleware functions are called in the order as they are added to the store.   
+
+#### Very Simple Logger Middleware Example
+
+```javascript
+function LoggerMiddleware(){
+    var logData = [];
+
+    this.log = function(newState, oldState){
+        logData.push({
+            timestamp: Date.now(),
+            state: _.cloneDeep(oldState)
+        });
+
+        return newState; // must return a state 
+    };
+
+    this.countLogEntries = function(){ return logData.length };
+    this.getLogEntry = function(t){
+        return logData[t];
+    };
+}
+
+var fusionStore = NanoFlux.getFusionStore();
+var logger = new LoggerMiddleware();
+fusionStore.use( logger.log );
+```
+
+#### State Modifying Middlewre   
+
+Each middleware *must* return a state object, usually the `newState` itself. 
+But it can be also a modified version of `newState`; this way, you can build a kind of a (generic) transformation pipeline.
+
+```javascript
+function TimestampMiddleware(propName, value){
+    this.addTimestamp = function(newState, oldState){
+
+        var modifiedState = {};
+        modifiedState.modified = Date.now(); // adds a timestamp to the state
+
+        Object.assign(newState, modifiedState);
+        return newState;
+    };
+}
+
+var timestampMiddleware = new TimestampMiddleware();
+fusionStore.use( timestampMiddleware.addTimestamp );
+```
+ 
+#### Only synchronous middleware functions
+
+There's no support for asynchronous middleware functions yet, that means that the middleware execution doesn't wait for asynchronous operations.
