@@ -210,12 +210,14 @@ chainedPromises(5); // state will be { a: 5, b: 10 }
 *Fusion* provides a simple middleware interface to apply generic functionality *before* states are merged into the application state.
 The `Fusion Store`'s `use` method accepts a function of the following structure
  
- ```javascript
- const middlewareFunction = function (newState, currentState){
+```javascript
+
+const middlewareFunction = function (newState, currentState){
     // ... your implementation
     return newState;
  }
- ```
+
+```
 The `newState` argument is the state object returned from the Fusionator, while the `currentState` is the most recent application state. 
 The middleware functions are called in the order as they are added to the store.   
 
