@@ -253,19 +253,16 @@ Each middleware *must* return a state object, usually the `newState` itself.
 But it can be also a modified version of `newState`; this way, you can build a kind of a (generic) transformation pipeline.
 
 ```javascript
-function TimestampMiddleware(){
-    this.addTimestamp = function(newState, oldState){
+function addTimestamp(newState, oldState){
 
         var modifiedState = {};
         modifiedState.modified = Date.now(); // adds a timestamp to the state
 
         Object.assign(newState, modifiedState);
         return newState;
-    };
 }
 
-var timestampMiddleware = new TimestampMiddleware();
-fusionStore.use( timestampMiddleware.addTimestamp );
+fusionStore.use( addTimestamp );
 ```
  
 #### Only synchronous middleware functions
