@@ -253,7 +253,7 @@ Each middleware *must* return a state object, usually the `newState` itself.
 But it can be also a modified version of `newState`; this way, you can build a kind of a (generic) transformation pipeline.
 
 ```javascript
-function TimestampMiddleware(propName, value){
+function TimestampMiddleware(){
     this.addTimestamp = function(newState, oldState){
 
         var modifiedState = {};
