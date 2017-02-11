@@ -30,6 +30,12 @@ module.exports = {
 
     getActions: function(name){
         return actionCreatorFactory.getActions(name);
-    }
-
+    },
+	use : function(fn,dispatcher){
+		if(!dispatcher){
+			dispatcherFactory.getDispatcher().addMiddleware(fn);
+		}else{
+			dispatcher.addMiddleware(fn);
+		}
+	}
 };

@@ -53,5 +53,7 @@ describe("Dispatcher Creation", function () {
 		expect(typeof(dispatcher.action1)).toBe("function");
 		expect(typeof(dispatcher.action2)).toBe("function");
 	});
+
 });
+
 // @endif

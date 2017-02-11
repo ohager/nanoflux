@@ -351,3 +351,83 @@ describe("NanoFlux Advanced Techniques", function () {
     });
 
 });
+
+
+describe("Nanoflux Middleware", function(){
+
+	beforeEach(function(){
+		NanoFlux.reset();
+	});
+
+	it("should use a single middleware for a fluxy dispatcher", function () {
+		var dispatcher = NanoFlux.createDispatcher(null, "action1");
+
+		var testMiddleware = function(storeHandlerName, args){
+			expect(storeHandlerName).toBe("onAction1");
+			expect(args[0]).toEqual({foo: "bar"});
+		};
+		NanoFlux.use(testMiddleware, dispatcher);
+
+		dispatcher.action1({foo:"bar"})
+	});
+
+	it("should use multiple middlewares for a fluxy dispatcher", function () {
+		var dispatcher = NanoFlux.createDispatcher(null, "action1");
+
+		var testMiddleware1 = function(storeHandlerName, args){
+			expect(storeHandlerName).toBe("onAction1");
+			expect(args[0]).toEqual({foo: "bar"});
+		};
+
+		var testMiddleware2 = function(storeHandlerName, args){
+			expect(storeHandlerName).toBe("onAction1");
+			expect(args[0]).toEqual({foo: "bar"});
+		};
+
+		NanoFlux.use(testMiddleware1, dispatcher);
+		NanoFlux.use(testMiddleware2, dispatcher);
+
+		dispatcher.action1({foo:"bar"})
+	});
+
+	function TestMiddleware(){
+
+		var noCalls = 1;
+
+		return function(handlerName, args){
+			if(noCalls === 1){
+				expect(handlerName).toBe("onAction1");
+				expect(args[0]).toEqual({foo: "fromAction1"});
+			}
+			if(noCalls === 2){
+				expect(handlerName).toBe("onAction2");
+				expect(args[0]).toEqual({foo: "fromAction2"});
+			}
+			noCalls++;
+		}
+	}
+
+	it("should use middleware with action creators", function () {
+		var dispatcher = NanoFlux.getDispatcher();
+
+		function ActionProvider(dispatcher){
+			this.action1 = function(data){
+				dispatcher.dispatch('action1',data);
+			};
+		}
+		var actions1 = new ActionProvider(dispatcher);
+		NanoFlux.use(new TestMiddleware(), dispatcher);
+		actions1.action1({foo:"fromAction1"});
+	});
+
+
+	it("should use single middleware for a multiple actions", function () {
+		var dispatcher = NanoFlux.createDispatcher(null, ["action1","action2"]);
+
+		NanoFlux.use(new TestMiddleware(), dispatcher);
+
+		dispatcher.action1({foo:"fromAction1"});
+		dispatcher.action2({foo:"fromAction2"});
+	});
+
+});

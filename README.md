@@ -17,16 +17,16 @@ Furthermore, __nanoflux__ uses a pure functional approach as a performant soluti
 
 - Extremely tiny implementation
 - No dependencies at all
-- Pure Functional approach (totally event less)
 - Support for full Flux using full stack of ActionProvider/Creator, Dispatcher, and Stores
 - Support for a simplified 'fluxy' concept, where Dispatcher is also ActionProvider
 - Interoperable/Chainable Stores
 - Multiple Dispatchers
-- Built in ActionCreator (*new*)
-- Quite fast (*recently optimized*)
+- Built in ActionCreator
+- Quite fast
 - CommonJS, RequireJS ready
+- Middleware support (*new, since 1.1.0*)
 
-> Hint: Have a look at [nanoflux-fusion](https://github.com/ohager/nanoflux-fusion), which is an upcoming extension for 
+> Hint: Have a look at [nanoflux-fusion](https://github.com/ohager/nanoflux-fusion), which is an extension for
 *nanoflux* providing a even more comfortable API inspired by [redux](http://redux.js.org/)
 
 
@@ -45,9 +45,10 @@ A *Store* and/or an *ActionProvider* is not part of their library, and therefore
 And even a bit smaller than __nanoflux__. The developer gains more liberty on implementation decisions, but for the costs of more work. 
 For example, it is left to the developer how stores and actions may interoperate, p.e. common approaches base on event emitters. 
 
-In this point __nanoflux__ offers slightly less flexibility with its a pure functional approach only - at least regarding 
-the dispatcher-store-binding - but is more comfortable. 
- 
+In this point __nanoflux__ offers slightly less flexibility with its convention based the dispatcher-store-binding, but is more comfortable.
+
+Since version 1.1.0 __nanoflux__ provides a middleware, which allows something like a payload data transformation pipeline, or dispatch inspection for logging, or debugging tools.
+
 # Size
 __nanoflux__ is a really tiny implementation, although it offers *much* more comfort than the reference implementation from Facebook.
 
@@ -160,6 +161,42 @@ The following example demonstrates the 'full' Flux approach, using ActionProvide
             actions.action2("test 2");
         };
     }   
+```
+
+
+## Middleware Example
+
+Applying middleware is as simple as licking ice cream on the beach:
+
+```javascript
+function Logger(){
+    var log = [];
+
+    return function(handlerName, args){
+        log.push({
+            handler: handlerName,
+            payload : args
+            }
+        )
+    }
+}
+
+// somewhere in your app --- using the fluxy approach for sake of simplicity
+// ...
+var dispatcher = NanoFlux.createDispatcher(null, ["action1", "action2"]);
+NanoFlux.use(new Logger(), dispatcher);
+
+dispatcher.action1({foo:"fromAction1"});
+/* Log is:  [{handler: "onAction1", payload: [{foo:"fromAction1"}]}] */
+
+dispatcher.action2({foo:"fromAction2"});
+/* Final Log is:
+    [
+        {handler: "onAction1", payload: [{foo:"fromAction1"}]}
+        {handler: "onAction2", payload: [{foo:"fromAction2"}]}
+    ]
+*/
+
 ```
 
 # Getting nanoflux
