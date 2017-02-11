@@ -51,6 +51,7 @@ function Dispatcher(actions) {
     this.__stores = [];
 	this.__handlerMapCache = {};
 	this.__isDispatching = false;
+	this.__middlewares = [];
 
     var createActionList = function (actionArray) {
 
@@ -83,6 +84,8 @@ Dispatcher.prototype.__callAction = function(){
     var handler = this.__getHandlerName(arguments[0]);
     var args = Array.prototype.slice.call(arguments,1);
 
+	this.__callMiddleware(handler, args);
+
     for (var i = 0; i < this.__stores.length; ++i) {
         var store = this.__stores[i];
         if(store[handler]){
@@ -95,6 +98,17 @@ Dispatcher.prototype.__registerAction = function (actionName) {
     if(!this[actionName]) {
         this[actionName] = this.__callAction.bind(this, actionName);
     }
+};
+
+
+Dispatcher.prototype.__callMiddleware = function(actionName, data){
+	for (var i = 0; i < this.__middlewares.length; ++i) {
+		this.__middlewares[i].call(null, actionName, data);
+	}
+};
+
+Dispatcher.prototype.addMiddleware = function(fn){
+	this.__middlewares.push(fn);
 };
 
 Dispatcher.prototype.connectTo = function (storeArray) {
@@ -186,8 +200,14 @@ module.exports = {
 
     getActions: function(name){
         return actionCreatorFactory.getActions(name);
-    }
-
+    },
+	use : function(fn,dispatcher){
+		if(!dispatcher){
+			dispatcherFactory.getDispatcher().addMiddleware(fn);
+		}else{
+			dispatcher.addMiddleware(fn);
+		}
+	}
 };
 
 },{"./actioncreator":1,"./dispatcher":2,"./store":4}],4:[function(_dereq_,module,exports){
