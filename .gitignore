@@ -18,6 +18,7 @@ Rakefile
 .jekyll-metadata
 node_modules
 .idea/
+coverage/
 
 
 

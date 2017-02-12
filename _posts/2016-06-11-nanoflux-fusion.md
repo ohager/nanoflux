@@ -212,14 +212,16 @@ The `Fusion Store`'s `use` method accepts a function of the following structure
  
 ```javascript
 
-const middlewareFunction = function (newState, currentState){
+const middlewareFunction = function (newState, currentState, actionName){
     // ... your implementation
     return newState;
  }
 
 ```
-The `newState` argument is the state object returned from the Fusionator, while the `currentState` is the most recent application state. 
+The `newState` argument is the state object returned from the Fusionator, while the `currentState` is the most recent application state. Obviously, `actionName` is the name of the triggered action (that one passed on `getFusionActor`.
 The middleware functions are called in the order as they are added to the store.   
+
+> Note: Nanoflux also provides a middleware interface (`Nanoflux.use()`), but that interface applies for the dispatcher. In case of Fusion, the dispatcher middleware isn't that useful, as it dispatches always to the same method (i.e. _on__fuse()_) with internally maintained arguments.
 
 #### Very Simple Logger Middleware Example
 
@@ -227,8 +229,9 @@ The middleware functions are called in the order as they are added to the store.
 function LoggerMiddleware(){
     var logData = [];
 
-    this.log = function(newState, oldState){
+    this.log = function(newState, oldState, actionName){
         logData.push({
+            action: actionName,
             timestamp: Date.now(),
             state: _.cloneDeep(oldState)
         });

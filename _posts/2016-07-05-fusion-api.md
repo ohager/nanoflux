@@ -28,7 +28,7 @@ It is already connected to the default dispatcher, so there`s no need to care ab
 This store has only three public functions, which are  
 
  - `getState()`, which returns the __immutable__ application state.
- - `use()`, which uses a middleware function of type `function(newState,currentState)`. The function object __must__ return an object, considered as new state. 
+ - `use()`, which uses a middleware function of type `function(newState,currentState, actionName)`. The function object __must__ return an object, considered as new state.
  - `subscribe()`, which connects components to listen to changes on this store (the same as in *nanoflux*)
 
 <a name='createFusionator'></a>
