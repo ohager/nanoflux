@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability" />
-    <ignored path="nanoflux.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="c4243c2a-6ab4-4b0d-8ef4-841abcee72e9" name="Default" comment="Store interoperability">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,75 +14,8 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="nanoflux" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-07-05-fusion-api.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-07-05-fusion-api.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="510">
-                <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-06-11-nanoflux-fusion.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-06-11-nanoflux-fusion.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-04-22-getting-started.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-getting-started.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-04-22-api.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-04-22-api.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="357">
-                <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -169,15 +102,9 @@
     <option name="width" value="1924" />
     <option name="height" value="1048" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
+  <component name="ProjectId" id="1uzVMTu1mhFFXaxwQYnJ69gIHyW" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -302,18 +229,28 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptLanguageLevel" value="JSX" />
+    <property name="SearchEverywhereHistoryKey" value="flati&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/flaticon.css&#10;navi&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;header&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/header.html&#10;swipe&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/swipe-instructions.html&#10;.git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;fluxy&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-fullflux-vs-fluxy.md&#10;git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;api&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;docs&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/categories/docs.html&#10;config&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;quick&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;cus&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;custom&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;conf&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gray&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_site/css/grayscale.css&#10;cred&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/credits.html&#10;ap&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;js&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/js.html&#10;con&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;inde&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/index.html&#10;head&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/head.html&#10;foot&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;about&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;cust&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;quicks&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;qui&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;po&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/post.html&#10;fo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;foo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;nav&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;quic&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/quickstart.html&#10;fea&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;gra&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;cu&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;c&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gr&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;grays&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;feat&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;abou&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;READ&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;action&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/actioncreator.js&#10;store&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/store.js&#10;read&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;pack&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/package.json" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2454805" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="flati&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/flaticon.css&#10;navi&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;header&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/header.html&#10;swipe&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/swipe-instructions.html&#10;.git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;fluxy&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-fullflux-vs-fluxy.md&#10;git&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/.gitignore&#10;api&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;docs&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/categories/docs.html&#10;config&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;quick&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;cus&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;custom&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;conf&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gray&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_site/css/grayscale.css&#10;cred&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/credits.html&#10;ap&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_posts/2016-04-22-api.md&#10;js&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/js.html&#10;con&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;inde&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/index.html&#10;head&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/head.html&#10;foot&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;about&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;cust&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;quicks&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;qui&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/quickstart.html&#10;po&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_layouts/post.html&#10;fo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;foo&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/footer.html&#10;nav&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/navigation.html&#10;quic&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_includes/quickstart.html&#10;fea&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;gra&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;cu&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/custom.css&#10;c&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/_config.yml&#10;gr&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;grays&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/css/grayscale.scss&#10;feat&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/features.html&#10;abou&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/about.html&#10;READ&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;action&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/actioncreator.js&#10;store&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/src/store.js&#10;read&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/README.md&#10;pack&#9;FILE&#9;file://C:/coding/devbutze/projects/nanoflux/package.json" />
-    <property name="JavaScriptLanguageLevel" value="JSX" />
-    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -329,38 +266,29 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration default="false" name="fullflux_builtin_actioncreator.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="fullflux_builtin_actioncreator.js" working-dir="$PROJECT_DIR$/examples">
-      <method />
-    </configuration>
-    <configuration default="false" name="dispatcher-spec.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="dispatcher-spec.js" working-dir="$PROJECT_DIR$/spec">
-      <method />
-    </configuration>
-    <configuration default="false" name="alt-perf.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="alt-perf.js" working-dir="$PROJECT_DIR$/perf">
-      <method />
-    </configuration>
-    <configuration default="false" name="benchmark.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="benchmark.js" working-dir="$PROJECT_DIR$/perf">
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/nanoflux/index.html">
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/nanoflux/index.html">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
+    <configuration name="alt-perf.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="alt-perf.js" working-dir="$PROJECT_DIR$/perf">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
+    <configuration name="benchmark.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="benchmark.js" working-dir="$PROJECT_DIR$/perf">
+      <method v="2" />
+    </configuration>
+    <configuration name="dispatcher-spec.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="dispatcher-spec.js" working-dir="$PROJECT_DIR$/spec">
+      <method v="2" />
+    </configuration>
+    <configuration name="fullflux_builtin_actioncreator.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="fullflux_builtin_actioncreator.js" working-dir="$PROJECT_DIR$/examples">
+      <method v="2" />
+    </configuration>
+    <configuration name="jasmine" type="NodeJSConfigurationType" application-parameters=".\spec" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="./node_modules/jasmine-node/lib/jasmine-node/cli.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
     </configuration>
     <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
       <setting name="nodePath" value="C:/Program Files/nodejs/node" />
@@ -369,68 +297,48 @@
       <setting name="workingDirectory" value="$PROJECT_DIR$" />
       <setting name="testType" value="JS_FILE" />
       <setting name="jsFile" value="" />
-      <method />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
-      <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
-      <envs />
-      <method />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+    <configuration default="true" type="mocha-javascript-test-runner">
       <node-interpreter>C:/Program Files/nodejs/node.exe</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
-      <envs />
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>DIRECTORY</test-kind>
       <test-directory />
       <recursive>false</recursive>
-      <method />
+      <method v="2" />
     </configuration>
-    <configuration default="false" name="jasmine" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="./node_modules/jasmine-node/lib/jasmine-node/cli.js" application-parameters=".\spec" working-dir="$PROJECT_DIR$">
-      <method />
-    </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.jasmine" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.fullflux_builtin_actioncreator.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.dispatcher-spec.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.alt-perf.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.benchmark.js" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.jasmine" />
+      <item itemvalue="Node.js.fullflux_builtin_actioncreator.js" />
+      <item itemvalue="Node.js.dispatcher-spec.js" />
+      <item itemvalue="Node.js.alt-perf.js" />
+      <item itemvalue="Node.js.benchmark.js" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.dispatcher-spec.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.benchmark.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.alt-perf.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.fullflux_builtin_actioncreator.js" />
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.dispatcher-spec.js" />
+        <item itemvalue="Node.js.benchmark.js" />
+        <item itemvalue="Node.js.alt-perf.js" />
+        <item itemvalue="Node.js.fullflux_builtin_actioncreator.js" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -476,6 +384,7 @@
       <workItem from="1470845796655" duration="1577000" />
       <workItem from="1482686572712" duration="2263000" />
       <workItem from="1486910226750" duration="1728000" />
+      <workItem from="1625668362084" duration="1022000" />
     </task>
     <task id="LOCAL-00001" summary="Starting with full flux implementation (dispatch&#10;)">
       <created>1441731251430</created>
@@ -566,6 +475,9 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39500567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -608,9 +520,7 @@
           <option name="timeStamp" value="136" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="137" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_includes/post-list.html" />

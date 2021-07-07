@@ -19,6 +19,8 @@ Rakefile
 node_modules
 .idea/
 coverage/
+.jekyll-cache/
+
 
 
 
